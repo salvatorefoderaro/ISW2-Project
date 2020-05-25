@@ -26,9 +26,8 @@ public class D3M3Utils {
 	private static final String UNDER_SAMPLING = "Under sampling";
 	private static final String SMOTE = "Smote";
 	private static final String NO_SAMPLING = "No sampling";
-	private static final String CUSTOM_ERROR = "Unable to do this operation";
 
-	public static List<String> applyFeatureSelection(Instances training, Instances testing, double percentageMajorityClass) throws Exception{
+	public static List<String> applyFeatureSelection(Instances training, Instances testing, double percentageMajorityClass) throws CustomException{
 
 		AttributeSelection filter = new AttributeSelection();
 		CfsSubsetEval eval = new CfsSubsetEval();
@@ -38,9 +37,9 @@ public class D3M3Utils {
 
 		filter.setEvaluator(eval);
 		filter.setSearch(search);
-		filter.setInputFormat(training);
 
 		try {
+			filter.setInputFormat(training);
 			Instances filteredTraining =  Filter.useFilter(training, filter);
 			Instances testingFiltered = Filter.useFilter(testing, filter);
 			int numAttrFiltered = filteredTraining.numAttributes();
@@ -49,8 +48,7 @@ public class D3M3Utils {
 
 			return applySampling(filteredTraining, testingFiltered, percentageMajorityClass, "True");
 		} catch (Exception e) {
-			throw new CustomException(CUSTOM_ERROR);
-
+			throw new CustomException("Error applyin filter.");
 		}
 
 
