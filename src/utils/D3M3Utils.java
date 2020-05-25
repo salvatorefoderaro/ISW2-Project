@@ -58,15 +58,21 @@ public class D3M3Utils {
 
 	}
 	
-	public static Evaluation applyFilter(FilteredClassifier fc, Evaluation eval, Instances training, Instances testing, AbstractClassifier classifierName) throws Exception {
+	public static Evaluation applyFilter(FilteredClassifier fc, Evaluation eval, Instances training, Instances testing, AbstractClassifier classifierName) throws CustomException {
 		
 		if (fc != null) {
-			fc.setClassifier(classifierName);
+			try {fc.setClassifier(classifierName);
 			fc.buildClassifier(training);
 			eval.evaluateModel(fc, testing);
-
+			} catch (Exception e) {
+				throw new CustomException("Custom error");
+			}
 		} else {
-			eval.evaluateModel(classifierName, testing);
+			try {
+				eval.evaluateModel(classifierName, testing);
+			} catch (Exception e) {
+				throw new CustomException("Custom error");
+			}
 		}
 		return eval;
 	}
