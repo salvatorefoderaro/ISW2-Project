@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="jar/commons-collections4-4.4.jar"/>
+	<classpathentry kind="lib" path="jar/guava-23.0.jar"/>
+	<classpathentry kind="lib" path="jar/java-json.jar"/>
+	<classpathentry kind="lib" path="jar/org.eclipse.jgit-5.7.0.202003110725-r.jar"/>
+	<classpathentry kind="lib" path="jar/slf4j-api-1.7.9.jar"/>
+	<classpathentry kind="lib" path="jar/slf4j-simple-1.7.9.jar"/>
+	<classpathentry kind="lib" path="jar/weka.jar"/>
+	<classpathentry kind="lib" path="jar/SMOTE-1.0.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
