@@ -20,12 +20,15 @@ import weka.filters.supervised.instance.SpreadSubsample;
 
 public class D3M3Utils {
 
+	private D3M3Utils() {}
+
 	private static final String OVER_SAMPLING = "Over sampling";
 	private static final String UNDER_SAMPLING = "Under sampling";
 	private static final String SMOTE = "Smote";
 	private static final String NO_SAMPLING = "No sampling";
-	
-	public static List<String> applyFeatureSelection(Instances training, Instances testing, double percentageMajorityClass) throws Throwable{
+	private static final String CUSTOM_ERROR = "Unable to do this operation";
+
+	public static List<String> applyFeatureSelection(Instances training, Instances testing, double percentageMajorityClass) throws Exception{
 
 		AttributeSelection filter = new AttributeSelection();
 		CfsSubsetEval eval = new CfsSubsetEval();
@@ -37,32 +40,45 @@ public class D3M3Utils {
 		filter.setSearch(search);
 		filter.setInputFormat(training);
 
+		try {
 		Instances filteredTraining =  Filter.useFilter(training, filter);
 		Instances testingFiltered = Filter.useFilter(testing, filter);
-
 		int numAttrFiltered = filteredTraining.numAttributes();
 		filteredTraining.setClassIndex(numAttrFiltered - 1);
 		testingFiltered.setClassIndex(numAttrFiltered - 1);
 
 		return applySampling(filteredTraining, testingFiltered, percentageMajorityClass, "True");
+		} catch (Exception e) {
+			throw new CustomException(CUSTOM_ERROR);
+
+		}
+		
+
+
 
 	}
 	
-	public static void addResult(FilteredClassifier fc, Evaluation eval, ArrayList<String> result, Instances training, Instances testing, AbstractClassifier classifierName, String classifierAbb, String sampling, String featureSelection) throws Throwable {
+	public static Evaluation applyFilter(FilteredClassifier fc, Evaluation eval, Instances training, Instances testing, AbstractClassifier classifierName) throws Exception {
 		
 		if (fc != null) {
 			fc.setClassifier(classifierName);
 			fc.buildClassifier(training);
 			eval.evaluateModel(fc, testing);
-			result.add(getMetrics(eval,classifierAbb, sampling, featureSelection));
+
 		} else {
 			eval.evaluateModel(classifierName, testing);
-			result.add(getMetrics(eval,classifierAbb, sampling, featureSelection));
 		}
+		return eval;
+	}
+
+	public static void addResult(Evaluation eval, List<String> result, String classifierAbb, String sampling, String featureSelection) {
+
+		result.add(getMetrics(eval,classifierAbb, sampling, featureSelection));
+		
 	}
 
 
-	public static List<String> applySampling(Instances training, Instances testing, double percentageMajorityClass, String featureSelection) throws Throwable {
+	public static List<String> applySampling(Instances training, Instances testing, double percentageMajorityClass, String featureSelection) throws Exception {
 
 		ArrayList<String> result = new ArrayList<>();
 
@@ -82,9 +98,14 @@ public class D3M3Utils {
 		// Get an evaluation object
 		Evaluation eval = new Evaluation(training);	
 
-		addResult(null, eval, result, training, testing, classifierRF, "RF", NO_SAMPLING, featureSelection);
-		addResult(null, eval, result, training, testing, classifierIBk, "IBk", NO_SAMPLING, featureSelection);
-		addResult(null, eval, result, training, testing, classifierNB, "NB", NO_SAMPLING, featureSelection);
+		applyFilter(null, eval, training, testing, classifierRF);
+		addResult(eval, result, "RF", NO_SAMPLING, featureSelection);
+		
+		applyFilter(null, eval, training, testing, classifierIBk);
+		addResult(eval, result, "IBk", NO_SAMPLING, featureSelection);
+
+		applyFilter(null, eval, training, testing, classifierNB);
+		addResult(eval, result, "NB", NO_SAMPLING, featureSelection);
 
 		// Sampling
 
@@ -96,9 +117,15 @@ public class D3M3Utils {
 		spreadSubsample.setOptions(opts);
 		fc.setFilter(spreadSubsample);
 
-		addResult(fc, eval, result, training, testing, classifierRF, "RF", UNDER_SAMPLING, featureSelection);
-		addResult(fc, eval, result, training, testing, classifierIBk, "IBk", UNDER_SAMPLING, featureSelection);
-		addResult(fc, eval, result, training, testing, classifierNB, "NB", UNDER_SAMPLING, featureSelection);
+		applyFilter(null, eval, training, testing, classifierRF);
+		addResult(eval, result, "RF", UNDER_SAMPLING, featureSelection);
+
+		
+		applyFilter(null, eval, training, testing, classifierIBk);
+		addResult(eval, result, "IBk", UNDER_SAMPLING, featureSelection);
+
+		applyFilter(null, eval, training, testing, classifierNB);
+		addResult(eval, result, "NB", UNDER_SAMPLING, featureSelection);
 
 		Resample  spreadOverSample = new Resample();
 		spreadOverSample.setInputFormat(training);
@@ -108,20 +135,31 @@ public class D3M3Utils {
 
 		eval = new Evaluation(testing);	
 
-		addResult(fc, eval, result, training, testing, classifierRF, "RF", OVER_SAMPLING, featureSelection);
-		addResult(fc, eval, result, training, testing, classifierIBk, "IBk", OVER_SAMPLING, featureSelection);
-		addResult(fc, eval, result, training, testing, classifierNB, "NB", OVER_SAMPLING, featureSelection);
+		applyFilter(null, eval, training, testing, classifierRF);
+		addResult(eval, result, "RF", OVER_SAMPLING, featureSelection);
+
+		applyFilter(null, eval, training, testing, classifierIBk);
+		addResult(eval, result, "IBk", OVER_SAMPLING, featureSelection);
+		
+		applyFilter(null, eval, training, testing, classifierNB);
+		addResult(eval, result, "NB", OVER_SAMPLING, featureSelection);
 
 		SMOTE smote = new SMOTE();
 		smote.setInputFormat(training);
 		fc.setFilter(smote);
 
 		eval = new Evaluation(testing);	
-		
-		addResult(fc, eval, result, training, testing, classifierRF, "RF", SMOTE, featureSelection);
-		addResult(fc, eval, result, training, testing, classifierIBk, "IBk", SMOTE, featureSelection);
-		addResult(fc, eval, result, training, testing, classifierNB, "NB", SMOTE, featureSelection);
 
+		
+		applyFilter(null, eval, training, testing, classifierRF);
+		addResult(eval, result, "RF", SMOTE, featureSelection);
+		
+		applyFilter(null, eval, training, testing, classifierIBk);
+		addResult(eval, result, "IBk", SMOTE, featureSelection);
+		
+		applyFilter(null, eval, training, testing, classifierNB);
+		addResult(eval, result, "NB", SMOTE, featureSelection);
+		
 		return result;
 
 	}

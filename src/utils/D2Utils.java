@@ -7,24 +7,33 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import weka.attributeSelection.CfsSubsetEval;
-import weka.attributeSelection.GreedyStepwise;
 import weka.classifiers.Evaluation;
-import weka.classifiers.bayes.NaiveBayes;
-import weka.classifiers.lazy.IBk;
-import weka.classifiers.meta.FilteredClassifier;
-import weka.classifiers.trees.RandomForest;
-import weka.core.Instances;
-import weka.filters.Filter;
-import weka.filters.supervised.attribute.AttributeSelection;
-import weka.filters.supervised.instance.Resample;
-import weka.filters.supervised.instance.SMOTE;
-import weka.filters.supervised.instance.SpreadSubsample;
 
 public class D2Utils {
 
 	private static final String TRAINING = "_training.arff";
 	private static final String TESTING = "_testing.arff";
+	
+	private D2Utils() throws CustomException {
+		throw new CustomException("Unable to do this operation.");
+	}
+	
+	public static int appendToCSV(FileWriter csvWriter, String line) throws IOException {
+		int counterDefective = 0;
+		// Append the row readed from the CSV file, but without the first 2 column
+		String[] array = line.split(",");
+		for (int i = 2; i < array.length; i++) {
+			if (i == array.length - 1) {
+				if(array[i].equals("Yes"))
+					counterDefective = counterDefective + 1;
+
+				csvWriter.append(array[i] + "\n");
+			} else {
+				csvWriter.append(array[i] + ",");
+			}
+		}
+		return counterDefective;
+	}
 	
 	/** This function build the ARFF file for the specific project relative to the training set
 	 * 
@@ -70,19 +79,7 @@ public class D2Utils {
 
 						counterElement = counterElement + 1;
 
-						// Append the row readed from the CSV file, but without the first 2 column
-						String[] array = line.split(",");
-						for (int i = 2; i < array.length; i++) {
-							if (i == array.length - 1) {
-								if(array[i].equals("Yes"))
-									counterDefective = counterDefective + 1;
-
-								csvWriter.append(array[i] + "\n");
-							} else {
-								csvWriter.append(array[i] + ",");
-							}
-
-						}
+						counterDefective = counterDefective + appendToCSV(csvWriter, line);
 					}
 				}
 
@@ -141,17 +138,7 @@ public class D2Utils {
 						counterElement = counterElement + 1;
 
 						// Append the row readed from the CSV file, but without the first 2 column
-						String[] array = line.split(",");
-						for (int i = 2; i < array.length; i++) {
-							if (i == array.length - 1) {
-								if(array[i].equals("Yes"))
-									counterDefective = counterDefective + 1;
-
-								csvWriter.append(array[i] + "\n");
-							} else {
-								csvWriter.append(array[i] + ",");
-							}
-						}
+						counterDefective = counterDefective + appendToCSV(csvWriter, line);
 					}
 				}
 

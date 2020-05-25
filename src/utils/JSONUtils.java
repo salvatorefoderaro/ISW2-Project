@@ -13,13 +13,17 @@ import org.json.JSONObject;
 
 public class JSONUtils {
 	
+	private JSONUtils() throws CustomException {
+		throw new CustomException("Unable to do this operation.");
+	}
+		
 	/** This function return the string needed for the JSONObject
 	 * 
 	 * @param rd, the Reader object
 	 * @return the string needed for the JSONObject
 	 *
 	 */ 
-	private static String readAll(Reader rd) throws IOException {
+	public static String readAll(Reader rd) throws IOException {
 
 		StringBuilder sb = new StringBuilder();
 		int cp;
