@@ -1,10 +1,10 @@
-package d2m3.src;
+package org.d2m3.src;
 
 import java.io.FileWriter;
 import java.util.List;
 
-import utils.D2Utils;
-import utils.D3M3Utils;
+import org.utils.D2Utils;
+import org.utils.D3M3Utils;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 
@@ -34,10 +34,10 @@ public class Deliverable2Milestone3 {
 				for (int i = 1; i < limits[j]; i++) {
 
 					// Create the ARFF file for the training, till the i-th version
-					List<Integer> resultTraining = D2Utils.writeTrainingToCSV(projects[j], i);
+					List<Integer> resultTraining = D2Utils.walkForwardTraining(projects[j], i);
 
 					// Create the ARFF file for testing, with the i+1 version
-					List<Integer> resultTesting = D2Utils.writeTestingToCSV(projects[j], i+1);
+					List<Integer> resultTesting = D2Utils.walkForwardTesting(projects[j], i+1);
 
 					double percentTraining = resultTraining.get(0) / (double)(resultTraining.get(0) + resultTesting.get(0));
 					double percentDefectTraining = resultTraining.get(1) / (double)resultTraining.get(0);

@@ -1,4 +1,4 @@
-package d2m1.src;
+package org.d2m1.src;
 
 
 
@@ -24,8 +24,8 @@ import org.json.JSONObject;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.MultimapBuilder;
 
-import utils.D2M1Utils;
-import utils.JSONUtils;
+import org.utils.D2M1Utils;
+import org.utils.JSONUtils;
 
 import org.apache.commons.collections4.MapIterator;
 import org.apache.commons.collections4.keyvalue.MultiKey;

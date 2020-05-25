@@ -1,4 +1,4 @@
-package d1.src;
+package org.d1.src;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -27,7 +27,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import utils.JSONUtils;
+import org.utils.JSONUtils;
 
 public class Deliverable1 {
 	

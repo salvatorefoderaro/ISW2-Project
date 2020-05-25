@@ -1,10 +1,10 @@
-package d2m2.src;
+package org.d2m2.src;
 
 import java.io.FileWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import utils.D2Utils;
+import org.utils.D2Utils;
 import weka.core.Instances;
 import weka.classifiers.Evaluation;
 import weka.classifiers.trees.RandomForest;
@@ -38,10 +38,10 @@ public class Deliverable2Milestone2 {
 				for (int i = 1; i < limits[j]; i++) {
 
 					// Create the ARFF file for the training, till the i-th version
-					D2Utils.writeTrainingToCSV(projects[j], i);
+					D2Utils.walkForwardTraining(projects[j], i);
 
 					// Create the ARFF file for testing, with the i+1 version
-					D2Utils.writeTestingToCSV(projects[j] ,i+1);
+					D2Utils.walkForwardTesting(projects[j] ,i+1);
 
 					// Read the Datasource created before and get each dataset
 					DataSource source1 = new DataSource(projects[j] + TRAINING);

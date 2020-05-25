@@ -1,4 +1,4 @@
-package utils;
+package org.utils;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -41,7 +41,7 @@ public class D2Utils {
 	 * @param trainingLimit, the index of the last version to be included in the training set
 	 *
 	 */ 
-	public static List<Integer> writeTrainingToCSV(String projectName, int trainingLimit) throws IOException {
+	public static List<Integer> walkForwardTraining(String projectName, int trainingLimit) throws IOException {
 
 		int counterElement = 0;
 		int counterDefective = 0;
@@ -101,7 +101,7 @@ public class D2Utils {
 	 * @param testing, the index of the version to be included in the testing set
 	 *
 	 */ 
-	public static List<Integer> writeTestingToCSV(String projectName, int testing) throws IOException {
+	public static List<Integer> walkForwardTesting(String projectName, int testing) throws IOException {
 
 		int counterElement = 0;
 		int counterDefective = 0;
