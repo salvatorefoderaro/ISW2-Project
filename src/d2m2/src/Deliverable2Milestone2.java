@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import d2utils.D2Utils;
+import utils.D2Utils;
 import weka.core.Instances;
 import weka.classifiers.Evaluation;
 import weka.classifiers.trees.RandomForest;

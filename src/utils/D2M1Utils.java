@@ -1,4 +1,4 @@
-package d2utils;
+package utils;
 
 import java.io.IOException;
 import java.time.LocalDate;

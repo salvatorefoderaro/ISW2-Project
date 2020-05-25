@@ -33,44 +33,11 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import utils.JSONUtils;
+
 public class Deliverable1 {
 	
 	private static Logger logger = Logger.getLogger(Deliverable1.class.getName()); 
-
-
-	/** This function return the string needed for the JSONObject
-	 * 
-	 * @param rd, the Reader object
-	 * @return the string needed for the JSONObject
-	 *
-	 */ 
-	private static String readAll(Reader rd) throws IOException {
-		StringBuilder sb = new StringBuilder();
-		int cp;
-		while ((cp = rd.read()) != -1) {
-			sb.append((char) cp);
-		}
-		return sb.toString();
-	}
-
-
-	/** This function return a JSONObrecj given an URL
-	 * 
-	 * @param url, URL for the get request
-	 * @return json, the JSONObject associated to the reply from the URL
-	 *
-	 */ 
-	public static JSONObject readJsonFromUrl(String url) throws IOException, JSONException {
-		InputStream is = new URL(url).openStream();
-		JSONObject json = null;
-		try(BufferedReader rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8))) {
-			json = new JSONObject(readAll(rd));  
-		} finally {
-			is.close();
-		}
-		return json;
-	}
-
 
 	/** This function, given the project name, return the list of all ticket with status =("closed" or "resolved") and resolution="fixed"
 	 * 
@@ -188,7 +155,7 @@ public class Deliverable1 {
 					+ "%22AND(%22status%22=%22closed%22OR"
 					+ "%22status%22=%22resolved%22)AND%22resolution%22=%22fixed%22&fields=key,versions,resolutiondate,created,fixVersions&startAt="
 					+ i.toString() + "&maxResults=1000";
-			JSONObject json = readJsonFromUrl(url);
+			JSONObject json = JSONUtils.readJsonFromUrl(url);
 			JSONArray issues = json.getJSONArray("issues");
 			total = json.getInt("total");
 			for (; i < total && i < j; i++) {

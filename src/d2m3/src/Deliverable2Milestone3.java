@@ -3,8 +3,8 @@ package d2m3.src;
 import java.io.FileWriter;
 import java.util.List;
 
-import d2utils.D2Utils;
-import d2utils.D3M3Utils;
+import utils.D2Utils;
+import utils.D3M3Utils;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 
@@ -13,7 +13,7 @@ public class Deliverable2Milestone3 {
 	private static final String TRAINING = "_training.arff";
 	private static final String TESTING = "_testing.arff";
 
-	public static void main(String[] args) throws Exception{
+	public static void main(String[] args) throws Throwable{
 
 		// Declare the list of the dataset names
 		String[] projects = {"AVRO", "BOOKKEEPER"};

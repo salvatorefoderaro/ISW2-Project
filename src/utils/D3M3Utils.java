@@ -1,10 +1,11 @@
-package d2utils;
+package utils;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import weka.attributeSelection.CfsSubsetEval;
 import weka.attributeSelection.GreedyStepwise;
+import weka.classifiers.AbstractClassifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.bayes.NaiveBayes;
 import weka.classifiers.lazy.IBk;
@@ -24,7 +25,7 @@ public class D3M3Utils {
 	private static final String SMOTE = "Smote";
 	private static final String NO_SAMPLING = "No sampling";
 	
-	public static List<String> applyFeatureSelection(Instances training, Instances testing, double percentageMajorityClass) throws Exception{
+	public static List<String> applyFeatureSelection(Instances training, Instances testing, double percentageMajorityClass) throws Throwable{
 
 		AttributeSelection filter = new AttributeSelection();
 		CfsSubsetEval eval = new CfsSubsetEval();
@@ -46,8 +47,22 @@ public class D3M3Utils {
 		return applySampling(filteredTraining, testingFiltered, percentageMajorityClass, "True");
 
 	}
+	
+	public static void addResult(FilteredClassifier fc, Evaluation eval, ArrayList<String> result, Instances training, Instances testing, AbstractClassifier classifierName, String classifierAbb, String sampling, String featureSelection) throws Throwable {
+		
+		if (fc != null) {
+			fc.setClassifier(classifierName);
+			fc.buildClassifier(training);
+			eval.evaluateModel(fc, testing);
+			result.add(getMetrics(eval,classifierAbb, sampling, featureSelection));
+		} else {
+			eval.evaluateModel(classifierName, testing);
+			result.add(getMetrics(eval,classifierAbb, sampling, featureSelection));
+		}
+	}
 
-	public static List<String> applySampling(Instances training, Instances testing, double percentageMajorityClass, String featureSelection) throws Exception {
+
+	public static List<String> applySampling(Instances training, Instances testing, double percentageMajorityClass, String featureSelection) throws Throwable {
 
 		ArrayList<String> result = new ArrayList<>();
 
@@ -67,17 +82,11 @@ public class D3M3Utils {
 		// Get an evaluation object
 		Evaluation eval = new Evaluation(training);	
 
-		eval.evaluateModel(classifierRF, testing);
-		result.add(getMetrics(eval,"RF", NO_SAMPLING, featureSelection));
-
-		eval.evaluateModel(classifierIBk, testing);
-		result.add(getMetrics(eval,"IBk", NO_SAMPLING, featureSelection));
-
-		eval.evaluateModel(classifierNB, testing);
-		result.add(getMetrics(eval,"NB", NO_SAMPLING, featureSelection));
+		addResult(null, eval, result, training, testing, classifierRF, "RF", NO_SAMPLING, featureSelection);
+		addResult(null, eval, result, training, testing, classifierIBk, "IBk", NO_SAMPLING, featureSelection);
+		addResult(null, eval, result, training, testing, classifierNB, "NB", NO_SAMPLING, featureSelection);
 
 		// Sampling
-
 
 		FilteredClassifier fc = new FilteredClassifier();
 
@@ -87,20 +96,9 @@ public class D3M3Utils {
 		spreadSubsample.setOptions(opts);
 		fc.setFilter(spreadSubsample);
 
-		fc.setClassifier(classifierRF);
-		fc.buildClassifier(training);
-		eval.evaluateModel(fc, testing);
-		result.add(getMetrics(eval,"RF", UNDER_SAMPLING, featureSelection));
-
-		fc.setClassifier(classifierIBk);
-		fc.buildClassifier(training);
-		eval.evaluateModel(fc, testing);
-		result.add(getMetrics(eval,"IBk", UNDER_SAMPLING, featureSelection));
-
-		fc.setClassifier(classifierNB);
-		fc.buildClassifier(training);
-		eval.evaluateModel(fc, testing);
-		result.add(getMetrics(eval,"NB", UNDER_SAMPLING, featureSelection));
+		addResult(fc, eval, result, training, testing, classifierRF, "RF", UNDER_SAMPLING, featureSelection);
+		addResult(fc, eval, result, training, testing, classifierIBk, "IBk", UNDER_SAMPLING, featureSelection);
+		addResult(fc, eval, result, training, testing, classifierNB, "NB", UNDER_SAMPLING, featureSelection);
 
 		Resample  spreadOverSample = new Resample();
 		spreadOverSample.setInputFormat(training);
@@ -108,42 +106,21 @@ public class D3M3Utils {
 		spreadOverSample.setOptions(optsOverSampling);
 		fc.setFilter(spreadOverSample);
 
-		fc.setClassifier(classifierRF);
-		fc.buildClassifier(training);
-
 		eval = new Evaluation(testing);	
-		eval.evaluateModel(fc, testing);
-		result.add(getMetrics(eval,"RF",OVER_SAMPLING , featureSelection));
 
-		fc.setClassifier(classifierIBk);
-		fc.buildClassifier(training);
-		eval.evaluateModel(fc, testing);
-		result.add(getMetrics(eval,"IBk", OVER_SAMPLING, featureSelection));
-
-		fc.setClassifier(classifierNB);
-		fc.buildClassifier(training);
-		eval.evaluateModel(fc, testing);
-		result.add(getMetrics(eval,"NB", OVER_SAMPLING, featureSelection));
+		addResult(fc, eval, result, training, testing, classifierRF, "RF", OVER_SAMPLING, featureSelection);
+		addResult(fc, eval, result, training, testing, classifierIBk, "IBk", OVER_SAMPLING, featureSelection);
+		addResult(fc, eval, result, training, testing, classifierNB, "NB", OVER_SAMPLING, featureSelection);
 
 		SMOTE smote = new SMOTE();
 		smote.setInputFormat(training);
 		fc.setFilter(smote);
 
-		fc.setClassifier(classifierRF);
-		fc.buildClassifier(training);
 		eval = new Evaluation(testing);	
-		eval.evaluateModel(fc, testing);
-		result.add(getMetrics(eval,"RF", SMOTE, featureSelection));
-
-		fc.setClassifier(classifierIBk);
-		fc.buildClassifier(training);
-		eval.evaluateModel(fc, testing);
-		result.add(getMetrics(eval,"IBk", SMOTE, featureSelection));
-
-		fc.setClassifier(classifierNB);
-		fc.buildClassifier(training);
-		eval.evaluateModel(fc, testing);
-		result.add(getMetrics(eval,"NB", SMOTE, featureSelection));
+		
+		addResult(fc, eval, result, training, testing, classifierRF, "RF", SMOTE, featureSelection);
+		addResult(fc, eval, result, training, testing, classifierIBk, "IBk", SMOTE, featureSelection);
+		addResult(fc, eval, result, training, testing, classifierNB, "NB", SMOTE, featureSelection);
 
 		return result;
 
