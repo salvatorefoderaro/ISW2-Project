@@ -287,8 +287,8 @@ public class Deliverable2Milestone1 {
 
 					// Get the date of the commit
 					LocalDate commitLocalDate = commit.getCommitterIdent().getWhen().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-				
-					
+
+
 					// Get the appartain version of the commit
 					int appartainVersion = jiraUtilsIstance.getCommitAppartainVersion(commitLocalDate);
 
@@ -319,7 +319,7 @@ public class Deliverable2Milestone1 {
 
 									// Replace the updated metrics
 									fileMapDataset.replace(appartainVersion, singleFileChanged.getNewPath(), fileMetrics);
-									
+
 									// Set this and other class contained in [IV, FV) buggy (if ther'are ticket(s) associated to the commit)
 									jiraUtilsIstance.setClassBuggy(ticketInformation, singleFileChanged, lastVersion +1 );
 								}
@@ -343,54 +343,54 @@ public class Deliverable2Milestone1 {
 		String[] projectList = {"AVRO", "BOOKKEEPER"};
 
 		for (String projectName : projectList) {
-		// The repo of the project
-		String projectRepo = "https://github.com/apache/" + projectName + ".git";
+			// The repo of the project
+			String projectRepo = "https://github.com/apache/" + projectName + ".git";
 
-		// Get the list of version with release date
-		versionListWithReleaseDate = getVersionWithReleaseDate(projectName);
+			// Get the list of version with release date
+			versionListWithReleaseDate = getVersionWithReleaseDate(projectName);
 
-		jiraUtilsIstance = new D2M1Utils(versionListWithReleaseDate, fileMapDataset, ticketWithBuggyIndex);
-		lastVersion = (versionListWithReleaseDate.size() / 2) / 2;
+			jiraUtilsIstance = new D2M1Utils(versionListWithReleaseDate, fileMapDataset, ticketWithBuggyIndex);
+			lastVersion = (versionListWithReleaseDate.size() / 2) / 2;
 
-		// Clone the repo in the 'projectName' folder
-		Git.cloneRepository()
-		.setURI(projectRepo)
-		.setDirectory(new File(projectName))
-		.call();
+			// Clone the repo in the 'projectName' folder
+			Git.cloneRepository()
+			.setURI(projectRepo)
+			.setDirectory(new File(projectName))
+			.call();
 
-		// Get all the file in the repo folder
-		try (Stream<File> fileStream = Files.walk(Paths.get(System.getProperty(USER_DIR) + "/" + projectName + "/"))
-				.filter(Files::isRegularFile).map(Path::toFile)){
+			// Get all the file in the repo folder
+			try (Stream<File> fileStream = Files.walk(Paths.get(System.getProperty(USER_DIR) + "/" + projectName + "/"))
+					.filter(Files::isRegularFile).map(Path::toFile)){
 
-			List<File> filesInFolder = fileStream.collect(Collectors.toList());
+				List<File> filesInFolder = fileStream.collect(Collectors.toList());
 
-			// For each file in the folder that ends with .java...
-			for (File i : filesInFolder) {
-				if (i.toString().endsWith(FILE_EXTENSION)) {
+				// For each file in the folder that ends with .java...
+				for (File i : filesInFolder) {
+					if (i.toString().endsWith(FILE_EXTENSION)) {
 
-					// ... put the pair (version, filePath) in the dataset map
-					for (int j = 1; j < (lastVersion) + 1; j++) {
-						jiraUtilsIstance.putEmptyRecord(j, i.toString().replace(
-								Paths.get(System.getProperty(USER_DIR)).toString() + "/" + projectName + "/",""));
+						// ... put the pair (version, filePath) in the dataset map
+						for (int j = 1; j < (lastVersion) + 1; j++) {
+							jiraUtilsIstance.putEmptyRecord(j, i.toString().replace(
+									Paths.get(System.getProperty(USER_DIR)).toString() + "/" + projectName + "/",""));
+						}
 					}
 				}
 			}
-		}
 
-		// Find the IV and FV index for tickets with Jira affected version
-		getBuggyVersionAVTicket(projectName);
+			// Find the IV and FV index for tickets with Jira affected version
+			getBuggyVersionAVTicket(projectName);
 
-		// Find the IV and FV index for tickets without Jira affected version (proportion method needed)
-		jiraUtilsIstance.getBuggyVersionProportionTicket();
+			// Find the IV and FV index for tickets without Jira affected version (proportion method needed)
+			jiraUtilsIstance.getBuggyVersionProportionTicket();
 
-		// Build the dataset
-		buildDataset(projectName);
+			// Build the dataset
+			buildDataset(projectName);
 
-		// Write the dataset to CSV file
-		writeToCSV(projectName);
+			// Write the dataset to CSV file
+			writeToCSV(projectName);
 
-		// Delete the project repo folder
-		FileUtils.delete(new File(projectName), 1);
+			// Delete the project repo folder
+			FileUtils.delete(new File(projectName), 1);
 		}
 
 	}

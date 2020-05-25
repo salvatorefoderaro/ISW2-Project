@@ -292,7 +292,7 @@ public class D2M1Utils {
 	 * 
 	 */ 
 	public void getBuggyVersionProportionTicket() {
-		
+
 		int ivIndex = 1;
 
 		// Iterate over all the commit without affected version list

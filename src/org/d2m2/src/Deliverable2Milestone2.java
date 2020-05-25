@@ -25,15 +25,15 @@ public class Deliverable2Milestone2 {
 		// Declare the number of revision for each dataset
 		Integer[] limits = {15, 7};
 
-			// For each project...
-			for (int j = 0; j < projects.length; j++) {
+		// For each project...
+		for (int j = 0; j < projects.length; j++) {
 
-				// Open the FileWriter for the output file
-				try (FileWriter csvWriter = new FileWriter("output/outputD2M2_" + projects[j]+ ".csv")) {
+			// Open the FileWriter for the output file
+			try (FileWriter csvWriter = new FileWriter("output/outputD2M2_" + projects[j]+ ".csv")) {
 
-					// Append the first line of the result file
-					csvWriter.append("Dataset,#TrainingRelease,Classifier,Precision,Recall,AUC,Kappa\n");
-				
+				// Append the first line of the result file
+				csvWriter.append("Dataset,#TrainingRelease,Classifier,Precision,Recall,AUC,Kappa\n");
+
 				// Iterate over the single version for the WalkForward technique...
 				for (int i = 1; i < limits[j]; i++) {
 

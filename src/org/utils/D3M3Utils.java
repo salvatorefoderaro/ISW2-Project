@@ -41,37 +41,37 @@ public class D3M3Utils {
 		filter.setInputFormat(training);
 
 		try {
-		Instances filteredTraining =  Filter.useFilter(training, filter);
-		Instances testingFiltered = Filter.useFilter(testing, filter);
-		int numAttrFiltered = filteredTraining.numAttributes();
-		filteredTraining.setClassIndex(numAttrFiltered - 1);
-		testingFiltered.setClassIndex(numAttrFiltered - 1);
+			Instances filteredTraining =  Filter.useFilter(training, filter);
+			Instances testingFiltered = Filter.useFilter(testing, filter);
+			int numAttrFiltered = filteredTraining.numAttributes();
+			filteredTraining.setClassIndex(numAttrFiltered - 1);
+			testingFiltered.setClassIndex(numAttrFiltered - 1);
 
-		return applySampling(filteredTraining, testingFiltered, percentageMajorityClass, "True");
+			return applySampling(filteredTraining, testingFiltered, percentageMajorityClass, "True");
 		} catch (Exception e) {
 			throw new CustomException(CUSTOM_ERROR);
 
 		}
-		
+
 
 
 
 	}
-	
+
 	public static Evaluation applyFilter(FilteredClassifier fc, Evaluation eval, Instances training, Instances testing, AbstractClassifier classifierName) throws CustomException {
-		
+
 		if (fc != null) {
 			try {fc.setClassifier(classifierName);
 			fc.buildClassifier(training);
 			eval.evaluateModel(fc, testing);
 			} catch (Exception e) {
-				throw new CustomException("Custom error");
+				throw new CustomException("Error on Evaluation with Filter.");
 			}
 		} else {
 			try {
 				eval.evaluateModel(classifierName, testing);
 			} catch (Exception e) {
-				throw new CustomException("Custom error");
+				throw new CustomException("Error on Evaluation without Filter.");
 			}
 		}
 		return eval;
@@ -80,11 +80,11 @@ public class D3M3Utils {
 	public static void addResult(Evaluation eval, List<String> result, String classifierAbb, String sampling, String featureSelection) {
 
 		result.add(getMetrics(eval,classifierAbb, sampling, featureSelection));
-		
+
 	}
 
 
-	public static List<String> applySampling(Instances training, Instances testing, double percentageMajorityClass, String featureSelection) throws Exception {
+	public static List<String> applySampling(Instances training, Instances testing, double percentageMajorityClass, String featureSelection) throws CustomException {
 
 		ArrayList<String> result = new ArrayList<>();
 
@@ -97,76 +97,85 @@ public class D3M3Utils {
 		testing.setClassIndex(numAttrNoFilter - 1);
 
 		// Build the classifier
-		classifierNB.buildClassifier(training);
-		classifierRF.buildClassifier(training);
-		classifierIBk.buildClassifier(training);
-
+		try {
+			classifierNB.buildClassifier(training);
+			classifierRF.buildClassifier(training);
+			classifierIBk.buildClassifier(training);
+		} catch (Exception e) {
+			throw new CustomException("Error building the classifier.");
+		}
 		// Get an evaluation object
-		Evaluation eval = new Evaluation(training);	
+		try {
+			Evaluation eval = new Evaluation(training);	
 
-		applyFilter(null, eval, training, testing, classifierRF);
-		addResult(eval, result, "RF", NO_SAMPLING, featureSelection);
-		
-		applyFilter(null, eval, training, testing, classifierIBk);
-		addResult(eval, result, "IBk", NO_SAMPLING, featureSelection);
 
-		applyFilter(null, eval, training, testing, classifierNB);
-		addResult(eval, result, "NB", NO_SAMPLING, featureSelection);
+			applyFilter(null, eval, training, testing, classifierRF);
+			addResult(eval, result, "RF", NO_SAMPLING, featureSelection);
 
-		// Sampling
+			applyFilter(null, eval, training, testing, classifierIBk);
+			addResult(eval, result, "IBk", NO_SAMPLING, featureSelection);
 
-		FilteredClassifier fc = new FilteredClassifier();
+			applyFilter(null, eval, training, testing, classifierNB);
+			addResult(eval, result, "NB", NO_SAMPLING, featureSelection);
 
-		SpreadSubsample  spreadSubsample = new SpreadSubsample();
-		spreadSubsample.setInputFormat(training);
-		String[] opts = new String[]{ "-M", "1.0"};
-		spreadSubsample.setOptions(opts);
-		fc.setFilter(spreadSubsample);
+			// Sampling
 
-		applyFilter(null, eval, training, testing, classifierRF);
-		addResult(eval, result, "RF", UNDER_SAMPLING, featureSelection);
+			FilteredClassifier fc = new FilteredClassifier();
 
-		
-		applyFilter(null, eval, training, testing, classifierIBk);
-		addResult(eval, result, "IBk", UNDER_SAMPLING, featureSelection);
+			SpreadSubsample  spreadSubsample = new SpreadSubsample();
+			spreadSubsample.setInputFormat(training);
+			String[] opts = new String[]{ "-M", "1.0"};
+			spreadSubsample.setOptions(opts);
+			fc.setFilter(spreadSubsample);
 
-		applyFilter(null, eval, training, testing, classifierNB);
-		addResult(eval, result, "NB", UNDER_SAMPLING, featureSelection);
+			applyFilter(null, eval, training, testing, classifierRF);
+			addResult(eval, result, "RF", UNDER_SAMPLING, featureSelection);
 
-		Resample  spreadOverSample = new Resample();
-		spreadOverSample.setInputFormat(training);
-		String[] optsOverSampling = new String[]{"-B", "1.0", "-Z", String.valueOf(2*percentageMajorityClass*100)};
-		spreadOverSample.setOptions(optsOverSampling);
-		fc.setFilter(spreadOverSample);
 
-		eval = new Evaluation(testing);	
+			applyFilter(null, eval, training, testing, classifierIBk);
+			addResult(eval, result, "IBk", UNDER_SAMPLING, featureSelection);
 
-		applyFilter(null, eval, training, testing, classifierRF);
-		addResult(eval, result, "RF", OVER_SAMPLING, featureSelection);
+			applyFilter(null, eval, training, testing, classifierNB);
+			addResult(eval, result, "NB", UNDER_SAMPLING, featureSelection);
 
-		applyFilter(null, eval, training, testing, classifierIBk);
-		addResult(eval, result, "IBk", OVER_SAMPLING, featureSelection);
-		
-		applyFilter(null, eval, training, testing, classifierNB);
-		addResult(eval, result, "NB", OVER_SAMPLING, featureSelection);
+			Resample  spreadOverSample = new Resample();
+			spreadOverSample.setInputFormat(training);
+			String[] optsOverSampling = new String[]{"-B", "1.0", "-Z", String.valueOf(2*percentageMajorityClass*100)};
+			spreadOverSample.setOptions(optsOverSampling);
+			fc.setFilter(spreadOverSample);
 
-		SMOTE smote = new SMOTE();
-		smote.setInputFormat(training);
-		fc.setFilter(smote);
+			eval = new Evaluation(testing);	
 
-		eval = new Evaluation(testing);	
+			applyFilter(null, eval, training, testing, classifierRF);
+			addResult(eval, result, "RF", OVER_SAMPLING, featureSelection);
 
-		
-		applyFilter(null, eval, training, testing, classifierRF);
-		addResult(eval, result, "RF", SMOTE, featureSelection);
-		
-		applyFilter(null, eval, training, testing, classifierIBk);
-		addResult(eval, result, "IBk", SMOTE, featureSelection);
-		
-		applyFilter(null, eval, training, testing, classifierNB);
-		addResult(eval, result, "NB", SMOTE, featureSelection);
-		
-		return result;
+			applyFilter(null, eval, training, testing, classifierIBk);
+			addResult(eval, result, "IBk", OVER_SAMPLING, featureSelection);
+
+			applyFilter(null, eval, training, testing, classifierNB);
+			addResult(eval, result, "NB", OVER_SAMPLING, featureSelection);
+
+			SMOTE smote = new SMOTE();
+			smote.setInputFormat(training);
+			fc.setFilter(smote);
+
+			eval = new Evaluation(testing);	
+
+
+			applyFilter(null, eval, training, testing, classifierRF);
+			addResult(eval, result, "RF", SMOTE, featureSelection);
+
+			applyFilter(null, eval, training, testing, classifierIBk);
+			addResult(eval, result, "IBk", SMOTE, featureSelection);
+
+			applyFilter(null, eval, training, testing, classifierNB);
+			addResult(eval, result, "NB", SMOTE, featureSelection);
+
+			return result;
+
+		} catch (Exception e) {
+			throw new CustomException("Error creating the Evaluation object.");
+		}
 
 	}
 

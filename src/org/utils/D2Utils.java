@@ -13,11 +13,11 @@ public class D2Utils {
 
 	private static final String TRAINING = "_training.arff";
 	private static final String TESTING = "_testing.arff";
-	
+
 	private D2Utils() throws CustomException {
 		throw new CustomException("Unable to do this operation.");
 	}
-	
+
 	public static int appendToCSV(FileWriter csvWriter, String line) throws IOException {
 		int counterDefective = 0;
 		// Append the row readed from the CSV file, but without the first 2 column
@@ -34,7 +34,7 @@ public class D2Utils {
 		}
 		return counterDefective;
 	}
-	
+
 	/** This function build the ARFF file for the specific project relative to the training set
 	 * 
 	 * @param projectName, the name of the project

@@ -12,11 +12,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class JSONUtils {
-	
+
 	private JSONUtils() throws CustomException {
 		throw new CustomException("Unable to do this operation.");
 	}
-		
+
 	/** This function return the string needed for the JSONObject
 	 * 
 	 * @param rd, the Reader object

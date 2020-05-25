@@ -53,12 +53,12 @@ public class Deliverable2Milestone3 {
 					for (String result : samplingResult) {
 						csvWriter.append(projects[j] + "," + i  + "," + percentTraining  + "," + percentDefectTraining  + "," + percentDefectTesting +"," + result);
 					}
-					
+
 					List<String> featureSelectionResult = D3M3Utils.applyFeatureSelection(noFilterTraining, testingNoFilter, percentageMajorityClass);
 					for (String result : featureSelectionResult) {
 						csvWriter.append(projects[j] + "," + i  + "," + percentTraining  + "," + percentDefectTraining  + "," + percentDefectTesting +"," + result);
 					}	
-					
+
 				}
 			}
 			csvWriter.flush();
