@@ -161,8 +161,8 @@ public class D3M3Utils {
 
 		if (fc != null) {
 			try {fc.setClassifier(classifierName);
-				fc.buildClassifier(training);
-				eval.evaluateModel(fc, testing);
+			fc.buildClassifier(training);
+			eval.evaluateModel(fc, testing);
 			} catch (Exception e) {
 				throw new CustomException("Error on Evaluation with Filter.");
 			}
@@ -177,7 +177,7 @@ public class D3M3Utils {
 	}
 
 	public static void addResult(Evaluation eval, List<String> result, String classifierAbb, String sampling, String featureSelection) {
-		
+
 		// Add the result to the List of instances metrics
 		result.add(getMetrics(eval,classifierAbb, sampling, featureSelection));
 
@@ -185,7 +185,7 @@ public class D3M3Utils {
 
 
 	public static String getMetrics(Evaluation eval, String classifier, String balancing, String featureSelection) {
-		
+
 		return classifier + "," + balancing + "," + featureSelection + "," + eval.numTruePositives(1)  + "," + eval.numFalsePositives(1)  + "," + eval.numTrueNegatives(1)  + "," + eval.numFalseNegatives(1)  + "," + eval.precision(1)  + "," + eval.recall(1)  + "," + eval.areaUnderROC(1)  + "," + eval.kappa() + "\n";
 
 	}

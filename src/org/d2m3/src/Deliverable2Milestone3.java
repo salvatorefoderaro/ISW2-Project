@@ -60,14 +60,14 @@ public class Deliverable2Milestone3 {
 					for (String result : featureSelectionResult) {
 						csvWriter.append(projects[j] + "," + i  + "," + percentTraining  + "," + percentDefectTraining  + "," + percentDefectTesting +"," + result);
 					}	
-					
+
 
 				}
 				// Delete the temp file
 				Files.deleteIfExists(Paths.get(projects[j] + TESTING));
 				Files.deleteIfExists(Paths.get(projects[j] + TRAINING));
 			}
-			
+
 			csvWriter.flush();
 		}
 	}

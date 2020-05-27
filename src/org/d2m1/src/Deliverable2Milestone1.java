@@ -53,7 +53,6 @@ public class Deliverable2Milestone1 {
 	// Map<ticketID, (IV, FV)>
 	private static Map<Integer, List<Integer>> ticketWithBuggyIndex = new HashMap<>();
 
-	private static List<Integer> ticketList = new ArrayList<>();;
 	
 	// Index of the last version (first half of the version released)
 	private static int lastVersion;

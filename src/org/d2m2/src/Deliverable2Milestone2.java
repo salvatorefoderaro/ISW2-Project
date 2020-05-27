@@ -82,7 +82,7 @@ public class Deliverable2Milestone2 {
 					csvWriter.append(projects[j] + "," + i + ",IBk," + eval.precision(0) + "," + eval.recall(0) +  "," + eval.areaUnderROC(0) + "," + eval.kappa() + "\n");
 
 				}
-				
+
 				// Delete the temp file
 				Files.deleteIfExists(Paths.get(projects[j] + TESTING));
 				Files.deleteIfExists(Paths.get(projects[j] + TRAINING));
