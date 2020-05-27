@@ -1,0 +1,2121 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="1092" height="550" viewBox="0 0 1092 550">
+ <g stroke="#000000" fill="#000000" font-family="Segoe UI" font-size="12">
+  <g>
+   <g>
+    <clipPath id="clip1">
+     <path d="M-99999.5,2.5 L-99999.5,100000.5 L100000.5,100000.5 L100000.5,2.5 z"/>
+    </clipPath>
+    <g clip-path="url(#clip1)">
+     <g>
+      <clipPath id="clip2" clip-path="url(#clip1)">
+       <path d="M12.5,3.5 L12.5,33.5 L42.5,33.5 L42.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip2)">
+       <image x="11" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEcSURBVFhH1ZQ9CsJAEIVTehXv4EkCVsEiBAsJFhJsJFhIsPAAdh7Bq1jaeoxxt4pvHXezM/nB4mP5loW83XkkIaJJYTfHhN0cE5Dm1JgFDwwNiCRAen5QennSfHk3yp/xASIKYD5eXF/TBbAftswWN6P8GR8gf9kBLSChANrCcYAEAygLxwESCiAtnO/lQIbqgO/lQOpjbZbW+8L3ciDaAJKSgqgDCEoK4gaIvZHvqX8BUh+cAIIbxQLiBpDcKBYQN0AfhMYIMkiAwBhBqn1lFjzAEVPO0BhBOgfosZwgXQOEbhUDSLXrFoBD8he0gKgCCMcCogkgHQuIJoAUkHJbErBpKSzrAsm/yfKMspWfz29CgClgN8eE3RwPSt6c+q+rFzq0hAAAAABJRU5ErkJggg=="/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip3" clip-path="url(#clip1)">
+       <path d="M42.5,3.5 L42.5,33.5 L72.5,33.5 L72.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip3)">
+       <image x="41" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJrSURBVFhHxZS7a1RREMa3kGBhYRfSaWknBMEi+A+I/8CCnaxFkn2/H8nm7uvuFilkGwsDBozBUkwl2Io2mkJNEJMqKApikSrN8RuvB2c255zrvZBN8WP2m5m98825ZzehlDpXjMlpYkxOEyFGoxGCbDhrhIhrILn+cZx8cDC+dndnbKq7ECK2AQxf3PhqNbD19tepnEYIm4GwDSlPXFx4cqpOwxPzD0WOI4TVQMiGNvTwz3u7xjohxHA0RJANhGtDF9ENDM0G4hLdgO8jyIYo0EB+X8KGE0L4/gBBNvwPNFhvy+9L2HBCCH8Q3YAerLfl94V02C9IiP6gjxB8vnJn6zp4DD6Bo78cgtdgEVzg79i2bdgvSIh+r6fw4KvgAzgGb0AN3AS3QBI8At/BAbgPZlxHzU/EVBeiFxj4AV7Rg3ltEtT7gEzSydwz9UyCPuI2z4mGbrdLBr6ASzxvQh8/ejfBT/ANdMGsqR/5OfAMnPC8aOp0OmRA5Dj8QvH3j+9cBk2wD+gE34OX4AV4DnYB5d+Bef5MMcDzvD8GbDeXXyhugPfg+zfAAGyAp2AbrAPKU130C+F5awj2m0uaoAtlGh4HIdprgQE+iNcJ2ty2fRyEWG23EWSDHsgHE5N9RNifjgkhVlZWEf5pPlBDW9s2t706F0K0Wi2E4LMerge6Bmtcr86GEM1mYIAP53UizjG7EKLRaCCEGIhxzC6EqNfrCG4DcY7ZhRC1Wg1BNpw1QlSrVVWpVFS5XFalUkkVi0VVKBRUPp9XuVxOZbNZlclkVDqdVstgaXlJpVKpyPCZwsB5YExOE2NyeqjEb8Aw6zbLvZAaAAAAAElFTkSuQmCC"/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip4" clip-path="url(#clip1)">
+       <path d="M72.5,3.5 L72.5,33.5 L102.5,33.5 L102.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip4)">
+       <image x="71" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKBSURBVFhHxdW7ixNRFAbwYCUoW9iIiNjYCIKChSh2/gPWCzYWaXY373c2m+zkNZnCQtIsimChhZUg2tiIpd2iqLAiWIgiFouN4uv4nbuZcM7MzToTstnix9lz5zLfmcnNJkFE+8q6OE/WxXlSjed5KHrDXlPNtAMs3ng9XLz5fnj62uOh7fpuVDP1AAhfuvNp4gD3X2yH1nyqmXYADmYHL98LDcDhifMbak1SzazPgB++9XbTep2pZuANUPQGm6ifefwBBhEH+M9nbpM4d/sULITWZTNwXRSzeUw+rb8mP3O5d4KL8A7+wBOZZ7Jk47p9lMAA4mnlegQnYBM4mL2CszLPZMnG7YcHiPm07DA8AxrZgjNgrss8kyWbXr+HogeI4Qg8gr/AwZ/hJKh9Ms9kyabX7aLEHuAoPIBfwOFf4QqY68EzJPNMlmy6owFsB8/iENyCH8DB3yAJal/wDMk8pppOp4Oiv2bBG4404Sfwq+YB6hDpGyPzmGra7TaK/tfq32hkCb4DB/8GD8bXIwyu8phqHMdBCZ2BA3AdtoFfNT/5XVgAtXeXwcdknsmSjeOso6gBrsIX4GA+ZA/hGMg9scg8kyWb1vp4gAvwEfhVc/hz4H8soRvGJfNMlmyarRYHfgA/+A0ch9CNIn5TQmQeU83aWpODn8JLuAT8+VtvFOXA2cg8pppGo4Gy87f8KbX9nMoDF7wWh2pWV3cGsP2Oy1fur82Caur1OsqEAcQr99dmQTW1Wg3FPsCsXnmQaqrVKoresNdUU6lUqFwuU6lUomKxSIVCgfL5POVyOcpms5TJZCidTlMqlaIVWF5ZpmQyGZvMVAPsB+viPFkX54cS/wBr+nRn8DTboQAAAABJRU5ErkJggg=="/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip5" clip-path="url(#clip1)">
+       <path d="M102.5,3.5 L102.5,33.5 L132.5,33.5 L132.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip5)">
+       <image x="101" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPKSURBVFhHxZZLTFNBFIYJC2NcuHAB7ty48DbEuFMTlZiwFE1IowkR5NUCKa9CebTl/Sp0YYyBhYm6IBHjgg2RGkNQMMFHWCiQILS0xaig0YVKRBfI+J9Lp8y9d8BWTVl8uXfOzJz/75k7M01ijO0q0mAikQYTiabh9Xrx0A7Yieyrc33Z10N9Ss5In6w/FjSNuA1A3HZ7ZfcMkDCx99Sd/2dAKfUn/SN7Is8UcAIcAZkgFVAf79/ZgLi+PBYDZpAN7oNp4APfwDDwg5vgElDHGwz0entVA6a8Jc36qm3BELVFMKcKTIInYFmlOHBLKQmMKJbFZrwPKNbFNsQfAzJElZEY6N0yIK4vtfWGIsJZYAV8gtgYGIZQB/qyTAXhHPW5hdmUH76IsUuAKiMx0NMTNaBHNIQxB0AYbED0qako6DAVhWwYJwqqZDgDvgx32KfkPvehbVZNlvrHQbLBQE+PR2qABgvv98AG+GgqDFkQ2/x1OmEOiZ9vf8cNZJHhSA6JAY/cAIE4fWBU7jWU+RpiUkE9JEyknhv3oVJ2zH8LLgBVU2Og29NtMID2ftAJluF+Cr+6gCcX0ZXa0I9v4jJyhMAzsA9IDHR1yQy0gjCtHcQLowl16EutB/Ppw3sPjpIGYTDQJRigbXeyLvBSKV1YxzYawhecrU8qoim1vm/zw/sCbCCZNAiDgc7OzqiBdPfiRJot8EMpmn6tTxgzWC6IjyLnKqhHjFdVbqCjo0M1AI4rJfNrimU2eDBz/IEmaWyYIV4M8THkCgI7YuKyyg20t7eTASoR7dMQHRyRhPFRFCrDfH+azf/9tGtxEudHP+KxGGgjA2fBG2yZmmjCOIis9zqYz/QE7+pPT4LECYOBlja1AjeQZIon1GPYbpEq4WygrfoTkLgLMX569vPjnEPihNFAaysZGFJK/DPblT+63a68eKhYgk4IezGH9vcvMIoxUaHtIHHCYKC5uYUM0M22iiWowOGRiwlbBgpDJep2s8wsHM6fpVuPDpXPYAqkcIE/gbFyA01NTWSALpoFMI39P6huI/Vq9c/gnQ6Tr4CO0xEwBM7sdFXLwBy5gcZG1QB1pqa75ieOVQY+KNZXc2jTHTAAaFvRyUj3uXqnE+JVzWOxYDDgdru5ga2keY8GI7FDvM/A5sfGr+qY/00ZDLhcLjw238WkPBYrYkVk/SKahtPpxEM74G+Ix7ym0dDQwOrr61ldXR2rra1lDoeD1dTUsOrqama321lVVRWrrKxkFRUVrByUlZcxq9UaN6KmxsBuIA0mEmkwcbCk3xsrL4OpMe8RAAAAAElFTkSuQmCC"/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip6" clip-path="url(#clip1)">
+       <path d="M132.5,3.5 L132.5,33.5 L162.5,33.5 L162.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip6)">
+       <image x="131" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASZSURBVFhHxVb7bxRlFOWvEAxgFBMhKFWiMaaFgqUCLQZbniU0YKIC+2y22310u9t9TPcxuzURKdJAoSgCvkCrhkRBExSMLYrK08grPFQUEf6D6z13d4bZ7Y67uKb8cNLp7Df3nHu/c+/3jSOie4qiL8cSRV+OJfL+SafTVC7UtEqqqlIqxc9qiv+mKJFMlgUj5ygBvR/f/ldkhm6Td/AaNYV/oIbAMZrv+5aqWgZpfI2X7qv26JhUF6Hq9Z/QAv8wLfSPUEvyFMXe/bNyAYDy/g1qTZ+RwPN9wzSzdRcL8OnkE2Z30hOr36L6jqMsYIQWdh6T9cp7N0iJKUxVoYDM0C3a0HdeAiPDJ9fsFVKQQ8j0Zf0G8hFa1PUd2bdcIvWjWxSNRZmqQgFpDvTKxnMiABWYsXK7XoEH6hWa2/alnjnIV6unqXvPdfk2GokwVQUCkH1o93Va3nNCtmCe+2ua0pDOZe+l6Uv7xRf4DeTLlJ+oY8dVEY3vw+EwU5kIUEsIQJAQZ7K292zOgMP0zLohmvhst5DDeDUbPpXs8fvi7uNk3XyBEvtu6jG6QyGmMhPAbWUkNCK5/yZ5Bq9KOZ8Pfi8ZotSPLN4o5BNm+SX7es9RIUf2L7/2ixjPGCcYDDKViQD0snExoH74t5QcpmuO/Cj7CmPVdxyhx1ftpPtru0TA5HlRqQZMCXK0XXD376PidXUFmMpEQJJ71LgYpXMNXKaWxElq5KAgRnnh8KfWviOkMB86AM6HHxpzpbe9cZFSLN4YDwh0djKViYBEIqEvTDK5o/8SNUWyAwcl18hntr5NE+eGJHMAzq/G3rMnkP3K+EkK7Potj1iD3+djKhMB8XhcFsHp2O/maK7kOfK69q/osRUDXPaAPnQgYFpzn973ENCKttv7xyhywOf1MlUJAfEP/tKdjqBoq1rHQZratEnMppHrrcflxxqsxVYtYeFoPSRSKMDj8TCViQBFUWQRTLckhuy1zA8LSSG5BmzHHOcXshbfQDgSiBV0ANDhdjNVCQH+N3+lF8LHJSBQa/+cHlyQlGyLCQCqWnbo67UZ0D5whTIFAtztZQhA+8B8WsA5zkP0kC6guIiHF/XKYMJ6eAYi0LqY/0YBLpeLqUoI6OHTbkX8hC7gOc839OjyrTR+1p0TrxDTmjfrPgAgAIMotT+/FV1tbUxVQoDxsNECzrZ9RlMaMzkR+VVAVzz90j59LYBvLX0XZJDdtQAAfWw0IrKrsRyQlsPMx/CBKXEOVK0a5CF0JE8APAAv4QJjFOB0OJmqDAFQ7tp2mc14xwsQUec6LEMHkxD3ADxrM0ADyr/u9XNyfhjJAafdwVRlCAAwSt3br8jR22DYjiyGc6bLGk8DRvGLr/486hDSYLfZmKpMAUCahwkuE8gIZzsmndEbGpD1Ut4yCx+/uLIVxtFw1wI0wJg9PCF9O6/R+k3naU3mrBzNGLvI2L7logjVLh5msFmtTPUfBBiBqoAIPQ7gudBsZrBa/gcBlcBqsTCViQC0SDlwOOwCu92WBe+rzarBSlaBJQsmLISRM0/AvUDRl2OJoi/HDjTuH5q7HYHIEsDkAAAAAElFTkSuQmCC"/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip7" clip-path="url(#clip1)">
+       <path d="M169.5,3.5 L169.5,33.5 L199.5,33.5 L199.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip7)">
+       <image x="168" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHVSURBVFhH7dO9SgNBFAXgoAhWCvZWNpYKYmElFraClgoKIaBGCwmCEtKEkCIGLCxsgmAl+gaW+gIi+Aa+gv9G13OWHXJuMiH+JBuLFB/rnd0798xmTQRB0FXexTh5F+NkinKpjIt9oNNM0QvwmwCJicpPrZl+LWIIsAlok34tOhxgDz6havq16GCAInD4B0yZfi06FOAA3PBprpl+LcqlAi61+ju4YRN9UAEOplkI75l+LcrFtgY4hQB4+vloLWT6tSi0J8AgXEAVePJFMM+Yfi1aBUDzOEzqJm5TcQ0czNMvR2uG2VMLDeBpXIV3eAbzSiP8zS+BJ6d1qH8m5GaEc7RwATxNKXgDnoyb83cdA3d/BG6AAXlvC7Tf0JmmKOS9AZbgETj4HEbBDZoDPnMra/yfr9/D0Jmm8ARYAG7KzY+iNRqCF+C9e+Db4d850H4vnWmKugAr8ADc+DhaU8PA74H3+cGdQf0zXjrTFBJgBvjKebJD6IeGjYAf3h2cwEC01pLONEW2FuAVeLK8a2onnWmKbC6LSxjgCa60qZ10pikkAL90/sYNzY72/YUpXIA4mSK73wvwDwJkdjPWjpXeTlsbfslUsimdaQJ0g3cxTt7F+ASJLzV8XJmkVxzmAAAAAElFTkSuQmCC"/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip8" clip-path="url(#clip1)">
+       <path d="M199.5,3.5 L199.5,33.5 L229.5,33.5 L229.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip8)">
+       <image x="198" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMGSURBVFhH7ZXpTtNREMV5DF/MV+ATawuUrSxlawuIUFHBsm+iUMpSEFlkEYm44Pos/ttSxjl3euO9zTUpxpSY+OGXmelhOHNhBsqI6FZxflhKnB+WEquIRqPEWJ/dlDt3U+Si8Os0VvG3Bpg5zlj8H+DfGSASjXCQHE0utP478DXzr7M0d/onA0TsAfa+X9PutxztfL1WFDvA3AkbH2VoKk/xA4TDHCRHk5jnKPVFKHYAvHrqVYYmDoWiBwiH+zhIjia8evtzjrY+CcUOgFdPHKbpyX5GUfwAffYAqbz5xuWVQn8jRBdaw6thPL4naM2FVfT29XKQHE2befPkR8E0eXqepcWzLM3zsgFTiyvzND3aFbTmwip6e3o4SI6m9cscJT9cUeK9YJos8qZj22dPBFMb41c/ZuOHLwStubCKnoIBYL7GxivvBNNk/hTGsu3A1LT5gx1Bay6soru7m4PkaEqw6erFFT17K5gms8dZmmYmeduBqWnzWMpTaM2FVXR1dXGQHE0rF1l6zsbL54JpMs2vhnGcFw6Y2iibj2x7NMzmQGsurCIUCnGQHE149TIv29IbwTSBObZ9fD+tMLUYzLfSdH9T0JoLqwiFOjlIjiZtvsDLBkyTeP7Ox16mFaY2vOWxsUf3NgStubCKjk57gCU+s4UznBnOzR5Am2PhgKkN8QAwHlwXtObCKto7OjhIjia8Wm07/2kFpslY/s4LTw1xSJn/oIGkoDUXVtHW1s5BcjThD8wMtp0XDpgmv07NU5jaYNJTxtE1T6E1F1YRDAY5SI4m9U/lKEsTWLiCUxuF+TZOTTC1ATbth3lC0JoLq2httQfAq2EcPxBMk5g+Nf59A1PrT/DrmciqoDUXVtHS0sJBcjRN4sYP5MwKT20EN86nNsTbDkwtwuZhNtZozYVVNDc3c5AcTSX/CTQ1NXGQHE0l/wk0NjZSIBCghoYGqq+vp7q6OvL7/eTz+ai2tpZqamqourqaqqqqqJKpqKyg8vLyG2N6WgPcBs4PS4nzw9JBZT8BFA6qZBuAy7IAAAAASUVORK5CYII="/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip9" clip-path="url(#clip1)">
+       <path d="M229.5,3.5 L229.5,33.5 L259.5,33.5 L259.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip9)">
+       <image x="228" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANvSURBVFhHzZNJTJNBFMcLaiI7xGiIeCFqFBQ0GgRcECMSRU00KJAQBKsWE1kKbVlaoFC2FgTZBMSLSzQxeCCyuBM1JuoBCSAo3E28eDHxxPJ8b+hXvylTQGXx8Mt8/5l58//Pm1YBAMuKcHIpEU4uJZyoqqoChJtbbDjxXwSQa0f4nu1WPB+ZUjwbnlI8GZpkWrRvPnCCAmxXdeInv8meRQ0QbRqE4CsvfmKQE/I1OWT49NOU4jGadw/+DoA1qxBvxNmqnaRvR3DCUmWBC82jcLxiiHUCCUVW0Jr1MC9kE333oHnXwKSis3+CBcA5T+Qdhv+GY4D8XNQOQ3DCYrFA6o0xBnUCC38gOYgfEoi8R2iebunU2T+p6OibJIPdyNe4mhEIutxD61OIAcNQaCc6G0d2EXs4YTGbbQEutYxNdyK1S+oGBKf1wk71W/pWPsKb4+iMnEa+U+eoLqF2BCgI7cfaNusehtxLghNmc6UtgERs9TDs0vWxpyGU10elGxqRcwibt6+jDlI3ApUP7/ifrBTenuCEuXJmAHuoM2H5/XS7CTQfF5lLRBoHWCcCle0av4g0eg5vuR/BiYrKCuFB9qQ0fWHPM5u5RLgew2KIbRc7UnBcKfcjOFFRXi485F9IrPsMOzJeUYhxZMbvgBPlixBAIiD5Plrw5gQnysrKhMVyYgxvwDW0BmJLPwjXHTGvAKWlpcJiiWP61+AWXgurQ6phXVSLcI8jKAA+gavcj+CEyWRim5PrhiA4qR38T92CBEsfm0uqHQSv/fXMnPA52AhHdL2cyWxYA3jI/QhOmEwlsCHmJnhHNIAPQrf1OlAPUdqX4LH3GjN2C6sBlz1X2Zo7Em+eDihH2TQCqtbpfwj9bWm0BvCU+xGcMBaX2G4oQYY00rvbrxG+0a1wvnGYmVDnghIfsGDrj7aJAszeAWNxsdBkLtYcaoLNZ+6C57461jHqljuy9nCzLZw1gIvcj+BEUZFRaPC3UCe2xN2DrYg1gLvcj+BEYWGh8KCFYGP87bmfoKBg8QJ4RzbM/SM0GAzC4oVizgB6vV5YuFBgAC+5H8GJ/Px8YeFCEZL7cfYfYV5eHuTm5kJOTg7odDrQarWg0WggOzsbsrKyQK1WQ2ZmJmRkZEA6kpaeBiqV6o+Re3IBlgPh5FIinFw6QPELip1Jw1QJJ/UAAAAASUVORK5CYII="/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip10" clip-path="url(#clip1)">
+       <path d="M259.5,3.5 L259.5,33.5 L289.5,33.5 L289.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip10)">
+       <image x="258" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJiSURBVFhHxZQxaxtBEEb9E1ymdelSpVtBGpUCFxGkMMKFMC6EcSGEGyNUHIeLIFK5dWNIioBTBC6N4dIphIASMFyKFCpSuHChcjzfyru3M76V7oJ9Lh5ids763syetUFEL0rhYZ0UHtaJKKIoIkachbj5/YM0+pkyiCKO4koCm68vHLULACuhw1Fr/L6PKCDg1+vAF4cEym5HFFoAf6ixve77WzK8y7E9gGfXhQNRFAmEJkHg/I4cnbO564EnEQChL+qcLQXSP0s6US5gNwOp9nhOrdPM9TSiqCTAgXPeenKzBEG2h/DbBRkg2RzMXE8jijga8Udeu3v27tv2EJhxefWL+UliSitgt7PTn7qeRhTx+LGAnULfc5sDs38c/p3oA9PypsR2zOoHmQkvLTDSAg8vGqZIeNL2OJ9ynQC2g/OLb4v/F8DEuGeseBlSTgCivsD2Xup6GlGsE/AnaZ1kYs3N47BAo/dMAjN+JRCg12x7k68Lij9V2cCpFMCEoZcJEzuBaynQ7M9o53BKjf2UwxPaepO4nkYURQKzv0TnXxaGRi8PQaDp8ZTA74HQ74dGFFrArPJBYPJZCfCE6E1sj6e1PfAkAljzlP8FcY+jj/Iu8WKZHofre7bhllUSohgqgYa7x5S23sq7xNmUf4IhBtC3PQRqbE8jiuHJkD/kA/jjoim2OTCFwCULMKtetFWIoooAAg27Cb3avTL4/bKIQgvY8NBdhuSqIIrh4LGARvefVWAVNjy0nbKIoqqARj9TBlFA4Oj4SNKXHBweSHrFdPe7QfxMIfASFB7WSeFhfdDGPUM43iAmR3TtAAAAAElFTkSuQmCC"/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip11" clip-path="url(#clip1)">
+       <path d="M259.5,3.5 L259.5,33.5 L269.5,33.5 L269.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip11)">
+       <g fill-opacity="0.35" fill="#08358B">
+        <rect stroke="none" x="258.5" y="2.5" width="32" height="32"/>
+       </g>
+       <g stroke-width="2" stroke="#0078D7">
+        <path fill="none" d="M259.5,3.5 L259.5,33.5 L289.5,33.5 L289.5,3.5 z"/>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip12" clip-path="url(#clip1)">
+       <path d="M269.5,3.5 L269.5,33.5 L279.5,33.5 L279.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip12)">
+       <g fill-opacity="0.35" fill="#08358B">
+        <rect stroke="none" x="258.5" y="2.5" width="32" height="32"/>
+       </g>
+       <g stroke-width="2" stroke="#0078D7">
+        <path fill="none" d="M259.5,3.5 L259.5,33.5 L289.5,33.5 L289.5,3.5 z"/>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip13" clip-path="url(#clip1)">
+       <path d="M279.5,3.5 L279.5,33.5 L289.5,33.5 L289.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip13)">
+       <g fill-opacity="0.35" fill="#08358B">
+        <rect stroke="none" x="258.5" y="2.5" width="32" height="32"/>
+       </g>
+       <g stroke-width="2" stroke="#0078D7">
+        <path fill="none" d="M259.5,3.5 L259.5,33.5 L289.5,33.5 L289.5,3.5 z"/>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip14" clip-path="url(#clip1)">
+       <path d="M289.5,3.5 L289.5,33.5 L319.5,33.5 L319.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip14)">
+       <image x="288" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALLSURBVFhH7ZTpUhpREIV9jLxYXoF/KgWFhSUlS7ENmsQtEDWJWYxJUEAFREATzaZm31+F2eCk7zDAvWRUCIt/8uPUVM9UzXe6+9w7AuBKZflymLJ8OUwJRSwWA4k9ByqeKRT08b8BXLue70jtP+1GPFMo6CPSH3Vsvdfx/FTDxjsNj19reHis4f4LFasHKu6UlcEaSBE8earjKcHX32h4dKxi7aWKu4cqlgkeLw7YQPKM4Ccanrwl+CsND440A75SVpEg+O3CgA00dvwvagedJ54pFPQRuW9V7HzWkf5kZuFExwZNQ8jCoYLlkor4voKlPQXzue6mwjOFgj5i90sVGQb/IGaBwVtZIDitg8EX8gpuZftoYJvgaQZnWSB4PQsUxCOCU/crBwoS1D3LAoPPZWXc2O2XAUlq7rOfasGliw1IZKD8u4bizxr2flSR+1qllejIsLuBptK4G9YbeaCVrNJK2N0QL6pYpKnMGyuhqezImMnIbQYumQAzUPpVQ4HBKYxZMw/G3XCmtfLQWAl3PJcKspkHE74tQ0pXRANSBwb2CZ7/zuA65aGKFHXP4M8adwN1v0Z3wz2WB+5uWKBA1vMgY9aAy4im2gyY4plCEY1Gm3vrp7oy0NqpgkV2xvOyMdZZc6dsrJGUjPCWdXediGcKRSQSEcZahyu0U8XcKY11i+CbMkKbAzAQJgOJEsHphmPdz+Vk3KSdMniMum90HiIDweQADIRC4ebeOpUV4DLxTKEIBoPN8ytRgiPGuCsIMlHHvXTNi2cKBTMws12BlKkYRyhMBkIm+C8Dxpmu32zdimcKRSAQQIwFjVTftQgXDPQgnikUfr+/uduLZPXTbsQzhcLn8/X8807EM4XC6/VienoaHo8HU1NTmJychNvtxsTEBFwuF5xOJxwOB+x2O8bGxzE6Ngqbzda1eKZg4Cpk+XKYsnw5PGHkD38V7gDXQkNsAAAAAElFTkSuQmCC"/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip15" clip-path="url(#clip1)">
+       <path d="M326.5,3.5 L326.5,33.5 L356.5,33.5 L356.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip15)">
+       <image x="325" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG5SURBVFhHxc/PThNhGEZxbsqFV4RCB0uJBSpVMG3ShjYUUpRKY/ljO12buPQiXOtFcANkeM9OkvPNiswszmLeb/F7ZqMoilrTY5XpscqefazX6+Kly/NotSpWtFwW93f3QZUM+PXnUXv94a82+vmgvZn+02ofcHOzCKrGAfP5PKgaB8xms6BqHHB5+SWoxIA8zxUnw8lwMpzOJxdBJQYsfywVJ8PJcDKcxuNxUIkBd7e3ipPhZDgZTsPhMKjEgMX3heJkOBlOhlO/3w8qMeDb9bXiZDgZTobTycnnoBIDrr5eKU6Gk+FkOHW7H4NKDJhOp4qT4WQ4GU6dTieoxIDJ2UQRMoRebf7W7Cdov70fVGLA6HSkOBlOhpPhtNfaCyoxYDAYKE6Gk+FkOO02d4NKDOj1eoqT4WQ4GU472U5QiQHHn44VJ8PJcDKcGo0sqMSAo6Ou4mQ4GU6G09bbraASAw4PDhUnw8lwMpxKB7TftxUnw8lwMpxKB7RaLcXJcDKcDKfSAc13TcXJcDKcDKfSAVmWKU6Gk+FkOJUO2N5uKE6Gk+FkOJUO4LGK/jefDagjPVaZHqur2HgCkeC6f5z8I9cAAAAASUVORK5CYII="/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip16" clip-path="url(#clip1)">
+       <path d="M356.5,3.5 L356.5,33.5 L386.5,33.5 L386.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip16)">
+       <image x="355" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVtSURBVFhHxZZtUFRVGMev0zh9bKYCHSSWVxfJ0IRQXiUUhREhYBcEFAgQmhhNLQPWBUxcbEczmQFKQkUtc8ZyEXaX11DHJsMv1oROEKC7rg6aTeOkA00OT89z75713uWyZM3Qh/+ce86y9/d7nnPuZTkA+F8juzibkV2czUgmWdpuR9TVfZzbyirOPbLGkfmv18VhCj2TTvUr0szglWa0xwQvpRh+o88wOeLvUDyfU3HLPOK4V9zX8BEzJZMpArGCAN7Ua/6qemNAZsd4SJ4R/DPawUclxD/TBL5qE/hlGOHlHBOE5JvBI77RjN+Jx8z9bwIxWs5jzafHvFLb/lyc0w7e6RiVURjFoTV7fNRGCN5khkXZHZMLEo/3o4S7178RSNP0cPPW7G9+LQ+rU4sgznAnARb/TOxIdjt4Jh0f8FxQ+vyryV9wS6P3c0sX5kuYkgmDZ1R0zinQX/5cmdsCgWoDX5U3RQYkJ+HDj7RF9LkRQsp/uabcPvCicsd1jiJmSiYE36Dp4vL2XT7zhn4YoiqHISC7g7+pb4ZZuDnutwBiAPkOOMQwS/I6IVx3cyBol/UFlwIZ5R1cTlWvV6p+aDJi1zCs0AwDjUziCVwe5IjMelBeFwRprSkeCUckTMlEXWbmknZfvbq6ZgTC7QLhJKEZgsBNnXhjrNqVBD9no7Dui1vnq2oFRcoZCK4atbgU2FTVHRNdNcKD5bIot/vJzV2EHkteNL0V/FQGSP6gH0parPD2yduPcQt2iJkSAbX++ldxe6RQ1glKpHYYlm7uQ4hQpSKtTVQ5ztPb+HinGUCZ1Q4Jlf2Q12SBomO3IL/ZCpuP2yCz8ebPYqZEIH3XhZ+i8eCJBZxDQiGllxxgBY6K9HO8jCLtLARuNEG8FsGHR3nwm0dvQeExGxSfsEFRiw1iPxy1iZkSgazKnsmV1aOyYHHoXES+28+/CUnCT30OArDiuIrvYUPdIIJu8TCqmI0sqgYLoqYRUFV0PYrUzixAicDtiC7/Efw3mGBJUS9k1w9hmy1QgFWLgc7JabIiahqB1LKuRzFVo5J9ny70N3RgE3WjcMBgg9KT2GY7xLlqcfJxS8RMiUDSzq7Hkdrpn4LlFaLr8hF8UaFArRU+Oz8Bjd88hG2n7/CQQuxCAYJIhA+uMancZhcCidvaB2KrpVC5kAglCmUTdRZo6puAJpQ4enECKg1jkooZnAmsO3jjgZgpEUgoPpGQoLkiuwVUMQOzTlC3Emst0NAzzgs0XxAk9rYJEnQY6QlgcBrXHxy5JGZKBDxjalaHFHf/sZyABELoFBE7nMIEDnWN83AmcQTzkXHM8eiRBAngE/CXcvs1rZgpEXAP38P5xeu/DCsbdFQshlPE63ICFBKgTnxsvOc4mCUnb0P8/hsP8FrClEzcI2o4v9X7AleUdEyEaRA0TQfYuiBg5QUY3LkT9Z2/Qwl2grqAr+GNMwq4he/mFq6r+zp05wDwEgS0xyFhF6D/lKwDTEAckjiMB/RQ+z18BVtu0G+CGQUoPnG6Z5XrG86GvidIMHAYgilSAWkHnEMSB9ru2tbWDikI7vL3ABOwS8xRJtXznWACbP+nCHRKzwAD0zlo6Lh7X9d635PgTyVgl5gbmPyJIWTLdwKcidhHxxY4CdB1y8VHUG8ae4hwb7ewrdy8KA0PfyoByrzw3c8o1+qDlevq+kO3XpkMK7sudAEF6H2RqHvSAf70n38IDeZ74/rWu28lV/8Q4Ba2haMw+FMLzI/ayynfGeTju6pW5RO7R7M46/TgstJv+Vex9tQdaOwdp2of1xnHTDrDr+9TxUKmwl0KzBQmwoLbEMSu5f7+n0R2cTYjuzh7Ae5vqXQLq73prvkAAAAASUVORK5CYII="/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip17" clip-path="url(#clip1)">
+       <path d="M386.5,3.5 L386.5,33.5 L416.5,33.5 L416.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip17)">
+       <image x="385" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFVSURBVFhHxZVNTsMwEEZ7LHKkxPlr2oYFK9Lmx9lzBI5QiWuw5hQcAJn5UiF1YDAGYnvxVM0o9XtK03ZjjImKuAyJuAyJuAzJl8U8z+Ya/fGqtZnANJlxGv/MZx8bAGQPT6+/IrlJTHL38iO3bUsK7mMDiB6gdfQALUpsrBswRQ7AUy5JbKwaMI6jKLGxasAwDKLEhmtAe9iTgvvYAPqhFyU2XAMOe5eA3l/ArmlIwX1sAKfT8XKgB3bNlhTcxwZw7Dpzfn4TwSHNo7GCa6T3gqZ2COju/QVs64oU3McG4DOgLiMHlGVBCu5jA/AaUEQOKPKcFNzHBuAzIM8VKbiPDcBngFKOATjkOyTpNbhGkgOVZaTgPjaAJUD4GV34Z0CWpqTgPjaA6AEt/WfXVeVEVZb01QLF8oSDnD7nXGXL7VZZeoHEkDsFhEZchkRchkRchsNs3gHgtKdN72mBvgAAAABJRU5ErkJggg=="/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip18" clip-path="url(#clip1)">
+       <path d="M416.5,3.5 L416.5,33.5 L446.5,33.5 L446.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip18)">
+       <image x="415" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN2SURBVFhHxZTLT1NREMbZICZGFppoYhA2bt34SAQXstBAEBN04T+jUWkpj7b0AaXQBwXKo4SHLbSlhQKlLxITTTTGlaD+G7SUcebcnvZeOL01wZbFLzPznTnn+25JqAOAC0Uo1hKhWEsUw/7+PvxvMhkknYY0kUqhTYUAr01/ynLe88ReAm2qGCCdSgt1zu7uDtpUMUAymRDqnK2tLbQ5RwD6W4p0zm58V6hzIhsbaFMhQI/+N7xEegwIVRnJRLLYl3Z+FbVYLMZ0dsaRvbO+HkQblQCZTAY6db+gA+nUHbKe1T7UkHg8jv0h60kr7ha0SCTCega7y/ck7eOqH21UAqSSKWh/fwBPEKq858S2txWznPZ3BxAMBkszVdTkO0tLS2ijEmAPv7D1zU9ok0Ez16KRKNx5NV0Wv99/5o58np+fRxuVADvbO8KHOaFQCG51OJAJIfSFctPT/czMDNqoBIhubgqNOYFAAK48MiOmAtTz2Qy+BZ/CtPWtMojbPYk2KgHCoTA0dTnh9nOky4UVKcxN2C8vr0Dd3YGyeL3eoqHcmM8T4w60UQmwtrYG19tHGddOVcLn80Hsx0lZPJMeaOl2Q8sLwgXN2Dd3Y8WZepvNhjYqAVZXVqHhoQExwmVWpb7hAc1GmPXOCo05jgkH3HxqR8YZN3j/zM56i9mCNioBFn2Lwp+W4/FMCY05Y7YxaGyzQuNjK1xVYEHdAkaDEW1UAszNzQkf5jidTqHOsVqsUH/PAPX3DXAJoVoE9aHBIbRRCTA1NQ2b30+QPESxSlCfZ7p9zM6qpPFz2pcYNg4LfzlOv64fbVQCuJwuCH/NM0KFGv5WqMiI1arQ2E7x/Bj0g3qFFqKKcE2r7UMblQB2+zgEvuQh8PkYq5I11IeHTXiG57TDddylM+oH+gcUOuuLNQ+9H3rRRiXA6MgoLH86hpUCpT7HMAzpi70E7eTYHtGHX0g6aaVaul8xgNmE/80yOfDtI5ms1POKGn0hzQvsPAcL1BfOqGrQQLoj3aM9vktUDGDQG8CbzMIs4k0g1POK6LQ61sthuwXIwJvIndEZ+E7FAIMDgzAVPwJPPIs1y6rUS5qmV8N6aZaqfCYDqtI90vkbklYxgK5PB+6do7LQAyKd8y/ncj9CMWg0WuFFTtUD0EK1kfsRiuEiEIq1RCjWDqj7C6Glm9GgLBiKAAAAAElFTkSuQmCC"/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip19" clip-path="url(#clip1)">
+       <path d="M453.5,3.5 L453.5,33.5 L483.5,33.5 L483.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip19)">
+       <image x="452" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMySURBVFhHzZRPaBNBFMbn5NUe9diDQo/BUy8KgV6KJ7FQhR6k9lBKoaX0UGIvUnIIRUGqIIi3ehBUECoqxIsQT0ZqNU2tpq1ts01tmvRfdrN/8nxvtrvZmW7jpoZo4Ed482Xm+9683TAA+Kf4LjYT38VmIhSxWAwQYe04bt7PQ1B67m5AV3QFOm+l4eJQErdXzxEOnYxN1hVA+FQAzEoFykYFDsoW7KgWbO2bsLFrwFpBh6WtMixuanC++w26sg7cwc8RDv2bAJYFoKN5SbfgdPgJbB+YkEPz9aIOy3kdvqN5ekPjWs0A3roW3gB0qMOeZkGhZMLmniGsL6D516wG7MLD4AEW07NHcDQnAN46GFYFNOx+H82LJfsGlB0DfuLVZ7Z0WMiVYV7RYG79BAFaOqZd5ADoDSaZm35zN2Apb8+dzL9g95/X1PoCEE4IrzlBAdAbdDQvofkumufRPLdr8htY5uZlSOfQXFG5+WyjA5C5evjQOWSLBqxs6/DjV1lYJ/MAASbwq1r3PiiI3Cu42tXosj137L6IDx1dfRbnvormZPgN556iuWdt42ABokcDFHCPsmdz/Y7iapeGPtpzR/M8vnI091X+vuv86u25k6kWPMCEHAA7JuPEErD4PLAr0Yyrnet+DWcvv4CW8DScan9sHxyUoAGoY6UAbGYO2LNPwDrHqgEIOuikuGd4D/xTgPbhpKt1jmfwRhQeitbDoylXo5vK4D7aM/1BZaH+hKvJCEW9AVKKbUD4aVPvVDb5UmVtN4IGuC0GoA69XXpNqGM3wHsxQHg4xdoHkyzUl0DzOGu9Fnc1GaHwC5BaBfborcoJ9VdNyJBr2CXh1Yjj/j9khEIOwK/yMMDUKykAdkjalKNht969DQlA15zEV5DmOPFcnCU9WFxDc3nOjrlDrRBCEZEChNw5JlhrjzhLWksuYmgMRpDuaGQo42gyQhEZj+CX+APa7NdFGxomKMBTDIDUetBqIRT1BCBDTlecnema4Xj1oAiFHMAxd/BqjUIoImNHA3jxao1CKOQAzUAo/osAI6MjIsMiA4MDIv3+9Pb1HovXUwjwL/BdbCa+i80D2G9G9w+A1FryrwAAAABJRU5ErkJggg=="/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip20" clip-path="url(#clip1)">
+       <path d="M483.5,3.5 L483.5,33.5 L513.5,33.5 L513.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip20)">
+       <image x="482" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALmSURBVFhHxZS7ilRBEIYHESMDMzFS30AQwUB8ATEWjGUM3J2d+21ndmdm5x74BKuggSsiCGImiJmYeAlERdTIRRQ0EQOFbf//eGqsavusM8LOBh91qrpP1X+quk/KOberBIPzJBicJ8YZj8cwLvXq9p7tWAdb4Gdsz4HQvgm6ho9xphDA4g58BQ/j5ywI7Z2ga/gYZwoB/GIWHYDDQIrz+Qk4FfubcSx6T9fwMc4/BLAYixMdZ6HvgN2RGMfCEUWCdA0f42wjQAprZPb8WuK/wxFRmKnhY5zReAQTFMBiTMbCbwC7wS9nnDGOJPQO19Z1DR/jjEaJAoh8uS7GuTOWdBC5tqlr+BhnNBzCJHZABMhBI7wNEmNH6HP2IpJrW7qGj3GGwwFMUMAdwGRMruMigM9yRQnjjEW+5A9hnOEgUQDnzmS0Oi4C2CF2QV9TrvN5+g70B32YoAA5gPqqkdDPaHL/AdemPwP9Xg/mLwFMyEREz5/QDwkjcm6yuoaPcXpWABOwONvJRNGdDsAuyMw1HFf0f9A1fIzT7XZhIgHy12MSmX/orguyT3weWoqKxqFr+BhnbW0NJhIgB0pmz/suyZOgQHaNzxQwWdM1fIzT6XRgJiOgenbCn/vM6Bo+xul02jC/n4+cvXEMXAMvwYeY9+ARuAT2AvP+/2CcVrvtkPQoeAG+gcegBk6C0+A8uAI+gXfgItgHTJ5ZMM5qq0UBn8EDSbwNfUCR7MwFxnSuENwDzuiY2bCyskoBb8H+ePM0XAdfwEfQBQeByUsQOwRugR86bjY1m00KMAX0usbbdwA0wGvADj4D98E9cBc8B4w/Bcd1HpO00bAC9FoSen/MCTAAV8EGuAkuA8ajPfp94ywvL8P88eeBcer1OozdsNMYp1arwdgNO41xqtWqq1Qqrlwuu1Kp5IrFoisUCi6fz7tcLuey2axbWlpymUzGLYKFxQWXTqdnRtc0AnaDYHCeBIPzw6V+ASK/03nJNHJ3AAAAAElFTkSuQmCC"/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip21" clip-path="url(#clip1)">
+       <path d="M483.5,3.5 L483.5,33.5 L493.5,33.5 L493.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip21)">
+       <g fill-opacity="0.7" fill="#DDDDDD">
+        <rect stroke="none" x="482.5" y="2.5" width="32" height="32"/>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip22" clip-path="url(#clip1)">
+       <path d="M493.5,3.5 L493.5,33.5 L503.5,33.5 L503.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip22)">
+       <g fill-opacity="0.7" fill="#DDDDDD">
+        <rect stroke="none" x="482.5" y="2.5" width="32" height="32"/>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip23" clip-path="url(#clip1)">
+       <path d="M503.5,3.5 L503.5,33.5 L513.5,33.5 L513.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip23)">
+       <g fill-opacity="0.7" fill="#DDDDDD">
+        <rect stroke="none" x="482.5" y="2.5" width="32" height="32"/>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip24" clip-path="url(#clip1)">
+       <path d="M513.5,3.5 L513.5,33.5 L543.5,33.5 L543.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip24)">
+       <image x="512" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHoSURBVFhHzZU7S8NQFID7C5wc9Ac4CU4O/gR3FYWKNq82SVObpkNF+rAPimJxF0FwsOqku5Ojg5PgLAjuQvfjOaGVpD15mIbU4aO9t835vqQXmgKAmcJuJgm7mSSuxWAwCIUkSTANTicbwF00zsr2VSToWqdzIqB58WkH9B6/PcmWuuzwMMQScGBWYT1/zwqCiCWgeHQJaa3BCoKIJYBQVQPS1g0r8UMURVR5BNCHRJgAegqKVmMlfgQGcDIvZElmJX7EGpDTKpAtlFiRF7EGWJ0n/LkUVuRFbAFm+xkPYt4+L3SdquRgO1OF1a0eKx7hG6AoCisbRyueAH13s/3mwiqXQZCyIIgy7AsK7GUM2M1UYG3nNJ6AzvU7qDkdLMuakHNU22dgFC0Q8bAKomRHRQro3n3h3R1CXtdZUVhIjsw5nYEB1vEDFAomtDsdduhfGAa4nK6FM4Du2izXoV6vs8OiEDqg1f+AWvMcNG26R+5kKG8EBthkNWg0W+ygKKgGHkRRfEU2fAPoz4jAL7GDoqCqOslfkHmSJxqgyDLJb5ElXNvyxAJoBkJ3vojrFEFymu90uhZxBQzlfWQB17acSDpgGd//yolEA/DVJSdG851O1+JfBUzLaBaH0+lazAJ2M0nYzeSA1A+oK6N6uWykYQAAAABJRU5ErkJggg=="/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip25" clip-path="url(#clip1)">
+       <path d="M513.5,3.5 L513.5,33.5 L523.5,33.5 L523.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip25)">
+       <g fill-opacity="0.7" fill="#DDDDDD">
+        <rect stroke="none" x="512.5" y="2.5" width="32" height="32"/>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip26" clip-path="url(#clip1)">
+       <path d="M523.5,3.5 L523.5,33.5 L533.5,33.5 L533.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip26)">
+       <g fill-opacity="0.7" fill="#DDDDDD">
+        <rect stroke="none" x="512.5" y="2.5" width="32" height="32"/>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip27" clip-path="url(#clip1)">
+       <path d="M533.5,3.5 L533.5,33.5 L543.5,33.5 L543.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip27)">
+       <g fill-opacity="0.7" fill="#DDDDDD">
+        <rect stroke="none" x="512.5" y="2.5" width="32" height="32"/>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip28" clip-path="url(#clip1)">
+       <path d="M543.5,3.5 L543.5,33.5 L573.5,33.5 L573.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip28)">
+       <image x="542" y="2" width="32" height="32" preserveAspectRatio="none" opacity="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAZ/SURBVFhHxZZrbFNlHMZfA/EGGEvi4gdDYhBi1A8m8kFjBCIXcYzrGDDuCHS9b13b9Xba09PT09vGZQFmQcQwQERAE02ED4bELxLubLCyC93mOmAMB0zkJguvz3vajo31zBDN/PDktKc97+9/ed7/ewil9H9V1ptDqaw3h1L9vkSjUfpvFIlGaDQSoZFwhIbDYVmhUIiGgkEahCRJogEpANQgAeTZjr6JK/v8j/J6vc/jCnCURCIRAqAsQEkQkqQgkYISCQQkIooiyTUfed0vCDRfvJijGAB+pIXR5mSe58ILfWEDFSHISoXPLFNAoSDAgAYZVAoAHCCiXyQz3bXDNLEbP+VLl+7xPM8YLysGsCTSVL841EjnCfHOD4pPv9QPGmFimaayzQSAq5wpSpyCIlu/308EQSAfms+OmMPHG1dtbKXqLcmDHMexAHqZAwJgINf++/zqja3tc4W6m2sq2yzoLUFfU+VlYpkCygJg/c5ARRkK+QTi433EsO3q8lne84lFwYb71uruKrfLTVwup3IAsokQAAPiT8PUm5NnVlQ007n8hcNyX+VMoXSmLABmMj+gPgb1+QhKzLxBZnK1X362qZWu3NCcXBxuHONwOInd4SD2MvsgATAHsxJHUmYSD90ZbtvVdQQteTSTqzmurbqck8qUlVhAv0UVczbPe4nX4yUej4foY1dyppad2ru8ItGD/8cBGwkoKdnR+cpHxb/mWK3WQQKQt43c25RgKJZp0Zbk21jw1nJUY55Q58xkWl5ervKLIvVwHuJ2u0kuF1+mrWqnC6WGHmhpWVkZmWg+/tpU2+l8y85Omi8lqNlsVg4gHA5R2UyABsT+ZnLuvTkGPU0WRprodMeZEOfhyPotu0YJPh9FX8lEy9l1qza0oOQtNxYGG94v29Vlnmg+UVkg1V9dVp6gK9e3PFhd2faLqbh4kADQz75Qn4BMfameshL7D97J0cWulCK7R6hG25rQsckej5euq+o6WRhuerQgUH84z1PLIeM69eY2yvyzYn3zRXjBbd55Y4LRaCQGg0E5gGAoSH0MnDFTuq+cmyMulNjlchGn08ncPX/d5uT9wlDDI7fbRRdh22q2ttMFmCHwywOA/9BUtceXRi+9w6BGo4EY9Aai0+mYBgkAhmLZcgzKAZiBwsEOh505mLC+2mw2Urzjmq8w3EAdDgctkBoYmK6p/K1GH7vqNMmZQoDqdXoZrNVpiVarIRqNRjkA5uhUtqlM5a1jfwxFKZ/Bvh6f6665BOC9FRUJivt0WXnzAd+3d3KNaahOD6geUC2DahmUFDEVFZEitVo5ADieOtlelaEQoFarjUwyH38DQP/y8sTD+f44xXzoduy+2Rr45vK8UouFoq9En4bK2crQNJhBIbWaSc2kHAAMyDIiNquVWCxWovv8StF0+5mKgkA9hbOpaXtHO7//dixtJiJt/GpkcUkJfQyVS5yGAsaUgvYVUI+Z/QKA+2lpaSmZZD3Hzxfq6piLcTYwg1UHDt1bJBz481W9QY9sU5kGQxGVyWiiKagmBcwO7SugFAMQ6KfcxbuAPoShHpTuvP4dt697rB7ZMmCvmeTyaklI8qlQeipnmx2WTUApBIAtSG177hzFNJsrQ9FXlq2WgdPl1SDTTIlFv6BC6WkWyGACSiEAHlNNL2+dVE8HOrjXSLIK7D8+i9L/dwF4vTxlJc5A2VXNHJwuMSbc8EnmE6NxvE5bW9nWNstT280WnMVfPJbnOf9WH8hgAkohAEw99DOVbeYBOH/cbE/ttMmWk3lz+LoaNu0wcjFmEz1FW5MtbMFVm9pv5YtxOtt7/osZzrPvZp5VEFAKAXCcp7ecU6ynXB9bT8XwYtKFkYppV08x/zuxNb93f30rLBzqeS+zYGB3/Xj7nu5N7NBBcPdmOM/tn+mueTGz1hMCSiEAHKl0mitej0yuLI0m2ISj6q2XqS7WIfIH7k8RD90d1XexYIAfzRbs/f5DzwTTjuv72LMYWLdRjWok8lzm97SAUggAc59qt/3eoYt1dqzZ2DTFuj2hCuxtGfHEAr0KSgEVrgNMKFQnRuq3XatbEm1+MF9spJ84a0pwXI9N/w6UQgCY/0/raCbFZ9ZVnBu3tuLsz0sijX8VhJpvT7I3CbgPlEIA7GTDOUBx+MiHDHt9smDWYzrKbzIlGLvFeKEwmUzUCBmMBgZ/avVl9gvg/1DWm0OprDeHTpT8DVJj6PPSN5WtAAAAAElFTkSuQmCC"/>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip29" clip-path="url(#clip1)">
+       <path d="M543.5,3.5 L543.5,33.5 L553.5,33.5 L553.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip29)">
+       <g fill-opacity="0.7" fill="#DDDDDD">
+        <rect stroke="none" x="542.5" y="2.5" width="32" height="32"/>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip30" clip-path="url(#clip1)">
+       <path d="M553.5,3.5 L553.5,33.5 L563.5,33.5 L563.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip30)">
+       <g fill-opacity="0.7" fill="#DDDDDD">
+        <rect stroke="none" x="542.5" y="2.5" width="32" height="32"/>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip31" clip-path="url(#clip1)">
+       <path d="M563.5,3.5 L563.5,33.5 L573.5,33.5 L573.5,3.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip31)">
+       <g fill-opacity="0.7" fill="#DDDDDD">
+        <rect stroke="none" x="542.5" y="2.5" width="32" height="32"/>
+       </g>
+      </g>
+     </g>
+     <g fill="#DDDDDD">
+      <rect stroke="none" x="122.5" y="95.5" width="833" height="412"/>
+     </g>
+     <g>
+      <clipPath id="clip32" clip-path="url(#clip1)">
+       <path d="M12.5,37.5 L12.5,57.5 L991.5,57.5 L991.5,37.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip32)">
+       <g>
+        <clipPath id="clip33" clip-path="url(#clip32)">
+         <path d="M366.5,37.5 L366.5,57.5 L637.5,57.5 L637.5,37.5 z"/>
+        </clipPath>
+        <g clip-path="url(#clip33)">
+         <g fill="#000000" font-size="14" font-weight="bold">
+          <text stroke="none" x="366.83" y="53.5">Precision &amp; 2 altro rispetto a Balancing</text>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g fill="#E9E8DF">
+      <rect stroke="none" x="122.5" y="76.5" width="276" height="19"/>
+     </g>
+     <text stroke="none" x="260.5" y="86" dy="4.97" text-anchor="middle">IBk</text>
+     <g stroke="#DBD9CA">
+      <path fill="none" d="M122.5,76.5 L122.5,95.5 L398.5,95.5 L398.5,76.5 z"/>
+     </g>
+     <g fill="#E9E8DF">
+      <rect stroke="none" x="400.5" y="76.5" width="277" height="19"/>
+     </g>
+     <text stroke="none" x="539" y="86" dy="4.97" text-anchor="middle">NB</text>
+     <g stroke="#DBD9CA">
+      <path fill="none" d="M400.5,76.5 L400.5,95.5 L677.5,95.5 L677.5,76.5 z"/>
+     </g>
+     <g fill="#DDDDDD">
+      <rect stroke="none" x="398.5" y="76.5" width="2" height="19"/>
+     </g>
+     <g fill="#E9E8DF">
+      <rect stroke="none" x="679.5" y="76.5" width="276" height="19"/>
+     </g>
+     <text stroke="none" x="817.5" y="86" dy="4.97" text-anchor="middle">RF</text>
+     <g stroke="#DBD9CA">
+      <path fill="none" d="M679.5,76.5 L679.5,95.5 L955.5,95.5 L955.5,76.5 z"/>
+     </g>
+     <g fill="#DDDDDD">
+      <rect stroke="none" x="677.5" y="76.5" width="2" height="19"/>
+     </g>
+     <g fill="#DBD9CA">
+      <rect stroke="none" x="122.5" y="59.5" width="833" height="17"/>
+     </g>
+     <g font-weight="bold">
+      <text stroke="none" x="539" y="68" dy="4.97" text-anchor="middle">Classifier</text>
+     </g>
+     <g stroke="#DBD9CA">
+      <path fill="none" d="M122.5,59.5 L122.5,76.5 L955.5,76.5 L955.5,59.5 z"/>
+     </g>
+     <g fill="#E9E8DF">
+      <rect stroke="none" x="955.5" y="95.5" width="19" height="206"/>
+     </g>
+     <g>
+      <g transform="translate(965,198.5)">
+       <g transform="rotate(90)">
+        <text stroke="none" dy="4.97" text-anchor="middle">False</text>
+       </g>
+      </g>
+     </g>
+     <g stroke="#DBD9CA">
+      <path fill="none" d="M955.5,95.5 L955.5,301.5 L974.5,301.5 L974.5,95.5 z"/>
+     </g>
+     <g fill="#E9E8DF">
+      <rect stroke="none" x="955.5" y="302.5" width="19" height="205"/>
+     </g>
+     <g>
+      <g transform="translate(965,405)">
+       <g transform="rotate(90)">
+        <text stroke="none" dy="4.97" text-anchor="middle">True</text>
+       </g>
+      </g>
+     </g>
+     <g stroke="#DBD9CA">
+      <path fill="none" d="M955.5,302.5 L955.5,507.5 L974.5,507.5 L974.5,302.5 z"/>
+     </g>
+     <g fill="#DDDDDD">
+      <rect stroke="none" x="955.5" y="301.5" width="19" height="1"/>
+     </g>
+     <g fill="#DBD9CA">
+      <rect stroke="none" x="974.5" y="95.5" width="17" height="412"/>
+     </g>
+     <g font-weight="bold">
+      <g transform="translate(983,301.5)">
+       <g transform="rotate(90)">
+        <text stroke="none" dy="4.97" text-anchor="middle">FeatureSelection</text>
+       </g>
+      </g>
+     </g>
+     <g stroke="#DBD9CA">
+      <path fill="none" d="M974.5,95.5 L974.5,507.5 L991.5,507.5 L991.5,95.5 z"/>
+     </g>
+     <g>
+      <clipPath id="clip34" clip-path="url(#clip1)">
+       <path d="M122.5,531.5 L122.5,549.5 L213.5,549.5 L213.5,531.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip34)">
+       <g>
+        <clipPath id="clip35" clip-path="url(#clip34)">
+         <path d="M143.5,531.5 L143.5,547.5 L192.5,547.5 L192.5,531.5 z"/>
+        </clipPath>
+        <g clip-path="url(#clip35)">
+         <g fill="#000000">
+          <text stroke="none" x="143.78" y="544.5">Precision</text>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip36" clip-path="url(#clip1)">
+       <path d="M118.5,507.5 L118.5,532.5 L206.5,532.5 L206.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip36)">
+       <g stroke="#A5A5A5">
+        <path fill="none" d="M126.5,507.5 L126.5,510.5"/>
+        <path fill="none" d="M141.5,507.5 L141.5,510.5"/>
+        <path fill="none" d="M156.5,507.5 L156.5,510.5"/>
+        <path fill="none" d="M172.5,507.5 L172.5,510.5"/>
+        <path fill="none" d="M187.5,507.5 L187.5,510.5"/>
+        <path fill="none" d="M202.5,507.5 L202.5,510.5"/>
+        <path fill="none" d="M133.5,507.5 L133.5,513.5"/>
+        <path fill="none" d="M149.5,507.5 L149.5,513.5"/>
+        <path fill="none" d="M164.5,507.5 L164.5,513.5"/>
+        <path fill="none" d="M179.5,507.5 L179.5,513.5"/>
+        <path fill="none" d="M194.5,507.5 L194.5,513.5"/>
+        <path fill="none" d="M210.5,507.5 L210.5,513.5"/>
+       </g>
+       <text stroke="none" x="133.5" y="515.5" dy="12.95" text-anchor="middle">0,94</text>
+       <text stroke="none" x="164.5" y="515.5" dy="12.95" text-anchor="middle">0,96</text>
+       <text stroke="none" x="205.5" y="515.5" dy="12.95" text-anchor="end">0,98</text>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip37" clip-path="url(#clip1)">
+       <path d="M122.5,507.5 L122.5,531.5 L213.5,531.5 L213.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip37)"/>
+     </g>
+     <g>
+      <clipPath id="clip38" clip-path="url(#clip1)">
+       <path d="M12.5,95.5 L12.5,507.5 L30.5,507.5 L30.5,95.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip38)">
+       <g fill="#000000">
+        <g transform="translate(14.5,300.5)">
+         <g transform="rotate(-90)">
+          <text stroke="none" dy="12.95" text-anchor="middle">Balancing</text>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip39" clip-path="url(#clip1)">
+       <path d="M30.5,95.5 L30.5,310.5 L123.5,310.5 L123.5,95.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip39)">
+       <text stroke="none" x="120.5" y="275.5" dy="4.97" text-anchor="end">No sampling</text>
+       <text stroke="none" x="120.5" y="224.5" dy="4.97" text-anchor="end">Over sampling</text>
+       <text stroke="none" x="120.5" y="172.5" dy="4.97" text-anchor="end">Smote</text>
+       <text stroke="none" x="120.5" y="121.5" dy="4.97" text-anchor="end">Under sampling</text>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip40" clip-path="url(#clip1)">
+       <path d="M30.5,95.5 L30.5,301.5 L122.5,301.5 L122.5,95.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip40)"/>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="122.5" y="95.5" width="91" height="206"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip41" clip-path="url(#clip1)">
+        <path d="M122.5,94.5 L122.5,302.5 L214.5,302.5 L214.5,94.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip41)">
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M186.5,285.5 L186.5,265.5 L163.5,265.5 L163.5,285.5 L186.5,285.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M193.5,275.5 L186.5,275.5"/>
+          <path fill="none" d="M156.5,275.5 L163.5,275.5"/>
+          <path fill="none" d="M156.5,285.5 L156.5,265.5"/>
+          <path fill="none" d="M193.5,285.5 L193.5,265.5"/>
+          <path fill="none" d="M172.5,285.5 L172.5,265.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M186.5,234.5 L186.5,214.5 L166.5,214.5 L166.5,234.5 L186.5,234.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M193.5,224.5 L186.5,224.5"/>
+          <path fill="none" d="M156.5,224.5 L166.5,224.5"/>
+          <path fill="none" d="M156.5,234.5 L156.5,214.5"/>
+          <path fill="none" d="M193.5,234.5 L193.5,214.5"/>
+          <path fill="none" d="M172.5,234.5 L172.5,214.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M189.5,182.5 L189.5,162.5 L164.5,162.5 L164.5,182.5 L189.5,182.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M197.5,172.5 L189.5,172.5"/>
+          <path fill="none" d="M156.5,172.5 L164.5,172.5"/>
+          <path fill="none" d="M156.5,182.5 L156.5,162.5"/>
+          <path fill="none" d="M197.5,182.5 L197.5,162.5"/>
+          <path fill="none" d="M173.5,182.5 L173.5,162.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M187.5,131.5 L187.5,111.5 L167.5,111.5 L167.5,131.5 L187.5,131.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M203.5,121.5 L187.5,121.5"/>
+          <path fill="none" d="M161.5,121.5 L167.5,121.5"/>
+          <path fill="none" d="M161.5,131.5 L161.5,111.5"/>
+          <path fill="none" d="M203.5,131.5 L203.5,111.5"/>
+          <path fill="none" d="M177.5,131.5 L177.5,111.5"/>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g stroke-linecap="square" stroke="#A5A5A5">
+      <path fill="none" d="M122.5,301.5 L122.5,95.5"/>
+     </g>
+     <g>
+      <clipPath id="clip42" clip-path="url(#clip1)">
+       <path d="M214.5,531.5 L214.5,549.5 L306.5,549.5 L306.5,531.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip42)">
+       <g>
+        <clipPath id="clip43" clip-path="url(#clip42)">
+         <path d="M233.5,531.5 L233.5,547.5 L286.5,547.5 L286.5,531.5 z"/>
+        </clipPath>
+        <g clip-path="url(#clip43)">
+         <g fill="#000000">
+          <text stroke="none" x="233.88" y="544.5">ROC Area</text>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip44" clip-path="url(#clip1)">
+       <path d="M210.5,507.5 L210.5,532.5 L299.5,532.5 L299.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip44)">
+       <g stroke="#A5A5A5">
+        <path fill="none" d="M214.5,507.5 L214.5,513.5"/>
+        <path fill="none" d="M225.5,507.5 L225.5,513.5"/>
+        <path fill="none" d="M237.5,507.5 L237.5,513.5"/>
+        <path fill="none" d="M248.5,507.5 L248.5,513.5"/>
+        <path fill="none" d="M259.5,507.5 L259.5,513.5"/>
+        <path fill="none" d="M271.5,507.5 L271.5,513.5"/>
+        <path fill="none" d="M282.5,507.5 L282.5,513.5"/>
+        <path fill="none" d="M293.5,507.5 L293.5,513.5"/>
+        <path fill="none" d="M305.5,507.5 L305.5,513.5"/>
+       </g>
+       <text stroke="none" x="225.5" y="515.5" dy="12.95" text-anchor="middle">0,60</text>
+       <text stroke="none" x="259.5" y="515.5" dy="12.95" text-anchor="middle">0,75</text>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip45" clip-path="url(#clip1)">
+       <path d="M214.5,507.5 L214.5,531.5 L306.5,531.5 L306.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip45)"/>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="214.5" y="95.5" width="92" height="206"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip46" clip-path="url(#clip1)">
+        <path d="M213.5,94.5 L213.5,302.5 L307.5,302.5 L307.5,94.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip46)">
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M287.5,285.5 L287.5,265.5 L261.5,265.5 L261.5,285.5 L287.5,285.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M294.5,275.5 L287.5,275.5"/>
+          <path fill="none" d="M253.5,275.5 L261.5,275.5"/>
+          <path fill="none" d="M253.5,285.5 L253.5,265.5"/>
+          <path fill="none" d="M294.5,285.5 L294.5,265.5"/>
+          <path fill="none" d="M284.5,285.5 L284.5,265.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M289.5,234.5 L289.5,214.5 L254.5,214.5 L254.5,234.5 L289.5,234.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M295.5,224.5 L289.5,224.5"/>
+          <path fill="none" d="M247.5,224.5 L254.5,224.5"/>
+          <path fill="none" d="M247.5,234.5 L247.5,214.5"/>
+          <path fill="none" d="M295.5,234.5 L295.5,214.5"/>
+          <path fill="none" d="M282.5,234.5 L282.5,214.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M288.5,182.5 L288.5,162.5 L261.5,162.5 L261.5,182.5 L288.5,182.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M293.5,172.5 L288.5,172.5"/>
+          <path fill="none" d="M250.5,172.5 L261.5,172.5"/>
+          <path fill="none" d="M250.5,182.5 L250.5,162.5"/>
+          <path fill="none" d="M293.5,182.5 L293.5,162.5"/>
+          <path fill="none" d="M285.5,182.5 L285.5,162.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M288.5,131.5 L288.5,111.5 L268.5,111.5 L268.5,131.5 L288.5,131.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M298.5,121.5 L288.5,121.5"/>
+          <path fill="none" d="M238.5,121.5 L268.5,121.5"/>
+          <path fill="none" d="M238.5,131.5 L238.5,111.5"/>
+          <path fill="none" d="M298.5,131.5 L298.5,111.5"/>
+          <path fill="none" d="M283.5,131.5 L283.5,111.5"/>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip47" clip-path="url(#clip1)">
+       <path d="M307.5,531.5 L307.5,549.5 L398.5,549.5 L398.5,531.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip47)">
+       <g>
+        <clipPath id="clip48" clip-path="url(#clip47)">
+         <path d="M335.5,531.5 L335.5,547.5 L370.5,547.5 L370.5,531.5 z"/>
+        </clipPath>
+        <g clip-path="url(#clip48)">
+         <g fill="#000000">
+          <text stroke="none" x="335.86" y="544.5">Kappa</text>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip49" clip-path="url(#clip1)">
+       <path d="M303.5,507.5 L303.5,532.5 L391.5,532.5 L391.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip49)">
+       <g stroke="#A5A5A5">
+        <path fill="none" d="M309.5,507.5 L309.5,513.5"/>
+        <path fill="none" d="M319.5,507.5 L319.5,513.5"/>
+        <path fill="none" d="M329.5,507.5 L329.5,513.5"/>
+        <path fill="none" d="M339.5,507.5 L339.5,513.5"/>
+        <path fill="none" d="M349.5,507.5 L349.5,513.5"/>
+        <path fill="none" d="M358.5,507.5 L358.5,513.5"/>
+        <path fill="none" d="M368.5,507.5 L368.5,513.5"/>
+        <path fill="none" d="M378.5,507.5 L378.5,513.5"/>
+        <path fill="none" d="M388.5,507.5 L388.5,513.5"/>
+        <path fill="none" d="M398.5,507.5 L398.5,513.5"/>
+       </g>
+       <text stroke="none" x="303.5" y="515.5" dy="12.95">0,0</text>
+       <text stroke="none" x="339.5" y="515.5" dy="12.95" text-anchor="middle">0,3</text>
+       <text stroke="none" x="368.5" y="515.5" dy="12.95" text-anchor="middle">0,6</text>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip50" clip-path="url(#clip1)">
+       <path d="M307.5,507.5 L307.5,531.5 L398.5,531.5 L398.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip50)"/>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="307.5" y="95.5" width="91" height="206"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip51" clip-path="url(#clip1)">
+        <path d="M306.5,94.5 L306.5,302.5 L399.5,302.5 L399.5,94.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip51)">
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M378.5,285.5 L378.5,265.5 L367.5,265.5 L367.5,285.5 L378.5,285.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M388.5,275.5 L378.5,275.5"/>
+          <path fill="none" d="M365.5,275.5 L367.5,275.5"/>
+          <path fill="none" d="M365.5,285.5 L365.5,265.5"/>
+          <path fill="none" d="M388.5,285.5 L388.5,265.5"/>
+          <path fill="none" d="M373.5,285.5 L373.5,265.5"/>
+         </g>
+        </g>
+        <g>
+         <g>
+          <title>2</title>
+          <g stroke-width="1.32" stroke="#3DAE46" fill="#3DAE46">
+           <ellipse stroke="none" cx="343.61" cy="275.75" rx="2.64" ry="2.64"/>
+          </g>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M382.5,234.5 L382.5,214.5 L365.5,214.5 L365.5,234.5 L382.5,234.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M388.5,224.5 L382.5,224.5"/>
+          <path fill="none" d="M346.5,224.5 L365.5,224.5"/>
+          <path fill="none" d="M346.5,234.5 L346.5,214.5"/>
+          <path fill="none" d="M388.5,234.5 L388.5,214.5"/>
+          <path fill="none" d="M374.5,234.5 L374.5,214.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M378.5,182.5 L378.5,162.5 L365.5,162.5 L365.5,182.5 L378.5,182.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M388.5,172.5 L378.5,172.5"/>
+          <path fill="none" d="M364.5,172.5 L365.5,172.5"/>
+          <path fill="none" d="M364.5,182.5 L364.5,162.5"/>
+          <path fill="none" d="M388.5,182.5 L388.5,162.5"/>
+          <path fill="none" d="M372.5,182.5 L372.5,162.5"/>
+         </g>
+        </g>
+        <g>
+         <g>
+          <title>11</title>
+          <g stroke-width="1.32" stroke="#3DAE46" fill="#3DAE46">
+           <ellipse stroke="none" cx="344.82" cy="172.75" rx="2.64" ry="2.64"/>
+          </g>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M376.5,131.5 L376.5,111.5 L364.5,111.5 L364.5,131.5 L376.5,131.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M384.5,121.5 L376.5,121.5"/>
+          <path fill="none" d="M355.5,121.5 L364.5,121.5"/>
+          <path fill="none" d="M355.5,131.5 L355.5,111.5"/>
+          <path fill="none" d="M384.5,131.5 L384.5,111.5"/>
+          <path fill="none" d="M370.5,131.5 L370.5,111.5"/>
+         </g>
+        </g>
+        <g>
+         <g>
+          <title>125</title>
+          <g stroke-width="1.32" stroke="#3DAE46" fill="#3DAE46">
+           <ellipse stroke="none" cx="327.34" cy="121.25" rx="2.64" ry="2.64"/>
+          </g>
+         </g>
+        </g>
+        <g/>
+        <g/>
+        <g/>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip52" clip-path="url(#clip1)">
+       <path d="M30.5,302.5 L30.5,516.5 L123.5,516.5 L123.5,302.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip52)">
+       <text stroke="none" x="120.5" y="481.5" dy="4.97" text-anchor="end">No sampling</text>
+       <text stroke="none" x="120.5" y="430.5" dy="4.97" text-anchor="end">Over sampling</text>
+       <text stroke="none" x="120.5" y="379.5" dy="4.97" text-anchor="end">Smote</text>
+       <text stroke="none" x="120.5" y="328.5" dy="4.97" text-anchor="end">Under sampling</text>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip53" clip-path="url(#clip1)">
+       <path d="M30.5,302.5 L30.5,507.5 L122.5,507.5 L122.5,302.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip53)"/>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="122.5" y="302.5" width="91" height="205"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip54" clip-path="url(#clip1)">
+        <path d="M122.5,301.5 L122.5,507.5 L214.5,507.5 L214.5,301.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip54)">
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M177.5,491.5 L177.5,471.5 L165.5,471.5 L165.5,491.5 L177.5,491.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M189.5,481.5 L177.5,481.5"/>
+          <path fill="none" d="M159.5,481.5 L165.5,481.5"/>
+          <path fill="none" d="M159.5,491.5 L159.5,471.5"/>
+          <path fill="none" d="M189.5,491.5 L189.5,471.5"/>
+          <path fill="none" d="M167.5,491.5 L167.5,471.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M184.5,440.5 L184.5,420.5 L166.5,420.5 L166.5,440.5 L184.5,440.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M204.5,430.5 L184.5,430.5"/>
+          <path fill="none" d="M153.5,430.5 L166.5,430.5"/>
+          <path fill="none" d="M153.5,440.5 L153.5,420.5"/>
+          <path fill="none" d="M204.5,440.5 L204.5,420.5"/>
+          <path fill="none" d="M168.5,440.5 L168.5,420.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M178.5,389.5 L178.5,369.5 L165.5,369.5 L165.5,389.5 L178.5,389.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M195.5,379.5 L178.5,379.5"/>
+          <path fill="none" d="M160.5,379.5 L165.5,379.5"/>
+          <path fill="none" d="M160.5,389.5 L160.5,369.5"/>
+          <path fill="none" d="M195.5,389.5 L195.5,369.5"/>
+          <path fill="none" d="M168.5,389.5 L168.5,369.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M176.5,338.5 L176.5,318.5 L166.5,318.5 L166.5,338.5 L176.5,338.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M189.5,328.5 L176.5,328.5"/>
+          <path fill="none" d="M159.5,328.5 L166.5,328.5"/>
+          <path fill="none" d="M159.5,338.5 L159.5,318.5"/>
+          <path fill="none" d="M189.5,338.5 L189.5,318.5"/>
+          <path fill="none" d="M171.5,338.5 L171.5,318.5"/>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g stroke-linecap="square" stroke="#A5A5A5">
+      <path fill="none" d="M122.5,507.5 L122.5,302.5 M213.5,507.5 L122.5,507.5"/>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="214.5" y="302.5" width="92" height="205"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip55" clip-path="url(#clip1)">
+        <path d="M213.5,301.5 L213.5,507.5 L307.5,507.5 L307.5,301.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip55)">
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M283.5,491.5 L283.5,471.5 L261.5,471.5 L261.5,491.5 L283.5,491.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M289.5,481.5 L283.5,481.5"/>
+          <path fill="none" d="M248.5,481.5 L261.5,481.5"/>
+          <path fill="none" d="M248.5,491.5 L248.5,471.5"/>
+          <path fill="none" d="M289.5,491.5 L289.5,471.5"/>
+          <path fill="none" d="M275.5,491.5 L275.5,471.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M283.5,440.5 L283.5,420.5 L261.5,420.5 L261.5,440.5 L283.5,440.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M289.5,430.5 L283.5,430.5"/>
+          <path fill="none" d="M241.5,430.5 L261.5,430.5"/>
+          <path fill="none" d="M241.5,440.5 L241.5,420.5"/>
+          <path fill="none" d="M289.5,440.5 L289.5,420.5"/>
+          <path fill="none" d="M275.5,440.5 L275.5,420.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M284.5,389.5 L284.5,369.5 L261.5,369.5 L261.5,389.5 L284.5,389.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M289.5,379.5 L284.5,379.5"/>
+          <path fill="none" d="M248.5,379.5 L261.5,379.5"/>
+          <path fill="none" d="M248.5,389.5 L248.5,369.5"/>
+          <path fill="none" d="M289.5,389.5 L289.5,369.5"/>
+          <path fill="none" d="M280.5,389.5 L280.5,369.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M283.5,338.5 L283.5,318.5 L264.5,318.5 L264.5,338.5 L283.5,338.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M288.5,328.5 L283.5,328.5"/>
+          <path fill="none" d="M260.5,328.5 L264.5,328.5"/>
+          <path fill="none" d="M260.5,338.5 L260.5,318.5"/>
+          <path fill="none" d="M288.5,338.5 L288.5,318.5"/>
+          <path fill="none" d="M269.5,338.5 L269.5,318.5"/>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g stroke-linecap="square" stroke="#A5A5A5">
+      <path fill="none" d="M306.5,507.5 L214.5,507.5"/>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="307.5" y="302.5" width="91" height="205"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip56" clip-path="url(#clip1)">
+        <path d="M306.5,301.5 L306.5,507.5 L399.5,507.5 L399.5,301.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip56)">
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M389.5,491.5 L389.5,471.5 L366.5,471.5 L366.5,491.5 L389.5,491.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M390.5,481.5 L389.5,481.5"/>
+          <path fill="none" d="M363.5,481.5 L366.5,481.5"/>
+          <path fill="none" d="M363.5,491.5 L363.5,471.5"/>
+          <path fill="none" d="M390.5,491.5 L390.5,471.5"/>
+          <path fill="none" d="M374.5,491.5 L374.5,471.5"/>
+         </g>
+        </g>
+        <g>
+         <g>
+          <title>14</title>
+          <g stroke-width="1.32" stroke="#3DAE46" fill="#3DAE46">
+           <ellipse stroke="none" cx="309.42" cy="481.88" rx="2.64" ry="2.64"/>
+          </g>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M389.5,440.5 L389.5,420.5 L364.5,420.5 L364.5,440.5 L389.5,440.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M390.5,430.5 L389.5,430.5"/>
+          <path fill="none" d="M360.5,430.5 L364.5,430.5"/>
+          <path fill="none" d="M360.5,440.5 L360.5,420.5"/>
+          <path fill="none" d="M390.5,440.5 L390.5,420.5"/>
+          <path fill="none" d="M374.5,440.5 L374.5,420.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M389.5,389.5 L389.5,369.5 L365.5,369.5 L365.5,389.5 L389.5,389.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M390.5,379.5 L389.5,379.5"/>
+          <path fill="none" d="M365.5,389.5 L365.5,369.5"/>
+          <path fill="none" d="M390.5,389.5 L390.5,369.5"/>
+          <path fill="none" d="M374.5,389.5 L374.5,369.5"/>
+         </g>
+        </g>
+        <g>
+         <g>
+          <title>23</title>
+          <g stroke-width="1.32" stroke="#3DAE46" fill="#3DAE46">
+           <ellipse stroke="none" cx="309.42" cy="379.38" rx="2.64" ry="2.64"/>
+          </g>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M389.5,338.5 L389.5,318.5 L362.5,318.5 L362.5,338.5 L389.5,338.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M390.5,328.5 L389.5,328.5"/>
+          <path fill="none" d="M349.5,328.5 L362.5,328.5"/>
+          <path fill="none" d="M349.5,338.5 L349.5,318.5"/>
+          <path fill="none" d="M390.5,338.5 L390.5,318.5"/>
+          <path fill="none" d="M374.5,338.5 L374.5,318.5"/>
+         </g>
+        </g>
+        <g/>
+        <g/>
+       </g>
+      </g>
+     </g>
+     <g stroke-linecap="square" stroke="#A5A5A5">
+      <path fill="none" d="M398.5,507.5 L307.5,507.5"/>
+     </g>
+     <g>
+      <clipPath id="clip57" clip-path="url(#clip1)">
+       <path d="M400.5,531.5 L400.5,549.5 L492.5,549.5 L492.5,531.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip57)">
+       <g>
+        <clipPath id="clip58" clip-path="url(#clip57)">
+         <path d="M421.5,531.5 L421.5,547.5 L470.5,547.5 L470.5,531.5 z"/>
+        </clipPath>
+        <g clip-path="url(#clip58)">
+         <g fill="#000000">
+          <text stroke="none" x="421.78" y="544.5">Precision</text>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip59" clip-path="url(#clip1)">
+       <path d="M396.5,507.5 L396.5,532.5 L485.5,532.5 L485.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip59)">
+       <g stroke="#A5A5A5">
+        <path fill="none" d="M404.5,507.5 L404.5,510.5"/>
+        <path fill="none" d="M419.5,507.5 L419.5,510.5"/>
+        <path fill="none" d="M435.5,507.5 L435.5,510.5"/>
+        <path fill="none" d="M450.5,507.5 L450.5,510.5"/>
+        <path fill="none" d="M466.5,507.5 L466.5,510.5"/>
+        <path fill="none" d="M481.5,507.5 L481.5,510.5"/>
+        <path fill="none" d="M411.5,507.5 L411.5,513.5"/>
+        <path fill="none" d="M427.5,507.5 L427.5,513.5"/>
+        <path fill="none" d="M442.5,507.5 L442.5,513.5"/>
+        <path fill="none" d="M458.5,507.5 L458.5,513.5"/>
+        <path fill="none" d="M473.5,507.5 L473.5,513.5"/>
+        <path fill="none" d="M489.5,507.5 L489.5,513.5"/>
+       </g>
+       <text stroke="none" x="411.5" y="515.5" dy="12.95" text-anchor="middle">0,94</text>
+       <text stroke="none" x="442.5" y="515.5" dy="12.95" text-anchor="middle">0,96</text>
+       <text stroke="none" x="484.5" y="515.5" dy="12.95" text-anchor="end">0,98</text>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip60" clip-path="url(#clip1)">
+       <path d="M400.5,507.5 L400.5,531.5 L492.5,531.5 L492.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip60)"/>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="400.5" y="95.5" width="92" height="206"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip61" clip-path="url(#clip1)">
+        <path d="M399.5,94.5 L399.5,302.5 L493.5,302.5 L493.5,94.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip61)">
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M465.5,285.5 L465.5,265.5 L441.5,265.5 L441.5,285.5 L465.5,285.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M476.5,275.5 L465.5,275.5"/>
+          <path fill="none" d="M431.5,275.5 L441.5,275.5"/>
+          <path fill="none" d="M431.5,285.5 L431.5,265.5"/>
+          <path fill="none" d="M476.5,285.5 L476.5,265.5"/>
+          <path fill="none" d="M452.5,285.5 L452.5,265.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M467.5,234.5 L467.5,214.5 L442.5,214.5 L442.5,234.5 L467.5,234.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M477.5,224.5 L467.5,224.5"/>
+          <path fill="none" d="M432.5,224.5 L442.5,224.5"/>
+          <path fill="none" d="M432.5,234.5 L432.5,214.5"/>
+          <path fill="none" d="M477.5,234.5 L477.5,214.5"/>
+          <path fill="none" d="M456.5,234.5 L456.5,214.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M469.5,182.5 L469.5,162.5 L448.5,162.5 L448.5,182.5 L469.5,182.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M476.5,172.5 L469.5,172.5"/>
+          <path fill="none" d="M437.5,172.5 L448.5,172.5"/>
+          <path fill="none" d="M437.5,182.5 L437.5,162.5"/>
+          <path fill="none" d="M476.5,182.5 L476.5,162.5"/>
+          <path fill="none" d="M455.5,182.5 L455.5,162.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M468.5,131.5 L468.5,111.5 L447.5,111.5 L447.5,131.5 L468.5,131.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M484.5,121.5 L468.5,121.5"/>
+          <path fill="none" d="M432.5,121.5 L447.5,121.5"/>
+          <path fill="none" d="M432.5,131.5 L432.5,111.5"/>
+          <path fill="none" d="M484.5,131.5 L484.5,111.5"/>
+          <path fill="none" d="M456.5,131.5 L456.5,111.5"/>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip62" clip-path="url(#clip1)">
+       <path d="M493.5,531.5 L493.5,549.5 L584.5,549.5 L584.5,531.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip62)">
+       <g>
+        <clipPath id="clip63" clip-path="url(#clip62)">
+         <path d="M512.5,531.5 L512.5,547.5 L565.5,547.5 L565.5,531.5 z"/>
+        </clipPath>
+        <g clip-path="url(#clip63)">
+         <g fill="#000000">
+          <text stroke="none" x="512.88" y="544.5">ROC Area</text>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip64" clip-path="url(#clip1)">
+       <path d="M489.5,507.5 L489.5,532.5 L577.5,532.5 L577.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip64)">
+       <g stroke="#A5A5A5">
+        <path fill="none" d="M493.5,507.5 L493.5,513.5"/>
+        <path fill="none" d="M504.5,507.5 L504.5,513.5"/>
+        <path fill="none" d="M515.5,507.5 L515.5,513.5"/>
+        <path fill="none" d="M527.5,507.5 L527.5,513.5"/>
+        <path fill="none" d="M538.5,507.5 L538.5,513.5"/>
+        <path fill="none" d="M549.5,507.5 L549.5,513.5"/>
+        <path fill="none" d="M560.5,507.5 L560.5,513.5"/>
+        <path fill="none" d="M571.5,507.5 L571.5,513.5"/>
+        <path fill="none" d="M583.5,507.5 L583.5,513.5"/>
+       </g>
+       <text stroke="none" x="504.5" y="515.5" dy="12.95" text-anchor="middle">0,60</text>
+       <text stroke="none" x="538.5" y="515.5" dy="12.95" text-anchor="middle">0,75</text>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip65" clip-path="url(#clip1)">
+       <path d="M493.5,507.5 L493.5,531.5 L584.5,531.5 L584.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip65)"/>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="493.5" y="95.5" width="91" height="206"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip66" clip-path="url(#clip1)">
+        <path d="M492.5,94.5 L492.5,302.5 L585.5,302.5 L585.5,94.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip66)">
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M566.5,285.5 L566.5,265.5 L544.5,265.5 L544.5,285.5 L566.5,285.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M575.5,275.5 L566.5,275.5"/>
+          <path fill="none" d="M517.5,275.5 L544.5,275.5"/>
+          <path fill="none" d="M517.5,285.5 L517.5,265.5"/>
+          <path fill="none" d="M575.5,285.5 L575.5,265.5"/>
+          <path fill="none" d="M563.5,285.5 L563.5,265.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M566.5,234.5 L566.5,214.5 L542.5,214.5 L542.5,234.5 L566.5,234.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M576.5,224.5 L566.5,224.5"/>
+          <path fill="none" d="M512.5,224.5 L542.5,224.5"/>
+          <path fill="none" d="M512.5,234.5 L512.5,214.5"/>
+          <path fill="none" d="M576.5,234.5 L576.5,214.5"/>
+          <path fill="none" d="M562.5,234.5 L562.5,214.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M566.5,182.5 L566.5,162.5 L547.5,162.5 L547.5,182.5 L566.5,182.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M575.5,172.5 L566.5,172.5"/>
+          <path fill="none" d="M523.5,172.5 L547.5,172.5"/>
+          <path fill="none" d="M523.5,182.5 L523.5,162.5"/>
+          <path fill="none" d="M575.5,182.5 L575.5,162.5"/>
+          <path fill="none" d="M563.5,182.5 L563.5,162.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M566.5,131.5 L566.5,111.5 L548.5,111.5 L548.5,131.5 L566.5,131.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M577.5,121.5 L566.5,121.5"/>
+          <path fill="none" d="M540.5,121.5 L548.5,121.5"/>
+          <path fill="none" d="M540.5,131.5 L540.5,111.5"/>
+          <path fill="none" d="M577.5,131.5 L577.5,111.5"/>
+          <path fill="none" d="M562.5,131.5 L562.5,111.5"/>
+         </g>
+        </g>
+        <g>
+         <g>
+          <title>126</title>
+          <g stroke-width="1.32" stroke="#D44958" fill="#D44958">
+           <ellipse stroke="none" cx="504.95" cy="121.25" rx="2.64" ry="2.64"/>
+          </g>
+         </g>
+        </g>
+        <g/>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip67" clip-path="url(#clip1)">
+       <path d="M585.5,531.5 L585.5,549.5 L677.5,549.5 L677.5,531.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip67)">
+       <g>
+        <clipPath id="clip68" clip-path="url(#clip67)">
+         <path d="M613.5,531.5 L613.5,547.5 L648.5,547.5 L648.5,531.5 z"/>
+        </clipPath>
+        <g clip-path="url(#clip68)">
+         <g fill="#000000">
+          <text stroke="none" x="613.86" y="544.5">Kappa</text>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip69" clip-path="url(#clip1)">
+       <path d="M581.5,507.5 L581.5,532.5 L670.5,532.5 L670.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip69)">
+       <g stroke="#A5A5A5">
+        <path fill="none" d="M587.5,507.5 L587.5,513.5"/>
+        <path fill="none" d="M597.5,507.5 L597.5,513.5"/>
+        <path fill="none" d="M607.5,507.5 L607.5,513.5"/>
+        <path fill="none" d="M617.5,507.5 L617.5,513.5"/>
+        <path fill="none" d="M627.5,507.5 L627.5,513.5"/>
+        <path fill="none" d="M637.5,507.5 L637.5,513.5"/>
+        <path fill="none" d="M647.5,507.5 L647.5,513.5"/>
+        <path fill="none" d="M657.5,507.5 L657.5,513.5"/>
+        <path fill="none" d="M667.5,507.5 L667.5,513.5"/>
+        <path fill="none" d="M677.5,507.5 L677.5,513.5"/>
+       </g>
+       <text stroke="none" x="581.5" y="515.5" dy="12.95">0,0</text>
+       <text stroke="none" x="627.5" y="515.5" dy="12.95" text-anchor="middle">0,4</text>
+       <text stroke="none" x="647.5" y="515.5" dy="12.95" text-anchor="middle">0,6</text>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip70" clip-path="url(#clip1)">
+       <path d="M585.5,507.5 L585.5,531.5 L677.5,531.5 L677.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip70)"/>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="585.5" y="95.5" width="92" height="206"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip71" clip-path="url(#clip1)">
+        <path d="M584.5,94.5 L584.5,302.5 L678.5,302.5 L678.5,94.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip71)">
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M654.5,285.5 L654.5,265.5 L641.5,265.5 L641.5,285.5 L654.5,285.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M663.5,275.5 L654.5,275.5"/>
+          <path fill="none" d="M630.5,275.5 L641.5,275.5"/>
+          <path fill="none" d="M630.5,285.5 L630.5,265.5"/>
+          <path fill="none" d="M663.5,285.5 L663.5,265.5"/>
+          <path fill="none" d="M647.5,285.5 L647.5,265.5"/>
+         </g>
+        </g>
+        <g>
+         <g>
+          <title>123</title>
+          <g stroke-width="1.32" stroke="#3DAE46" fill="#3DAE46">
+           <ellipse stroke="none" cx="596.71" cy="275.75" rx="2.64" ry="2.64"/>
+          </g>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M655.5,234.5 L655.5,214.5 L641.5,214.5 L641.5,234.5 L655.5,234.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M659.5,224.5 L655.5,224.5"/>
+          <path fill="none" d="M631.5,224.5 L641.5,224.5"/>
+          <path fill="none" d="M631.5,234.5 L631.5,214.5"/>
+          <path fill="none" d="M659.5,234.5 L659.5,214.5"/>
+          <path fill="none" d="M648.5,234.5 L648.5,214.5"/>
+         </g>
+        </g>
+        <g>
+         <g>
+          <title>129</title>
+          <g stroke-width="1.32" stroke="#3DAE46" fill="#3DAE46">
+           <ellipse stroke="none" cx="596.7" cy="224.25" rx="2.64" ry="2.64"/>
+          </g>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M657.5,182.5 L657.5,162.5 L643.5,162.5 L643.5,182.5 L657.5,182.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M661.5,172.5 L657.5,172.5"/>
+          <path fill="none" d="M630.5,172.5 L643.5,172.5"/>
+          <path fill="none" d="M630.5,182.5 L630.5,162.5"/>
+          <path fill="none" d="M661.5,182.5 L661.5,162.5"/>
+          <path fill="none" d="M649.5,182.5 L649.5,162.5"/>
+         </g>
+        </g>
+        <g>
+         <g>
+          <title>132</title>
+          <g stroke-width="1.32" stroke="#3DAE46" fill="#3DAE46">
+           <ellipse stroke="none" cx="597.84" cy="172.75" rx="2.64" ry="2.64"/>
+          </g>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M654.5,131.5 L654.5,111.5 L640.5,111.5 L640.5,131.5 L654.5,131.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M660.5,121.5 L654.5,121.5"/>
+          <path fill="none" d="M634.5,121.5 L640.5,121.5"/>
+          <path fill="none" d="M634.5,131.5 L634.5,111.5"/>
+          <path fill="none" d="M660.5,131.5 L660.5,111.5"/>
+          <path fill="none" d="M648.5,131.5 L648.5,111.5"/>
+         </g>
+        </g>
+        <g>
+         <g>
+          <title>126</title>
+          <g stroke-width="1.32" stroke="#3DAE46" fill="#3DAE46">
+           <ellipse stroke="none" cx="596.88" cy="121.25" rx="2.64" ry="2.64"/>
+          </g>
+         </g>
+        </g>
+        <g/>
+        <g/>
+        <g/>
+        <g/>
+       </g>
+      </g>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="400.5" y="302.5" width="92" height="205"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip72" clip-path="url(#clip1)">
+        <path d="M399.5,301.5 L399.5,507.5 L493.5,507.5 L493.5,301.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip72)">
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M452.5,491.5 L452.5,471.5 L443.5,471.5 L443.5,491.5 L452.5,491.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M461.5,481.5 L452.5,481.5"/>
+          <path fill="none" d="M432.5,481.5 L443.5,481.5"/>
+          <path fill="none" d="M432.5,491.5 L432.5,471.5"/>
+          <path fill="none" d="M461.5,491.5 L461.5,471.5"/>
+          <path fill="none" d="M445.5,491.5 L445.5,471.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M464.5,440.5 L464.5,420.5 L444.5,420.5 L444.5,440.5 L464.5,440.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M479.5,430.5 L464.5,430.5"/>
+          <path fill="none" d="M440.5,430.5 L444.5,430.5"/>
+          <path fill="none" d="M440.5,440.5 L440.5,420.5"/>
+          <path fill="none" d="M479.5,440.5 L479.5,420.5"/>
+          <path fill="none" d="M448.5,440.5 L448.5,420.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M454.5,389.5 L454.5,369.5 L443.5,369.5 L443.5,389.5 L454.5,389.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M462.5,379.5 L454.5,379.5"/>
+          <path fill="none" d="M432.5,379.5 L443.5,379.5"/>
+          <path fill="none" d="M432.5,389.5 L432.5,369.5"/>
+          <path fill="none" d="M462.5,389.5 L462.5,369.5"/>
+          <path fill="none" d="M446.5,389.5 L446.5,369.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M455.5,338.5 L455.5,318.5 L444.5,318.5 L444.5,338.5 L455.5,338.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M469.5,328.5 L455.5,328.5"/>
+          <path fill="none" d="M440.5,328.5 L444.5,328.5"/>
+          <path fill="none" d="M440.5,338.5 L440.5,318.5"/>
+          <path fill="none" d="M469.5,338.5 L469.5,318.5"/>
+          <path fill="none" d="M450.5,338.5 L450.5,318.5"/>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g stroke-linecap="square" stroke="#A5A5A5">
+      <path fill="none" d="M492.5,507.5 L400.5,507.5"/>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="493.5" y="302.5" width="91" height="205"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip73" clip-path="url(#clip1)">
+        <path d="M492.5,301.5 L492.5,507.5 L585.5,507.5 L585.5,301.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip73)">
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M561.5,491.5 L561.5,471.5 L541.5,471.5 L541.5,491.5 L561.5,491.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M564.5,481.5 L561.5,481.5"/>
+          <path fill="none" d="M539.5,481.5 L541.5,481.5"/>
+          <path fill="none" d="M539.5,491.5 L539.5,471.5"/>
+          <path fill="none" d="M564.5,491.5 L564.5,471.5"/>
+          <path fill="none" d="M554.5,491.5 L554.5,471.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M561.5,440.5 L561.5,420.5 L539.5,420.5 L539.5,440.5 L561.5,440.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M564.5,430.5 L561.5,430.5"/>
+          <path fill="none" d="M539.5,440.5 L539.5,420.5"/>
+          <path fill="none" d="M564.5,440.5 L564.5,420.5"/>
+          <path fill="none" d="M554.5,440.5 L554.5,420.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M562.5,389.5 L562.5,369.5 L541.5,369.5 L541.5,389.5 L562.5,389.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M566.5,379.5 L562.5,379.5"/>
+          <path fill="none" d="M539.5,379.5 L541.5,379.5"/>
+          <path fill="none" d="M539.5,389.5 L539.5,369.5"/>
+          <path fill="none" d="M566.5,389.5 L566.5,369.5"/>
+          <path fill="none" d="M557.5,389.5 L557.5,369.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M561.5,338.5 L561.5,318.5 L543.5,318.5 L543.5,338.5 L561.5,338.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M566.5,328.5 L561.5,328.5"/>
+          <path fill="none" d="M539.5,328.5 L543.5,328.5"/>
+          <path fill="none" d="M539.5,338.5 L539.5,318.5"/>
+          <path fill="none" d="M566.5,338.5 L566.5,318.5"/>
+          <path fill="none" d="M548.5,338.5 L548.5,318.5"/>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g stroke-linecap="square" stroke="#A5A5A5">
+      <path fill="none" d="M584.5,507.5 L493.5,507.5"/>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="585.5" y="302.5" width="92" height="205"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip74" clip-path="url(#clip1)">
+        <path d="M584.5,301.5 L584.5,507.5 L678.5,507.5 L678.5,301.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip74)">
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M668.5,491.5 L668.5,471.5 L640.5,471.5 L640.5,491.5 L668.5,491.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M669.5,481.5 L668.5,481.5"/>
+          <path fill="none" d="M613.5,481.5 L640.5,481.5"/>
+          <path fill="none" d="M613.5,491.5 L613.5,471.5"/>
+          <path fill="none" d="M669.5,491.5 L669.5,471.5"/>
+          <path fill="none" d="M653.5,491.5 L653.5,471.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M664.5,440.5 L664.5,420.5 L642.5,420.5 L642.5,440.5 L664.5,440.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M669.5,430.5 L664.5,430.5"/>
+          <path fill="none" d="M638.5,430.5 L642.5,430.5"/>
+          <path fill="none" d="M638.5,440.5 L638.5,420.5"/>
+          <path fill="none" d="M669.5,440.5 L669.5,420.5"/>
+          <path fill="none" d="M653.5,440.5 L653.5,420.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M668.5,389.5 L668.5,369.5 L640.5,369.5 L640.5,389.5 L668.5,389.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M669.5,379.5 L668.5,379.5"/>
+          <path fill="none" d="M613.5,379.5 L640.5,379.5"/>
+          <path fill="none" d="M613.5,389.5 L613.5,369.5"/>
+          <path fill="none" d="M669.5,389.5 L669.5,369.5"/>
+          <path fill="none" d="M653.5,389.5 L653.5,369.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M666.5,338.5 L666.5,318.5 L640.5,318.5 L640.5,338.5 L666.5,338.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M669.5,328.5 L666.5,328.5"/>
+          <path fill="none" d="M629.5,328.5 L640.5,328.5"/>
+          <path fill="none" d="M629.5,338.5 L629.5,318.5"/>
+          <path fill="none" d="M669.5,338.5 L669.5,318.5"/>
+          <path fill="none" d="M653.5,338.5 L653.5,318.5"/>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g stroke-linecap="square" stroke="#A5A5A5">
+      <path fill="none" d="M677.5,507.5 L585.5,507.5"/>
+     </g>
+     <g>
+      <clipPath id="clip75" clip-path="url(#clip1)">
+       <path d="M679.5,531.5 L679.5,549.5 L770.5,549.5 L770.5,531.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip75)">
+       <g>
+        <clipPath id="clip76" clip-path="url(#clip75)">
+         <path d="M700.5,531.5 L700.5,547.5 L749.5,547.5 L749.5,531.5 z"/>
+        </clipPath>
+        <g clip-path="url(#clip76)">
+         <g fill="#000000">
+          <text stroke="none" x="700.78" y="544.5">Precision</text>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip77" clip-path="url(#clip1)">
+       <path d="M675.5,507.5 L675.5,532.5 L763.5,532.5 L763.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip77)">
+       <g stroke="#A5A5A5">
+        <path fill="none" d="M683.5,507.5 L683.5,510.5"/>
+        <path fill="none" d="M698.5,507.5 L698.5,510.5"/>
+        <path fill="none" d="M713.5,507.5 L713.5,510.5"/>
+        <path fill="none" d="M729.5,507.5 L729.5,510.5"/>
+        <path fill="none" d="M744.5,507.5 L744.5,510.5"/>
+        <path fill="none" d="M759.5,507.5 L759.5,510.5"/>
+        <path fill="none" d="M690.5,507.5 L690.5,513.5"/>
+        <path fill="none" d="M706.5,507.5 L706.5,513.5"/>
+        <path fill="none" d="M721.5,507.5 L721.5,513.5"/>
+        <path fill="none" d="M736.5,507.5 L736.5,513.5"/>
+        <path fill="none" d="M751.5,507.5 L751.5,513.5"/>
+        <path fill="none" d="M767.5,507.5 L767.5,513.5"/>
+       </g>
+       <text stroke="none" x="690.5" y="515.5" dy="12.95" text-anchor="middle">0,94</text>
+       <text stroke="none" x="721.5" y="515.5" dy="12.95" text-anchor="middle">0,96</text>
+       <text stroke="none" x="762.5" y="515.5" dy="12.95" text-anchor="end">0,98</text>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip78" clip-path="url(#clip1)">
+       <path d="M679.5,507.5 L679.5,531.5 L770.5,531.5 L770.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip78)"/>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="679.5" y="95.5" width="91" height="206"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip79" clip-path="url(#clip1)">
+        <path d="M678.5,94.5 L678.5,302.5 L771.5,302.5 L771.5,94.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip79)">
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M734.5,285.5 L734.5,265.5 L723.5,265.5 L723.5,285.5 L734.5,285.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M748.5,275.5 L734.5,275.5"/>
+          <path fill="none" d="M721.5,275.5 L723.5,275.5"/>
+          <path fill="none" d="M721.5,285.5 L721.5,265.5"/>
+          <path fill="none" d="M748.5,285.5 L748.5,265.5"/>
+          <path fill="none" d="M728.5,285.5 L728.5,265.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M740.5,234.5 L740.5,214.5 L722.5,214.5 L722.5,234.5 L740.5,234.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M759.5,224.5 L740.5,224.5"/>
+          <path fill="none" d="M695.5,224.5 L722.5,224.5"/>
+          <path fill="none" d="M695.5,234.5 L695.5,214.5"/>
+          <path fill="none" d="M759.5,234.5 L759.5,214.5"/>
+          <path fill="none" d="M728.5,234.5 L728.5,214.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M740.5,182.5 L740.5,162.5 L723.5,162.5 L723.5,182.5 L740.5,182.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M759.5,172.5 L740.5,172.5"/>
+          <path fill="none" d="M721.5,172.5 L723.5,172.5"/>
+          <path fill="none" d="M721.5,182.5 L721.5,162.5"/>
+          <path fill="none" d="M759.5,182.5 L759.5,162.5"/>
+          <path fill="none" d="M731.5,182.5 L731.5,162.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M743.5,131.5 L743.5,111.5 L721.5,111.5 L721.5,131.5 L743.5,131.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M758.5,121.5 L743.5,121.5"/>
+          <path fill="none" d="M716.5,121.5 L721.5,121.5"/>
+          <path fill="none" d="M716.5,131.5 L716.5,111.5"/>
+          <path fill="none" d="M758.5,131.5 L758.5,111.5"/>
+          <path fill="none" d="M733.5,131.5 L733.5,111.5"/>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip80" clip-path="url(#clip1)">
+       <path d="M771.5,531.5 L771.5,549.5 L863.5,549.5 L863.5,531.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip80)">
+       <g>
+        <clipPath id="clip81" clip-path="url(#clip80)">
+         <path d="M790.5,531.5 L790.5,547.5 L843.5,547.5 L843.5,531.5 z"/>
+        </clipPath>
+        <g clip-path="url(#clip81)">
+         <g fill="#000000">
+          <text stroke="none" x="790.88" y="544.5">ROC Area</text>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip82" clip-path="url(#clip1)">
+       <path d="M767.5,507.5 L767.5,532.5 L856.5,532.5 L856.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip82)">
+       <g stroke="#A5A5A5">
+        <path fill="none" d="M771.5,507.5 L771.5,513.5"/>
+        <path fill="none" d="M782.5,507.5 L782.5,513.5"/>
+        <path fill="none" d="M794.5,507.5 L794.5,513.5"/>
+        <path fill="none" d="M805.5,507.5 L805.5,513.5"/>
+        <path fill="none" d="M816.5,507.5 L816.5,513.5"/>
+        <path fill="none" d="M828.5,507.5 L828.5,513.5"/>
+        <path fill="none" d="M839.5,507.5 L839.5,513.5"/>
+        <path fill="none" d="M850.5,507.5 L850.5,513.5"/>
+        <path fill="none" d="M862.5,507.5 L862.5,513.5"/>
+       </g>
+       <text stroke="none" x="782.5" y="515.5" dy="12.95" text-anchor="middle">0,60</text>
+       <text stroke="none" x="816.5" y="515.5" dy="12.95" text-anchor="middle">0,75</text>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip83" clip-path="url(#clip1)">
+       <path d="M771.5,507.5 L771.5,531.5 L863.5,531.5 L863.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip83)"/>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="771.5" y="95.5" width="92" height="206"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip84" clip-path="url(#clip1)">
+        <path d="M770.5,94.5 L770.5,302.5 L864.5,302.5 L864.5,94.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip84)">
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M847.5,285.5 L847.5,265.5 L834.5,265.5 L834.5,285.5 L847.5,285.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M857.5,275.5 L847.5,275.5"/>
+          <path fill="none" d="M819.5,275.5 L834.5,275.5"/>
+          <path fill="none" d="M819.5,285.5 L819.5,265.5"/>
+          <path fill="none" d="M857.5,285.5 L857.5,265.5"/>
+          <path fill="none" d="M846.5,285.5 L846.5,265.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M847.5,234.5 L847.5,214.5 L829.5,214.5 L829.5,234.5 L847.5,234.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M855.5,224.5 L847.5,224.5"/>
+          <path fill="none" d="M806.5,224.5 L829.5,224.5"/>
+          <path fill="none" d="M806.5,234.5 L806.5,214.5"/>
+          <path fill="none" d="M855.5,234.5 L855.5,214.5"/>
+          <path fill="none" d="M843.5,234.5 L843.5,214.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M848.5,182.5 L848.5,162.5 L834.5,162.5 L834.5,182.5 L848.5,182.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M855.5,172.5 L848.5,172.5"/>
+          <path fill="none" d="M829.5,172.5 L834.5,172.5"/>
+          <path fill="none" d="M829.5,182.5 L829.5,162.5"/>
+          <path fill="none" d="M855.5,182.5 L855.5,162.5"/>
+          <path fill="none" d="M847.5,182.5 L847.5,162.5"/>
+         </g>
+        </g>
+        <g>
+         <g>
+          <title>154</title>
+          <g stroke-width="1.32" stroke="#D44958" fill="#D44958">
+           <ellipse stroke="none" cx="806.74" cy="172.75" rx="2.64" ry="2.64"/>
+          </g>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M845.5,131.5 L845.5,111.5 L824.5,111.5 L824.5,131.5 L845.5,131.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M855.5,121.5 L845.5,121.5"/>
+          <path fill="none" d="M798.5,121.5 L824.5,121.5"/>
+          <path fill="none" d="M798.5,131.5 L798.5,111.5"/>
+          <path fill="none" d="M855.5,131.5 L855.5,111.5"/>
+          <path fill="none" d="M841.5,131.5 L841.5,111.5"/>
+         </g>
+        </g>
+        <g/>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip85" clip-path="url(#clip1)">
+       <path d="M864.5,531.5 L864.5,549.5 L955.5,549.5 L955.5,531.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip85)">
+       <g>
+        <clipPath id="clip86" clip-path="url(#clip85)">
+         <path d="M892.5,531.5 L892.5,547.5 L927.5,547.5 L927.5,531.5 z"/>
+        </clipPath>
+        <g clip-path="url(#clip86)">
+         <g fill="#000000">
+          <text stroke="none" x="892.86" y="544.5">Kappa</text>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip87" clip-path="url(#clip1)">
+       <path d="M860.5,507.5 L860.5,532.5 L948.5,532.5 L948.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip87)">
+       <g stroke="#A5A5A5">
+        <path fill="none" d="M866.5,507.5 L866.5,513.5"/>
+        <path fill="none" d="M876.5,507.5 L876.5,513.5"/>
+        <path fill="none" d="M886.5,507.5 L886.5,513.5"/>
+        <path fill="none" d="M896.5,507.5 L896.5,513.5"/>
+        <path fill="none" d="M906.5,507.5 L906.5,513.5"/>
+        <path fill="none" d="M915.5,507.5 L915.5,513.5"/>
+        <path fill="none" d="M925.5,507.5 L925.5,513.5"/>
+        <path fill="none" d="M935.5,507.5 L935.5,513.5"/>
+        <path fill="none" d="M945.5,507.5 L945.5,513.5"/>
+        <path fill="none" d="M955.5,507.5 L955.5,513.5"/>
+       </g>
+       <text stroke="none" x="860.5" y="515.5" dy="12.95">0,0</text>
+       <text stroke="none" x="896.5" y="515.5" dy="12.95" text-anchor="middle">0,3</text>
+       <text stroke="none" x="925.5" y="515.5" dy="12.95" text-anchor="middle">0,6</text>
+      </g>
+     </g>
+     <g>
+      <clipPath id="clip88" clip-path="url(#clip1)">
+       <path d="M864.5,507.5 L864.5,531.5 L955.5,531.5 L955.5,507.5 z"/>
+      </clipPath>
+      <g clip-path="url(#clip88)"/>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="864.5" y="95.5" width="91" height="206"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip89" clip-path="url(#clip1)">
+        <path d="M863.5,94.5 L863.5,302.5 L956.5,302.5 L956.5,94.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip89)">
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M937.5,285.5 L937.5,265.5 L923.5,265.5 L923.5,285.5 L937.5,285.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M947.5,275.5 L937.5,275.5"/>
+          <path fill="none" d="M921.5,275.5 L923.5,275.5"/>
+          <path fill="none" d="M921.5,285.5 L921.5,265.5"/>
+          <path fill="none" d="M947.5,285.5 L947.5,265.5"/>
+          <path fill="none" d="M928.5,285.5 L928.5,265.5"/>
+         </g>
+        </g>
+        <g>
+         <g>
+          <title>1</title>
+          <g stroke-width="1.32" stroke="#3DAE46" fill="#3DAE46">
+           <ellipse stroke="none" cx="866.42" cy="275.75" rx="2.64" ry="2.64"/>
+          </g>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M946.5,234.5 L946.5,214.5 L920.5,214.5 L920.5,234.5 L946.5,234.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M947.5,224.5 L946.5,224.5"/>
+          <path fill="none" d="M917.5,224.5 L920.5,224.5"/>
+          <path fill="none" d="M917.5,234.5 L917.5,214.5"/>
+          <path fill="none" d="M947.5,234.5 L947.5,214.5"/>
+          <path fill="none" d="M930.5,234.5 L930.5,214.5"/>
+         </g>
+        </g>
+        <g>
+         <g>
+          <title>7</title>
+          <g stroke-width="1.32" stroke="#3DAE46" fill="#3DAE46">
+           <ellipse stroke="none" cx="866.42" cy="224.25" rx="2.64" ry="2.64"/>
+          </g>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M937.5,182.5 L937.5,162.5 L923.5,162.5 L923.5,182.5 L937.5,182.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M947.5,172.5 L937.5,172.5"/>
+          <path fill="none" d="M921.5,172.5 L923.5,172.5"/>
+          <path fill="none" d="M921.5,182.5 L921.5,162.5"/>
+          <path fill="none" d="M947.5,182.5 L947.5,162.5"/>
+          <path fill="none" d="M929.5,182.5 L929.5,162.5"/>
+         </g>
+        </g>
+        <g>
+         <g>
+          <title>10</title>
+          <g stroke-width="1.32" stroke="#3DAE46" fill="#3DAE46">
+           <ellipse stroke="none" cx="866.42" cy="172.75" rx="2.64" ry="2.64"/>
+          </g>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M931.5,131.5 L931.5,111.5 L921.5,111.5 L921.5,131.5 L931.5,131.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M942.5,121.5 L931.5,121.5"/>
+          <path fill="none" d="M911.5,121.5 L921.5,121.5"/>
+          <path fill="none" d="M911.5,131.5 L911.5,111.5"/>
+          <path fill="none" d="M942.5,131.5 L942.5,111.5"/>
+          <path fill="none" d="M927.5,131.5 L927.5,111.5"/>
+         </g>
+        </g>
+        <g>
+         <g>
+          <title>124</title>
+          <g stroke-width="1.32" stroke="#3DAE46" fill="#3DAE46">
+           <ellipse stroke="none" cx="880.45" cy="121.25" rx="2.64" ry="2.64"/>
+          </g>
+         </g>
+        </g>
+        <g/>
+        <g/>
+        <g/>
+        <g/>
+       </g>
+      </g>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="679.5" y="302.5" width="91" height="205"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip90" clip-path="url(#clip1)">
+        <path d="M678.5,301.5 L678.5,507.5 L771.5,507.5 L771.5,301.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip90)">
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M734.5,491.5 L734.5,471.5 L723.5,471.5 L723.5,491.5 L734.5,491.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M746.5,481.5 L734.5,481.5"/>
+          <path fill="none" d="M721.5,481.5 L723.5,481.5"/>
+          <path fill="none" d="M721.5,491.5 L721.5,471.5"/>
+          <path fill="none" d="M746.5,491.5 L746.5,471.5"/>
+          <path fill="none" d="M725.5,491.5 L725.5,471.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M740.5,440.5 L740.5,420.5 L723.5,420.5 L723.5,440.5 L740.5,440.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M764.5,430.5 L740.5,430.5"/>
+          <path fill="none" d="M717.5,430.5 L723.5,430.5"/>
+          <path fill="none" d="M717.5,440.5 L717.5,420.5"/>
+          <path fill="none" d="M764.5,440.5 L764.5,420.5"/>
+          <path fill="none" d="M725.5,440.5 L725.5,420.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M735.5,389.5 L735.5,369.5 L723.5,369.5 L723.5,389.5 L735.5,389.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M752.5,379.5 L735.5,379.5"/>
+          <path fill="none" d="M721.5,379.5 L723.5,379.5"/>
+          <path fill="none" d="M721.5,389.5 L721.5,369.5"/>
+          <path fill="none" d="M752.5,389.5 L752.5,369.5"/>
+          <path fill="none" d="M728.5,389.5 L728.5,369.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#4270DD">
+          <path fill="none" d="M732.5,338.5 L732.5,318.5 L723.5,318.5 L723.5,338.5 L732.5,338.5"/>
+         </g>
+         <g stroke="#4270DD">
+          <path fill="none" d="M744.5,328.5 L732.5,328.5"/>
+          <path fill="none" d="M714.5,328.5 L723.5,328.5"/>
+          <path fill="none" d="M714.5,338.5 L714.5,318.5"/>
+          <path fill="none" d="M744.5,338.5 L744.5,318.5"/>
+          <path fill="none" d="M725.5,338.5 L725.5,318.5"/>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g stroke-linecap="square" stroke="#A5A5A5">
+      <path fill="none" d="M770.5,507.5 L679.5,507.5"/>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="771.5" y="302.5" width="92" height="205"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip91" clip-path="url(#clip1)">
+        <path d="M770.5,301.5 L770.5,507.5 L864.5,507.5 L864.5,301.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip91)">
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M841.5,491.5 L841.5,471.5 L820.5,471.5 L820.5,491.5 L841.5,491.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M846.5,481.5 L841.5,481.5"/>
+          <path fill="none" d="M817.5,481.5 L820.5,481.5"/>
+          <path fill="none" d="M817.5,491.5 L817.5,471.5"/>
+          <path fill="none" d="M846.5,491.5 L846.5,471.5"/>
+          <path fill="none" d="M835.5,491.5 L835.5,471.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M841.5,440.5 L841.5,420.5 L820.5,420.5 L820.5,440.5 L841.5,440.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M846.5,430.5 L841.5,430.5"/>
+          <path fill="none" d="M817.5,430.5 L820.5,430.5"/>
+          <path fill="none" d="M817.5,440.5 L817.5,420.5"/>
+          <path fill="none" d="M846.5,440.5 L846.5,420.5"/>
+          <path fill="none" d="M832.5,440.5 L832.5,420.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M841.5,389.5 L841.5,369.5 L820.5,369.5 L820.5,389.5 L841.5,389.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M846.5,379.5 L841.5,379.5"/>
+          <path fill="none" d="M817.5,379.5 L820.5,379.5"/>
+          <path fill="none" d="M817.5,389.5 L817.5,369.5"/>
+          <path fill="none" d="M846.5,389.5 L846.5,369.5"/>
+          <path fill="none" d="M838.5,389.5 L838.5,369.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#D44958">
+          <path fill="none" d="M840.5,338.5 L840.5,318.5 L821.5,318.5 L821.5,338.5 L840.5,338.5"/>
+         </g>
+         <g stroke="#D44958">
+          <path fill="none" d="M845.5,328.5 L840.5,328.5"/>
+          <path fill="none" d="M817.5,328.5 L821.5,328.5"/>
+          <path fill="none" d="M817.5,338.5 L817.5,318.5"/>
+          <path fill="none" d="M845.5,338.5 L845.5,318.5"/>
+          <path fill="none" d="M828.5,338.5 L828.5,318.5"/>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+     <g stroke-linecap="square" stroke="#A5A5A5">
+      <path fill="none" d="M863.5,507.5 L771.5,507.5"/>
+     </g>
+     <g fill="#FFFFFF">
+      <rect stroke="none" x="864.5" y="302.5" width="91" height="205"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip92" clip-path="url(#clip1)">
+        <path d="M863.5,301.5 L863.5,507.5 L956.5,507.5 L956.5,301.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip92)">
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M946.5,491.5 L946.5,471.5 L923.5,471.5 L923.5,491.5 L946.5,491.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M947.5,481.5 L946.5,481.5"/>
+          <path fill="none" d="M920.5,481.5 L923.5,481.5"/>
+          <path fill="none" d="M920.5,491.5 L920.5,471.5"/>
+          <path fill="none" d="M947.5,491.5 L947.5,471.5"/>
+          <path fill="none" d="M931.5,491.5 L931.5,471.5"/>
+         </g>
+        </g>
+        <g>
+         <g>
+          <title>13</title>
+          <g stroke-width="1.32" stroke="#3DAE46" fill="#3DAE46">
+           <ellipse stroke="none" cx="866.42" cy="481.88" rx="2.64" ry="2.64"/>
+          </g>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M946.5,440.5 L946.5,420.5 L921.5,420.5 L921.5,440.5 L946.5,440.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M947.5,430.5 L946.5,430.5"/>
+          <path fill="none" d="M919.5,430.5 L921.5,430.5"/>
+          <path fill="none" d="M919.5,440.5 L919.5,420.5"/>
+          <path fill="none" d="M947.5,440.5 L947.5,420.5"/>
+          <path fill="none" d="M931.5,440.5 L931.5,420.5"/>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M946.5,389.5 L946.5,369.5 L925.5,369.5 L925.5,389.5 L946.5,389.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M947.5,379.5 L946.5,379.5"/>
+          <path fill="none" d="M921.5,379.5 L925.5,379.5"/>
+          <path fill="none" d="M921.5,389.5 L921.5,369.5"/>
+          <path fill="none" d="M947.5,389.5 L947.5,369.5"/>
+          <path fill="none" d="M931.5,389.5 L931.5,369.5"/>
+         </g>
+        </g>
+        <g>
+         <g>
+          <title>22</title>
+          <g stroke-width="1.32" stroke="#3DAE46" fill="#3DAE46">
+           <ellipse stroke="none" cx="866.42" cy="379.38" rx="2.64" ry="2.64"/>
+          </g>
+         </g>
+        </g>
+        <g>
+         <g stroke-linecap="square" stroke="#3DAE46">
+          <path fill="none" d="M946.5,338.5 L946.5,318.5 L918.5,318.5 L918.5,338.5 L946.5,338.5"/>
+         </g>
+         <g stroke="#3DAE46">
+          <path fill="none" d="M947.5,328.5 L946.5,328.5"/>
+          <path fill="none" d="M902.5,328.5 L918.5,328.5"/>
+          <path fill="none" d="M902.5,338.5 L902.5,318.5"/>
+          <path fill="none" d="M947.5,338.5 L947.5,318.5"/>
+          <path fill="none" d="M931.5,338.5 L931.5,318.5"/>
+         </g>
+        </g>
+        <g/>
+        <g/>
+       </g>
+      </g>
+     </g>
+     <g stroke-linecap="square" stroke="#A5A5A5">
+      <path fill="none" d="M955.5,507.5 L864.5,507.5"/>
+     </g>
+     <g>
+      <g>
+       <clipPath id="clip93" clip-path="url(#clip1)">
+        <path d="M995.5,59.5 L995.5,108.5 L1090.5,108.5 L1090.5,59.5 z"/>
+       </clipPath>
+       <g clip-path="url(#clip93)">
+        <g stroke="#4270DD" fill="none">
+         <path fill="none" d="M997.5,69 L1002.5,69 M1017.5,69 L1012.5,69 M1002.5,65.5 L1002.5,71.5 L1012.5,71.5 L1012.5,65.5 z"/>
+        </g>
+        <text stroke="none" x="1020.5" y="68.5" dy="4.97">Precision</text>
+        <g stroke="#D44958" fill="none">
+         <path fill="none" d="M997.5,84 L1002.5,84 M1017.5,84 L1012.5,84 M1002.5,80.5 L1002.5,86.5 L1012.5,86.5 L1012.5,80.5 z"/>
+        </g>
+        <text stroke="none" x="1020.5" y="83.5" dy="4.97">ROC Area</text>
+        <g stroke="#3DAE46" fill="none">
+         <path fill="none" d="M997.5,99 L1002.5,99 M1017.5,99 L1012.5,99 M1002.5,95.5 L1002.5,101.5 L1012.5,101.5 L1012.5,95.5 z"/>
+        </g>
+        <text stroke="none" x="1020.5" y="98.5" dy="4.97">Kappa</text>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

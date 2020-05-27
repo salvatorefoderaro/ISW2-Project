@@ -53,15 +53,14 @@ public class Deliverable2Milestone1 {
 	// Map<ticketID, (IV, FV)>
 	private static Map<Integer, List<Integer>> ticketWithBuggyIndex = new HashMap<>();
 
+	private static List<Integer> ticketList = new ArrayList<>();;
+	
 	// Index of the last version (first half of the version released)
 	private static int lastVersion;
 
 	public static final String USER_DIR = "user.dir";
 	public static final String RELEASE_DATE = "releaseDate";
 	public static final String FILE_EXTENSION = ".java";
-
-
-
 
 	/** This function return the list of released version of a given project
 	 * 
@@ -139,7 +138,10 @@ public class Deliverable2Milestone1 {
 
 				// , get JSONArray associated to the affected versions,
 				JSONArray affectedVersionArray = singleJsonObject.getJSONArray("versions");
+				if (key.split("-")[1].equals("108"))
 
+					ticketList.add(Integer.valueOf(key.split("-")[1]));
+				
 				// Get a Java List from the JSONArray
 				List<String> affectedVersionList = jiraUtilsIstance.getJsonAffectedVersionList(affectedVersionArray);
 
@@ -268,7 +270,7 @@ public class Deliverable2Milestone1 {
 		// Setting the project's folder
 		String repoFolder = System.getProperty(USER_DIR) + "/" + projectName + "/.git";
 		Repository repository = builder.setGitDir(new File(repoFolder)).readEnvironment().findGitDir().build();
-
+		
 		// Try to open the Git repository
 		try (Git git = new Git(repository)) {
 
@@ -288,15 +290,16 @@ public class Deliverable2Milestone1 {
 					// Get the date of the commit
 					LocalDate commitLocalDate = commit.getCommitterIdent().getWhen().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
 
-
 					// Get the appartain version of the commit
 					int appartainVersion = jiraUtilsIstance.getCommitAppartainVersion(commitLocalDate);
 
 					// Check if the version index is in the first half ot the releases
 					if (appartainVersion < lastVersion + 1){
 
+						List<Integer> ticketBugFix = jiraUtilsIstance.getTicketAssociatedCommitBugFix(commit.getFullMessage(), projectName);
+						
 						// Get the list of the commit (could be empty) associated to the commit
-						List<Integer> ticketInformation = jiraUtilsIstance.getTicketAssociatedToCommit(commit.getFullMessage(), projectName);
+						List<Integer> ticketInformationBugginess = jiraUtilsIstance.getTicketAssociatedCommitBuggy(commit.getFullMessage(), projectName);
 
 						// Create a new DiffFormatter, needed to get the change between the commit and his parent
 						try (DiffFormatter differenceBetweenCommits = new DiffFormatter(NullOutputStream.INSTANCE)) {
@@ -308,20 +311,20 @@ public class Deliverable2Milestone1 {
 
 							// For each file changed in the commit
 							for (DiffEntry singleFileChanged : filesChanged) {
-
+						
 								if (singleFileChanged.getNewPath().endsWith(FILE_EXTENSION)) {
 									// Put (if not present) an empty record in the dataset map for the pair (version, filePath)
 									jiraUtilsIstance.putEmptyRecord(appartainVersion, singleFileChanged.getNewPath());
 
 									// Get the update metrics of the file
 									fileMetrics = (ArrayList<Integer>) jiraUtilsIstance.getMetrics(singleFileChanged, appartainVersion, differenceBetweenCommits,
-											filesChanged, ticketInformation, lastVersion +1);
+											filesChanged, ticketBugFix, lastVersion +1);
 
 									// Replace the updated metrics
 									fileMapDataset.replace(appartainVersion, singleFileChanged.getNewPath(), fileMetrics);
 
 									// Set this and other class contained in [IV, FV) buggy (if ther'are ticket(s) associated to the commit)
-									jiraUtilsIstance.setClassBuggy(ticketInformation, singleFileChanged, lastVersion +1 );
+									jiraUtilsIstance.setClassBuggy(ticketInformationBugginess, singleFileChanged, lastVersion +1 );
 								}
 							}
 						}
@@ -340,7 +343,7 @@ public class Deliverable2Milestone1 {
 				.build();
 
 		// The name of the project
-		String[] projectList = {"AVRO", "BOOKKEEPER"};
+		String[] projectList = {"BOOKKEEPER"};
 
 		for (String projectName : projectList) {
 			// The repo of the project
@@ -349,7 +352,7 @@ public class Deliverable2Milestone1 {
 			// Get the list of version with release date
 			versionListWithReleaseDate = getVersionWithReleaseDate(projectName);
 
-			jiraUtilsIstance = new D2M1Utils(versionListWithReleaseDate, fileMapDataset, ticketWithBuggyIndex);
+			jiraUtilsIstance = new D2M1Utils(versionListWithReleaseDate, fileMapDataset, ticketWithBuggyIndex, ticketList);
 			lastVersion = (versionListWithReleaseDate.size() / 2) / 2;
 
 			// Clone the repo in the 'projectName' folder

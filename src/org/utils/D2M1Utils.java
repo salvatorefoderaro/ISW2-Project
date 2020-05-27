@@ -34,16 +34,19 @@ public class D2M1Utils {
 	// MultiKeyMap<FileVersion, FilePath, MetricsList>
 	private  MultiKeyMap fileMapDataset;
 
+	private List<Integer> ticketList;
+	
 	// Map<ticketID, (IV, FV)>
 	private  Map<Integer, List<Integer>> ticketWithBuggyIndex;
 
 	private static final String RELEASE_DATE = "releaseDate";
 	private static final int METRICS_NUMBER = 10;
 
-	public D2M1Utils(Multimap<LocalDate, String> versionListWithDate, MultiKeyMap fileMapDataset, Map<Integer, List<Integer>> ticketWithBuggyIndex) {
+	public D2M1Utils(Multimap<LocalDate, String> versionListWithDate, MultiKeyMap fileMapDataset, Map<Integer, List<Integer>> ticketWithBuggyIndex, List <Integer> ticketList) {
 		this.versionListWithDateAndIndex = versionListWithDate;
 		this.fileMapDataset = fileMapDataset;
 		this.ticketWithBuggyIndex = ticketWithBuggyIndex;
+		this.ticketList = ticketList;
 	}
 
 
@@ -82,22 +85,41 @@ public class D2M1Utils {
 	 * @return resultList, the list containing the pair (ticketIV, ticketFV, ticketID) for each ticket contained in the commit's message
 	 * 
 	 */ 
-	public List<Integer> getTicketAssociatedToCommit(String commitMessage, String projectName) {
+	public List<Integer> getTicketAssociatedCommitBuggy(String commitMessage, String projectName) {
 		List<Integer> resultList = new ArrayList<>();
 		Pattern pattern = null;
 		Matcher matcher = null;
 
 		for (Map.Entry<Integer,List<Integer>> entry : ticketWithBuggyIndex.entrySet()) {
-
+				
 			// Use pattern to check if the commit message contains the word "*ProjectName-IssuesID*"
 			pattern = Pattern.compile("\\b"+ projectName + "-" + entry.getKey() + "\\b", Pattern.CASE_INSENSITIVE);
 			matcher = pattern.matcher(commitMessage);
 
 			// Check if commit message contains the issues ID and the issues is labeled like "not checked"
-			if (matcher.find()) {
+			if (matcher.find() && !resultList.contains(entry.getKey())) {
 				resultList.add(ticketWithBuggyIndex.get(entry.getKey()).get(0));
 				resultList.add(ticketWithBuggyIndex.get(entry.getKey()).get(1));
 				resultList.add(entry.getKey());
+			}
+		}
+		return resultList;
+	}
+	
+	public List<Integer> getTicketAssociatedCommitBugFix(String commitMessage, String projectName) {
+		List<Integer> resultList = new ArrayList<>();
+		Pattern pattern = null;
+		Matcher matcher = null;
+		
+		for (Integer entry : ticketList) {
+
+			// Use pattern to check if the commit message contains the word "*ProjectName-IssuesID*"
+			pattern = Pattern.compile("\\b"+ projectName + "-" + entry + "\\b", Pattern.CASE_INSENSITIVE);
+			matcher = pattern.matcher(commitMessage);
+
+			// Check if commit message contains the issues ID and the issues is labeled like "not checked"
+			if (matcher.find() && !resultList.contains(entry)) {
+				resultList.add(entry);
 			}
 		}
 		return resultList;
@@ -167,7 +189,7 @@ public class D2M1Utils {
 
 			} else {
 				// If yes, set the call buggy and calculate the number of "NumberBugFix"
-				result.set(2, result.get(2) + ticketAssociated.size()/3);
+				result.set(2, result.get(2) + ticketAssociated.size());
 				result.set(9, 1);
 			}
 

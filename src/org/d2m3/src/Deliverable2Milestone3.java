@@ -1,6 +1,8 @@
 package org.d2m3.src;
 
 import java.io.FileWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.List;
 
 import org.utils.D2Utils;
@@ -58,9 +60,14 @@ public class Deliverable2Milestone3 {
 					for (String result : featureSelectionResult) {
 						csvWriter.append(projects[j] + "," + i  + "," + percentTraining  + "," + percentDefectTraining  + "," + percentDefectTesting +"," + result);
 					}	
+					
 
 				}
+				// Delete the temp file
+				Files.deleteIfExists(Paths.get(projects[j] + TESTING));
+				Files.deleteIfExists(Paths.get(projects[j] + TRAINING));
 			}
+			
 			csvWriter.flush();
 		}
 	}

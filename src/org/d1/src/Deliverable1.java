@@ -11,10 +11,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.eclipse.jgit.api.Git;
@@ -29,9 +25,14 @@ import org.json.JSONObject;
 
 import org.utils.JSONUtils;
 
+import com.google.common.collect.Iterables;
+import com.google.common.collect.Multimap;
+import com.google.common.collect.MultimapBuilder;
+
 public class Deliverable1 {
 	
-	private static Logger logger = Logger.getLogger(Deliverable1.class.getName()); 
+	private static final String RELEASE_DATE = "releaseDate";
+	public static final String USER_DIR = "user.dir";
 
 	/** This function, given the project name, return the list of all ticket with status =("closed" or "resolved") and resolution="fixed"
 	 * 
@@ -40,20 +41,18 @@ public class Deliverable1 {
 	 * @param incrementValue The value of the increment for the specific key of the HashMap
 	 *
 	 */
-	public static void addDateToMap(Map<Date, Integer> monthsMap, Date commitDate, Integer incrementValue) {
+	public static void addDateToMap(Multimap<Date, Integer> monthsMap, Date commitDate, Integer incrementValue) {
 
-		// Check if the date key exists on the Map
-		if(monthsMap.containsKey(commitDate)) {
+		List<Integer> currentValue = new ArrayList(monthsMap.get(commitDate));
+		
+	
+		// If exists, update the value of the key using the old value plus incrementValue
+		currentValue.set(0,  currentValue.get(0) + incrementValue);
 
-			// If exists, update the value of the key using the old value plus incrementValue
-			monthsMap.replace(commitDate, monthsMap.get(commitDate) + incrementValue);
+		monthsMap.replaceValues(commitDate, currentValue);
 
-			// Else, if the date key doesn't exists
-		} else {
+		// Else, if the date key doesn't exists
 
-			// Insert in the map the date key with the given value
-			monthsMap.put(commitDate, incrementValue);
-		}
 
 	}
 
@@ -64,9 +63,9 @@ public class Deliverable1 {
 	 * @param projectName The name of the project
 	 * @return monthMap The HashMap with [Date(Month), Number of fixed ticket]
 	 */
-	public static Map<Date, Integer> getMonthFI(List<Integer> issuesID, String projectName) throws IOException, GitAPIException, ParseException {
+	public static Multimap<Date, Integer> getMonthFI(List<Integer> issuesID, String projectName) throws IOException, GitAPIException, ParseException {
 
-		Map<Date, Integer> monthMap = new TreeMap<>();
+		Multimap<Date, Integer> monthMap = MultimapBuilder.treeKeys().linkedListValues().build();
 		String commitDateString;
 		Date commitDate;
 
@@ -74,31 +73,49 @@ public class Deliverable1 {
 		FileRepositoryBuilder builder = new FileRepositoryBuilder();		
 
 		// Setting the project's folder
-		String repoFolder = System.getProperty("user.dir") + "/" + projectName + "/.git";
+		String repoFolder = System.getProperty(USER_DIR) + "/" + projectName + "/.git";
 
 		// Set the project's folder
 		Repository repository = builder.setGitDir(new File(repoFolder)).readEnvironment().findGitDir().build();
 		Pattern pattern = null; 
 		Matcher matcher = null; 
-		int counter = 0;
 
 		// Try to open the Git repository
 		try (Git git = new Git(repository)) {
 
 			// Get all the commits
 			Iterable<RevCommit> commits = null;
+			commits = git.log().all().call();
+			
+			// Iterate over the single commit
+			for (RevCommit commit : commits) {
 
+				// Get the Date of the commit
+				LocalDate commitLocalDate = commit.getCommitterIdent().getWhen().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+				commitDateString = commitLocalDate.getMonthValue() + "/" + commitLocalDate.getYear();
+				commitDate=new SimpleDateFormat("MM/yyyy").parse(commitDateString); 
+				
+				List<Integer> currentValue = new ArrayList(monthMap.get(commitDate));
+				
+				// Check if the date key exists on the Map
+				if(monthMap.containsKey(commitDate)) {
+					
+					// If exists, update the value of the key using the old value plus incrementValue
+					currentValue.set(1,  currentValue.get(1) + 1);
+					monthMap.replaceValues(commitDate, currentValue);
+
+					// Else, if the date key doesn't exists
+				} else {
+
+					// Insert in the map the date key with the given value
+					monthMap.put(commitDate, 0);
+					monthMap.put(commitDate, 1);
+					monthMap.put(commitDate, 0);
+
+				}				
+				
 			// Iterate over the single issues
-			for (Integer issues : issuesID) {
-				commits = git.log().all().call();
-
-				// Iterate over the single commit
-				for (RevCommit commit : commits) {
-
-					// Get the Date of the commit
-					LocalDate commitLocalDate = commit.getCommitterIdent().getWhen().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-					commitDateString = commitLocalDate.getMonthValue() + "/" + commitLocalDate.getYear();
-					commitDate=new SimpleDateFormat("MM/yyyy").parse(commitDateString);   
+			for (Integer issues : issuesID) {  
 
 					// Use pattern to check if the commit message contains the word " ProjectName-IssuesID "
 					pattern = Pattern.compile("\\b"+ projectName + "-" +issues + "\\b", Pattern.CASE_INSENSITIVE);
@@ -109,9 +126,6 @@ public class Deliverable1 {
 
 						// Add the Date to the map, incrementing the pair key-value of 1
 						addDateToMap(monthMap, commitDate, 1);        
-						counter++;
-						// Label the issue "checked"
-						break;
 
 					} else {
 
@@ -123,7 +137,7 @@ public class Deliverable1 {
 
 			} 
 		}
-		logger.log(Level.INFO, "Numero di ticket con relativo commit:  {0}", counter);
+		
 		return monthMap;
 	}
 
@@ -161,14 +175,56 @@ public class Deliverable1 {
 		} while (i < total);
 		return fixedIssues;
 	}
+	
+	/** This function return the list of released version of a given project
+	 * 
+	 * @param projectName, the name of the project
+	 * @return versionList, the list of the version with release date
+	 *
+	 */ 
+	public static Multimap<Date, Integer> getReleasedVersion(Multimap<Date, Integer> monthMap, String projectName)
+			throws IOException, JSONException, ParseException {
 
+		Date versionDate;
+		String versionDateString;
+		Integer i;
 
+		// Url for the GET request to get information associated to Jira project
+		String url = "https://issues.apache.org/jira/rest/api/2/project/" + projectName;
+
+		JSONObject json = JSONUtils.readJsonFromUrl(url);
+
+		// Get the JSONArray associated to project version
+		JSONArray versions = json.getJSONArray("versions");	
+		
+		// For each version...
+		for (i = 0; i < versions.length(); i++) {
+			// ... check if version has release date and name, and add it to relative list
+			if (versions.getJSONObject(i).has(RELEASE_DATE) && versions.getJSONObject(i).has("name")) {
+			
+				LocalDate test = LocalDate.parse(versions.getJSONObject(i).get(RELEASE_DATE).toString());
+				versionDateString = test.getMonthValue() + "/" + test.getYear();
+				versionDate =new SimpleDateFormat("MM/yyyy").parse(versionDateString);   
+				
+				List<Integer> currentValue = new ArrayList(monthMap.get(versionDate));
+				
+				currentValue.set(2, currentValue.get(2) + 1);
+				
+				monthMap.replaceValues(versionDate, currentValue);
+							
+			}
+		}
+		return monthMap;
+
+	}
+
+	
 	/** This function, given the project name, return the list of all ticket with status =("closed" or "resolved") and resolution="fixed"
 	 * 
 	 * @param monthList The HashMap with, for each month, the number of fixed ticket
 	 *
 	 */ 
-	public static void writeToCSV(Map<Date, Integer> monthList, String projectName) throws IOException {
+	public static void writeToCSV(Multimap<Date, Integer> monthList, String projectName) throws IOException {
 
 		// Use a Calendar instance to get month and year from Date
 		Calendar cal = Calendar.getInstance();
@@ -179,13 +235,17 @@ public class Deliverable1 {
 			// Append the first line
 			csvWriter.append("Month");
 			csvWriter.append(",");
-			csvWriter.append("Fixed issues");
+			csvWriter.append("#Fixed tickets");
+			csvWriter.append(",");
+			csvWriter.append("Number of commits");
+			csvWriter.append(",");
+			csvWriter.append("Number of versions");
 			csvWriter.append("\n");
 
 			// For every entry of the map, write the pair key-value on the csv file
-			for (Map.Entry<Date,Integer> entry : monthList.entrySet()) {
-				cal.setTime(entry.getKey());
-				csvWriter.append((cal.get(Calendar.MONTH)+1 + "/" + cal.get(Calendar.YEAR)) + "," + entry.getValue().toString());
+			for (Date entry : monthList.keySet()) {
+				cal.setTime(entry);
+				csvWriter.append((cal.get(Calendar.MONTH)+1 + "/" + cal.get(Calendar.YEAR)) + "," + Iterables.get(monthList.get(entry), 0).toString() + "," + Iterables.get(monthList.get(entry), 1).toString() + "," + Iterables.get(monthList.get(entry), 2)*100);
 				csvWriter.append("\n");
 			} 
 
@@ -210,13 +270,13 @@ public class Deliverable1 {
 		// Get all the commit of the project
 		List<Integer> commitID = getFII(projectName);
 
-		logger.log(Level.INFO, "Numero di fixed issues: {0}", commitID.size());
-
 		// For each month from first to last commit, get the number of fixed
-		Map<Date, Integer> monthsMap = getMonthFI(commitID, projectName);
+		Multimap<Date, Integer> mapFIMap = getMonthFI(commitID, projectName);
 
+		getReleasedVersion(mapFIMap, projectName);
+		
 		// Write to CSV all the pair key-value for each month
-		writeToCSV(monthsMap, projectName);
+		writeToCSV(mapFIMap, projectName);
 
 		// Delete the folder containing the repo
 		FileUtils.delete(new File(projectName), 1);
