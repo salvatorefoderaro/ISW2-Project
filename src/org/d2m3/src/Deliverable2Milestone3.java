@@ -51,10 +51,14 @@ public class Deliverable2Milestone3 {
 					DataSource source = new DataSource(projects[j] + TESTING);
 					Instances noFilterTraining = source.getDataSet();
 
+					System.out.println("Sampling | Dataset: " + projects[j] + " training run: " + i);
+					
 					List<String> samplingResult = D3M3Utils.applySampling(noFilterTraining, testingNoFilter, percentageMajorityClass, "False");
 					for (String result : samplingResult) {
 						csvWriter.append(projects[j] + "," + i  + "," + percentTraining  + "," + percentDefectTraining  + "," + percentDefectTesting +"," + result);
 					}
+					
+					System.out.println("Feature Selection | Dataset: " + projects[j] + " training run: " + i);
 
 					List<String> featureSelectionResult = D3M3Utils.applyFeatureSelection(noFilterTraining, testingNoFilter, percentageMajorityClass);
 					for (String result : featureSelectionResult) {

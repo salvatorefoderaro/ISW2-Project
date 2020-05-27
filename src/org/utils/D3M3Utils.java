@@ -55,7 +55,7 @@ public class D3M3Utils {
 
 	}
 
-	public static List<String> applySampling(Instances training, Instances testing, double percentageMajorityClass, String featureSelection) throws CustomException {
+	public static List<String> applySampling(Instances training, Instances testing, double percentageMajorityClass, String featureSelection) throws Exception {
 
 		ArrayList<String> result = new ArrayList<>();
 
@@ -76,7 +76,6 @@ public class D3M3Utils {
 			throw new CustomException("Error building the classifier.");
 		}
 		// Get an evaluation object
-		try {
 
 			// Evaluate with no sampling e no feature selection
 			Evaluation eval = new Evaluation(training);	
@@ -150,28 +149,24 @@ public class D3M3Utils {
 
 			return result;
 
-		} catch (Exception e) {
-			throw new CustomException("Error creating the Evaluation object.");
-		}
+		
 
 	}
 
 
-	public static Evaluation applyFilterForSampling(FilteredClassifier fc, Evaluation eval, Instances training, Instances testing, AbstractClassifier classifierName) throws CustomException {
+	public static Evaluation applyFilterForSampling(FilteredClassifier fc, Evaluation eval, Instances training, Instances testing, AbstractClassifier classifierName) throws Exception {
 
 		if (fc != null) {
-			try {fc.setClassifier(classifierName);
-			fc.buildClassifier(training);
-			eval.evaluateModel(fc, testing);
-			} catch (Exception e) {
-				throw new CustomException("Error on Evaluation with Filter.");
-			}
-		} else {
+			fc.setClassifier(classifierName);
 			try {
+				fc.buildClassifier(training);
+			eval.evaluateModel(fc, testing);
+			} catch (Exception e) {}
+
+		} else {
+			
 				eval.evaluateModel(classifierName, testing);
-			} catch (Exception e) {
-				throw new CustomException("Error on Evaluation without Filter.");
-			}
+
 		}
 		return eval;
 	}

@@ -53,6 +53,7 @@ public class Deliverable2Milestone1 {
 	// Map<ticketID, (IV, FV)>
 	private static Map<Integer, List<Integer>> ticketWithBuggyIndex = new HashMap<>();
 
+	private static List<Integer> ticketList = new ArrayList<>();
 	
 	// Index of the last version (first half of the version released)
 	private static int lastVersion;
@@ -120,7 +121,7 @@ public class Deliverable2Milestone1 {
 			// >1000
 			j = i + 1000;
 			String url = "https://issues.apache.org/jira/rest/api/2/search?jql=project=%22" + projectName
-					+ "%22AND(%22status%22=%22closed%22OR"
+					+ "%22AND%22issueType%22=%22Bug%22AND(%22status%22=%22closed%22OR"
 					+ "%22status%22=%22resolved%22)AND%22resolution%22=%22fixed%22&fields=key,versions,resolutiondate,created,fixVersions&startAt="
 					+ i.toString() + "&maxResults=1000";
 			JSONObject json = JSONUtils.readJsonFromUrl(url);
@@ -137,9 +138,8 @@ public class Deliverable2Milestone1 {
 
 				// , get JSONArray associated to the affected versions,
 				JSONArray affectedVersionArray = singleJsonObject.getJSONArray("versions");
-				if (key.split("-")[1].equals("108"))
 
-					ticketList.add(Integer.valueOf(key.split("-")[1]));
+				ticketList.add(Integer.valueOf(key.split("-")[1]));
 				
 				// Get a Java List from the JSONArray
 				List<String> affectedVersionList = jiraUtilsIstance.getJsonAffectedVersionList(affectedVersionArray);
@@ -311,6 +311,9 @@ public class Deliverable2Milestone1 {
 							// For each file changed in the commit
 							for (DiffEntry singleFileChanged : filesChanged) {
 						
+									if (singleFileChanged.getNewPath().contentEquals("bookkeeper-server/src/main/java/org/apache/bookkeeper/client/BookKeeperAdmin.java") && appartainVersion == 1)
+										System.out.println(ticketBugFix + " " + ticketInformationBugginess);
+									
 								if (singleFileChanged.getNewPath().endsWith(FILE_EXTENSION)) {
 									// Put (if not present) an empty record in the dataset map for the pair (version, filePath)
 									jiraUtilsIstance.putEmptyRecord(appartainVersion, singleFileChanged.getNewPath());
@@ -342,7 +345,7 @@ public class Deliverable2Milestone1 {
 				.build();
 
 		// The name of the project
-		String[] projectList = {"BOOKKEEPER"};
+		String[] projectList = {"AVRO"};
 
 		for (String projectName : projectList) {
 			// The repo of the project
