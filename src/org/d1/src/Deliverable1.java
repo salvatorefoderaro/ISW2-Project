@@ -45,7 +45,7 @@ public class Deliverable1 {
 	 */
 	public static void addDateToMap(Multimap<Date, Integer> monthsMap, Date commitDate, Integer incrementValue) {
 
-		List<Integer> currentValue = new ArrayList(monthsMap.get(commitDate));
+		List<Integer> currentValue = new ArrayList<>(monthsMap.get(commitDate));
 
 
 		// If exists, update the value of the key using the old value plus incrementValue
@@ -97,7 +97,7 @@ public class Deliverable1 {
 				commitDateString = commitLocalDate.getMonthValue() + "/" + commitLocalDate.getYear();
 				commitDate=new SimpleDateFormat(MONTH_YEAR).parse(commitDateString); 
 
-				List<Integer> currentValue = new ArrayList(monthMap.get(commitDate));
+				List<Integer> currentValue = new ArrayList<>(monthMap.get(commitDate));
 
 				// Check if the date key exists on the Map
 				if(monthMap.containsKey(commitDate)) {
@@ -222,7 +222,7 @@ public class Deliverable1 {
 				versionDate =new SimpleDateFormat(MONTH_YEAR).parse(versionDateString);   
 
 				// Get the list of value associated to the month
-				List<Integer> currentValue = new ArrayList(monthMap.get(versionDate));
+				List<Integer> currentValue = new ArrayList<>(monthMap.get(versionDate));
 
 				// Increment the number of the released for the specific month
 				currentValue.set(2, currentValue.get(2) + 1);

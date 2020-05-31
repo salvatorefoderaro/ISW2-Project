@@ -1,5 +1,6 @@
 package org.utils;
 
+import java.lang.System.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +27,6 @@ public class D3M3Utils {
 	private static final String UNDER_SAMPLING = "Under sampling";
 	private static final String SMOTE = "Smote";
 	private static final String NO_SAMPLING = "No sampling";
-
 	
 	/** This apply feature selection, apply different sampling technique and evaluate the model
 	 * 
@@ -95,13 +95,13 @@ public class D3M3Utils {
 			// Evaluate with no sampling e no feature selection
 			Evaluation eval = new Evaluation(training);	
 
-			eval = applyFilterForSampling(null, eval, training, testing, classifierRF);
+			applyFilterForSampling(null, eval, training, testing, classifierRF);
 			addResult(eval, result, "RF", NO_SAMPLING, featureSelection);
 
-			eval =  applyFilterForSampling(null, eval, training, testing, classifierIBk);
+			applyFilterForSampling(null, eval, training, testing, classifierIBk);
 			addResult(eval, result, "IBk", NO_SAMPLING, featureSelection);
 
-			eval =  applyFilterForSampling(null, eval, training, testing, classifierNB);
+			applyFilterForSampling(null, eval, training, testing, classifierNB);
 			addResult(eval, result, "NB", NO_SAMPLING, featureSelection);
 
 			// Apply under sampling
@@ -115,13 +115,13 @@ public class D3M3Utils {
 			// Evaluate the three classifiers
 			eval = new Evaluation(training);
 
-			eval = applyFilterForSampling(fc, eval, training, testing, classifierRF);
+			applyFilterForSampling(fc, eval, training, testing, classifierRF);
 			addResult(eval, result, "RF", UNDER_SAMPLING, featureSelection);
 
-			eval = applyFilterForSampling(fc, eval, training, testing, classifierIBk);
+			applyFilterForSampling(fc, eval, training, testing, classifierIBk);
 			addResult(eval, result, "IBk", UNDER_SAMPLING, featureSelection);
 
-			eval = applyFilterForSampling(fc, eval, training, testing, classifierNB);
+			applyFilterForSampling(fc, eval, training, testing, classifierNB);
 			addResult(eval, result, "NB", UNDER_SAMPLING, featureSelection);
 
 			// Apply over sampling
@@ -135,13 +135,13 @@ public class D3M3Utils {
 			// Evaluate the three classifiers
 			eval = new Evaluation(testing);	
 
-			eval = applyFilterForSampling(fc, eval, training, testing, classifierRF);
+			applyFilterForSampling(fc, eval, training, testing, classifierRF);
 			addResult(eval, result, "RF", OVER_SAMPLING, featureSelection);
 
-			eval = applyFilterForSampling(fc, eval, training, testing, classifierIBk);
+			applyFilterForSampling(fc, eval, training, testing, classifierIBk);
 			addResult(eval, result, "IBk", OVER_SAMPLING, featureSelection);
 
-			eval = applyFilterForSampling(fc, eval, training, testing, classifierNB);
+			applyFilterForSampling(fc, eval, training, testing, classifierNB);
 			addResult(eval, result, "NB", OVER_SAMPLING, featureSelection);
 
 			// Apply SMOTE
@@ -153,13 +153,13 @@ public class D3M3Utils {
 			// Evaluate the three classifiers
 			eval = new Evaluation(testing);	
 
-			eval = applyFilterForSampling(fc, eval, training, testing, classifierRF);
+			applyFilterForSampling(fc, eval, training, testing, classifierRF);
 			addResult(eval, result, "RF", SMOTE, featureSelection);
 
-			eval = applyFilterForSampling(fc, eval, training, testing, classifierIBk);
+			applyFilterForSampling(fc, eval, training, testing, classifierIBk);
 			addResult(eval, result, "IBk", SMOTE, featureSelection);
 
-			eval = applyFilterForSampling(fc, eval, training, testing, classifierNB);
+			applyFilterForSampling(fc, eval, training, testing, classifierNB);
 			addResult(eval, result, "NB", SMOTE, featureSelection);
 
 			return result;
@@ -175,7 +175,7 @@ public class D3M3Utils {
 	 * @param classifierName, the name of the classifier
 	 * @return eval, return the Evaluation object with filter applied
 	 */ 
-	public static Evaluation applyFilterForSampling(FilteredClassifier fc, Evaluation eval, Instances training, Instances testing, AbstractClassifier classifierName) throws Exception {
+	public static Evaluation applyFilterForSampling(FilteredClassifier fc, Evaluation eval, Instances training, Instances testing, AbstractClassifier classifierName) throws CustomException {
 
 		// In filter needed, applyt it and evaluate the model 
 		if (fc != null) {
@@ -183,13 +183,15 @@ public class D3M3Utils {
 			try {
 				fc.buildClassifier(training);
 				eval.evaluateModel(fc, testing);
-			} catch (Exception e) {
-				System.err.println("Can't apply filter.");
-			}
+			} catch (Exception e) { }
 
 		// If not... Just evaluate the model
 		} else {
-			eval.evaluateModel(classifierName, testing);
+			try {
+				eval.evaluateModel(classifierName, testing);
+			} catch (Exception e) {
+				throw new CustomException("Errore nella valutazione del modello.");
+			}
 		}
 		return eval;
 	}
