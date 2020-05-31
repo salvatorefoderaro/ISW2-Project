@@ -18,10 +18,10 @@ public class Deliverable2Milestone3 {
 	public static void main(String[] args) throws Throwable{
 
 		// Declare the list of the dataset names
-		String[] projects = {"AVRO", "BOOKKEEPER"};
+		String[] projects = {"BOOKKEEPER"};
 
 		// Declare the number of revision for each dataset
-		Integer[] limits = {15, 7};
+		Integer[] limits = {7};
 
 		// Open the FileWriter for the output file
 		try (FileWriter csvWriter = new FileWriter("output/outputut_D2M3.csv")) {

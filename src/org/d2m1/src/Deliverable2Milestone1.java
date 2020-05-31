@@ -345,7 +345,7 @@ public class Deliverable2Milestone1 {
 				.build();
 
 		// The name of the project
-		String[] projectList = {"AVRO"};
+		String[] projectList = {"BOOKKEEPER"};
 
 		for (String projectName : projectList) {
 			// The repo of the project
