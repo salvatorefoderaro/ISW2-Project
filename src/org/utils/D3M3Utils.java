@@ -165,7 +165,6 @@ public class D3M3Utils {
 
 				
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				throw new CustomException("Errore nell'applicazione del sampling.");
  			}	
 			
