@@ -188,8 +188,6 @@ public class D2M1Utils {
 				result.set(2, result.get(2) + 0);
 
 			} else {
-				if (entry.getNewPath().equals("bookkeeper-server/src/main/java/org/apache/bookkeeper/client/BookKeeperAdmin.java") && version == 1)
-					System.out.println(ticketAssociated.size());
 				
 				// If yes, set the call buggy and calculate the number of "NumberBugFix"
 				result.set(2, result.get(2) + ticketAssociated.size());

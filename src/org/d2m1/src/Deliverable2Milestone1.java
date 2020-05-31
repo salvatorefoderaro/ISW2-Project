@@ -311,9 +311,6 @@ public class Deliverable2Milestone1 {
 							// For each file changed in the commit
 							for (DiffEntry singleFileChanged : filesChanged) {
 						
-									if (singleFileChanged.getNewPath().contentEquals("bookkeeper-server/src/main/java/org/apache/bookkeeper/client/BookKeeperAdmin.java") && appartainVersion == 1)
-										System.out.println(ticketBugFix + " " + ticketInformationBugginess);
-									
 								if (singleFileChanged.getNewPath().endsWith(FILE_EXTENSION)) {
 									// Put (if not present) an empty record in the dataset map for the pair (version, filePath)
 									jiraUtilsIstance.putEmptyRecord(appartainVersion, singleFileChanged.getNewPath());

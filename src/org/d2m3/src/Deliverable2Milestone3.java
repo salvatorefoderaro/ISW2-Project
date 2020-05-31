@@ -35,10 +35,8 @@ public class Deliverable2Milestone3 {
 				// Iterate over the single version for the WalkForward technique...
 				for (int i = 1; i < limits[j]; i++) {
 
-					// Create the ARFF file for the training, till the i-th version
+					// For training and testing, get the number of buggy, non buggy and total instancies					
 					List<Integer> resultTraining = D2Utils.walkForwardTraining(projects[j], i);
-
-					// Create the ARFF file for testing, with the i+1 version
 					List<Integer> resultTesting = D2Utils.walkForwardTesting(projects[j], i+1);
 
 					double percentTraining = resultTraining.get(0) / (double)(resultTraining.get(0) + resultTesting.get(0));
@@ -46,25 +44,25 @@ public class Deliverable2Milestone3 {
 					double percentDefectTesting = resultTesting.get(1) / (double)resultTesting.get(0);
 					double percentageMajorityClass = 1 - ( (resultTraining.get(1) + resultTesting.get(1)) / (double)(resultTraining.get(0) + resultTesting.get(0)));
 
+					// Create the ARFF file for the training, till the i-th version
 					DataSource source2 = new DataSource(projects[j] + TRAINING);
 					Instances testingNoFilter = source2.getDataSet();
+					
+					// Create the ARFF file for testing, with the i+1 version
 					DataSource source = new DataSource(projects[j] + TESTING);
 					Instances noFilterTraining = source.getDataSet();
-
-					System.out.println("Sampling | Dataset: " + projects[j] + " training run: " + i);
 					
+					// Apply sampling to the two datasets
 					List<String> samplingResult = D3M3Utils.applySampling(noFilterTraining, testingNoFilter, percentageMajorityClass, "False");
 					for (String result : samplingResult) {
 						csvWriter.append(projects[j] + "," + i  + "," + percentTraining  + "," + percentDefectTraining  + "," + percentDefectTesting +"," + result);
 					}
 					
-					System.out.println("Feature Selection | Dataset: " + projects[j] + " training run: " + i);
-
+					// Apply feature selection to the two datasets
 					List<String> featureSelectionResult = D3M3Utils.applyFeatureSelection(noFilterTraining, testingNoFilter, percentageMajorityClass);
 					for (String result : featureSelectionResult) {
 						csvWriter.append(projects[j] + "," + i  + "," + percentTraining  + "," + percentDefectTraining  + "," + percentDefectTesting +"," + result);
 					}	
-
 
 				}
 				// Delete the temp file
@@ -72,6 +70,7 @@ public class Deliverable2Milestone3 {
 				Files.deleteIfExists(Paths.get(projects[j] + TRAINING));
 			}
 
+			// Flush to file
 			csvWriter.flush();
 		}
 	}

@@ -27,6 +27,14 @@ public class D3M3Utils {
 	private static final String SMOTE = "Smote";
 	private static final String NO_SAMPLING = "No sampling";
 
+	
+	/** This apply feature selection, apply different sampling technique and evaluate the model
+	 * 
+	 * @param training, the Evaluation object
+	 * @param testing, the name of the classifier
+	 * @param percentageMajorityClass, the percentage in the training set of the majority class
+	 * @return string with the list of metrics separated with ','
+	 */ 
 	public static List<String> applyFeatureSelection(Instances training, Instances testing, double percentageMajorityClass) throws CustomException{
 
 		// Build the filter
@@ -55,6 +63,13 @@ public class D3M3Utils {
 
 	}
 
+	/** This apply different sampling technique and evaluate the model
+	 * 
+	 * @param training, the Evaluation object
+	 * @param testing, the name of the classifier
+	 * @param percentageMajorityClass, the percentage in the training set of the majority class
+	 * @return result, list string with the list of metrics separated with ',' of the various run
+	 */
 	public static List<String> applySampling(Instances training, Instances testing, double percentageMajorityClass, String featureSelection) throws Exception {
 
 		ArrayList<String> result = new ArrayList<>();
@@ -148,29 +163,45 @@ public class D3M3Utils {
 			addResult(eval, result, "NB", SMOTE, featureSelection);
 
 			return result;
-
-		
-
 	}
 
 
+	/** This function build apply the specified filter with the sampling technique to the evaluator
+	 * 
+	 * @param fc, the FilteredClassifier object, with the filter technique 
+	 * @param eval, the Evaluation object
+	 * @param training, the training instance
+	 * @param testing, the testing instance
+	 * @param classifierName, the name of the classifier
+	 * @return eval, return the Evaluation object with filter applied
+	 */ 
 	public static Evaluation applyFilterForSampling(FilteredClassifier fc, Evaluation eval, Instances training, Instances testing, AbstractClassifier classifierName) throws Exception {
 
+		// In filter needed, applyt it and evaluate the model 
 		if (fc != null) {
 			fc.setClassifier(classifierName);
 			try {
 				fc.buildClassifier(training);
-			eval.evaluateModel(fc, testing);
-			} catch (Exception e) {}
+				eval.evaluateModel(fc, testing);
+			} catch (Exception e) {
+				System.err.println("Can't apply filter.");
+			}
 
+		// If not... Just evaluate the model
 		} else {
-			
-				eval.evaluateModel(classifierName, testing);
-
+			eval.evaluateModel(classifierName, testing);
 		}
 		return eval;
 	}
 
+	/** This function build the ARFF file for the specific project relative to the testing set
+	 * 
+	 * @param eval, the Evaluation object
+	 * @param result, the list needed to append the results
+	 * @param classifierAbb, the abbreviation of the classifier
+	 * @param sampling, the name of sampling technique
+	 * @param featureSelection, the name of feature selection technique
+	 */ 
 	public static void addResult(Evaluation eval, List<String> result, String classifierAbb, String sampling, String featureSelection) {
 
 		// Add the result to the List of instances metrics
@@ -178,11 +209,17 @@ public class D3M3Utils {
 
 	}
 
-
+	
+	/** This function build the ARFF file for the specific project relative to the testing set
+	 * 
+	 * @param projectName, the Evaluation object
+	 * @param testing, the name of the classifier
+	 * @param balancing, the name of the balancing technique
+	 * @param featureSelection, the name of feature selection technique
+	 * @return a string with the list of metrics separated with ','
+	 */ 
 	public static String getMetrics(Evaluation eval, String classifier, String balancing, String featureSelection) {
-
 		return classifier + "," + balancing + "," + featureSelection + "," + eval.numTruePositives(1)  + "," + eval.numFalsePositives(1)  + "," + eval.numTrueNegatives(1)  + "," + eval.numFalseNegatives(1)  + "," + eval.precision(1)  + "," + eval.recall(1)  + "," + eval.areaUnderROC(1)  + "," + eval.kappa() + "\n";
-
 	}
 
 }

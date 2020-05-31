@@ -32,8 +32,9 @@ import com.google.common.collect.MultimapBuilder;
 public class Deliverable1 {
 
 	private static final String RELEASE_DATE = "releaseDate";
-	public static final String USER_DIR = "user.dir";
-	public static List<Integer> checkedTickets = new ArrayList<>();
+	private static final String USER_DIR = "user.dir";
+	private static final String MONTH_YEAR = "MONTH_YEAR";
+	private static List<Integer> checkedTickets = new ArrayList<>();
 
 	/** This function, given the project name, return the list of all ticket with status =("closed" or "resolved") and resolution="fixed"
 	 * 
@@ -65,6 +66,7 @@ public class Deliverable1 {
 	 */
 	public static Multimap<Date, Integer> getMonthFI(List<Integer> issuesID, String projectName) throws IOException, GitAPIException, ParseException {
 
+		// MultiMap<Month, (NumberOfFixedTickets, NumberOfCommits, NumberOfversionReleased)>
 		Multimap<Date, Integer> monthMap = MultimapBuilder.treeKeys().linkedListValues().build();
 		String commitDateString;
 		Date commitDate;
@@ -93,7 +95,7 @@ public class Deliverable1 {
 				// Get the Date of the commit
 				LocalDate commitLocalDate = commit.getCommitterIdent().getWhen().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
 				commitDateString = commitLocalDate.getMonthValue() + "/" + commitLocalDate.getYear();
-				commitDate=new SimpleDateFormat("MM/yyyy").parse(commitDateString); 
+				commitDate=new SimpleDateFormat(MONTH_YEAR).parse(commitDateString); 
 
 				List<Integer> currentValue = new ArrayList(monthMap.get(commitDate));
 
@@ -108,8 +110,14 @@ public class Deliverable1 {
 				} else {
 
 					// Insert in the map the date key with the given value
+					
+					// Number of fixed tickets
 					monthMap.put(commitDate, 0);
+					
+					// Number of commits
 					monthMap.put(commitDate, 1);
+					
+					// Number of versions
 					monthMap.put(commitDate, 0);
 
 				}				
@@ -121,18 +129,16 @@ public class Deliverable1 {
 					pattern = Pattern.compile("\\b"+ projectName + "-" +issues + "\\b", Pattern.CASE_INSENSITIVE);
 					matcher = pattern.matcher(commit.getFullMessage());
 
-
-
-
 					// Check if commit message contains the issues ID and the issues is labeled like "not checked"
 					if (matcher.find()) {
-						Date a = new SimpleDateFormat("MM/yyyy").parse("05/2013");
 
+						// If ticket was not checked before...
 						if (!checkedTickets.contains(issues)) {
 
 							// Add the Date to the map, incrementing the pair key-value of 1
 							addDateToMap(monthMap, commitDate, 1); 
 
+							// Add the ticket to the checked list
 							checkedTickets.add(issues);
 						}
 
@@ -213,10 +219,12 @@ public class Deliverable1 {
 
 				LocalDate test = LocalDate.parse(versions.getJSONObject(i).get(RELEASE_DATE).toString());
 				versionDateString = test.getMonthValue() + "/" + test.getYear();
-				versionDate =new SimpleDateFormat("MM/yyyy").parse(versionDateString);   
+				versionDate =new SimpleDateFormat(MONTH_YEAR).parse(versionDateString);   
 
+				// Get the list of value associated to the month
 				List<Integer> currentValue = new ArrayList(monthMap.get(versionDate));
 
+				// Increment the number of the released for the specific month
 				currentValue.set(2, currentValue.get(2) + 1);
 
 				monthMap.replaceValues(versionDate, currentValue);
