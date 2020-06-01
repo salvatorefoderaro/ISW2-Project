@@ -8,4 +8,3 @@ addons:
   token: 92416348c727438debe78e83a6b8ff9300c51b87
 script:
 - ant build
-- sonar-scanner
