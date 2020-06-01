@@ -3,57 +3,13 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="ISW2-Project">
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="ISW2-Project-Deliverable2">
     <property environment="env"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="11"/>
     <property name="source" value="11"/>
-    <path id="ISW2-Project.classpath">
+    <path id="ISW2-Project-Deliverable2.classpath">
         <pathelement location="bin"/>
-        <pathelement location="jar/commons-collections4-4.4.jar"/>
-        <pathelement location="jar/guava-23.0.jar"/>
-        <pathelement location="jar/java-json.jar"/>
-        <pathelement location="jar/org.eclipse.jgit-5.7.0.202003110725-r.jar"/>
-        <pathelement location="jar/slf4j-api-1.7.9.jar"/>
-        <pathelement location="jar/slf4j-simple-1.7.9.jar"/>
-        <pathelement location="jar/weka.jar"/>
-        <pathelement location="jar/SMOTE-1.0.3.jar"/>
-    </path>
-    <path id="run.Deliverable2Milestone3.classpath">
-        <path refid="ISW2-Project.classpath"/>
-        <pathelement location="jar/commons-collections4-4.4.jar"/>
-        <pathelement location="jar/guava-23.0.jar"/>
-        <pathelement location="jar/java-json.jar"/>
-        <pathelement location="jar/org.eclipse.jgit-5.7.0.202003110725-r.jar"/>
-        <pathelement location="jar/slf4j-api-1.7.9.jar"/>
-        <pathelement location="jar/slf4j-simple-1.7.9.jar"/>
-        <pathelement location="jar/weka.jar"/>
-        <pathelement location="jar/SMOTE-1.0.3.jar"/>
-    </path>
-    <path id="run.Deliverable1 (5).classpath">
-        <path refid="ISW2-Project.classpath"/>
-        <pathelement location="jar/commons-collections4-4.4.jar"/>
-        <pathelement location="jar/guava-23.0.jar"/>
-        <pathelement location="jar/java-json.jar"/>
-        <pathelement location="jar/org.eclipse.jgit-5.7.0.202003110725-r.jar"/>
-        <pathelement location="jar/slf4j-api-1.7.9.jar"/>
-        <pathelement location="jar/slf4j-simple-1.7.9.jar"/>
-        <pathelement location="jar/weka.jar"/>
-        <pathelement location="jar/SMOTE-1.0.3.jar"/>
-    </path>
-    <path id="run.Deliverable2Milestone2.classpath">
-        <path refid="ISW2-Project.classpath"/>
-        <pathelement location="jar/commons-collections4-4.4.jar"/>
-        <pathelement location="jar/guava-23.0.jar"/>
-        <pathelement location="jar/java-json.jar"/>
-        <pathelement location="jar/org.eclipse.jgit-5.7.0.202003110725-r.jar"/>
-        <pathelement location="jar/slf4j-api-1.7.9.jar"/>
-        <pathelement location="jar/slf4j-simple-1.7.9.jar"/>
-        <pathelement location="jar/weka.jar"/>
-        <pathelement location="jar/SMOTE-1.0.3.jar"/>
-    </path>
-    <path id="run.Deliverable2Milestone1.classpath">
-        <path refid="ISW2-Project.classpath"/>
         <pathelement location="jar/commons-collections4-4.4.jar"/>
         <pathelement location="jar/guava-23.0.jar"/>
         <pathelement location="jar/java-json.jar"/>
@@ -82,7 +38,7 @@
         <echo message="${ant.project.name}: ${ant.file}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
-            <classpath refid="ISW2-Project.classpath"/>
+            <classpath refid="ISW2-Project-Deliverable2.classpath"/>
         </javac>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
@@ -98,25 +54,5 @@
     <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
-    </target>
-    <target name="Deliverable2Milestone3">
-        <java classname="d2m3.src.Deliverable2Milestone3" failonerror="true" fork="yes">
-            <classpath refid="run.Deliverable2Milestone3.classpath"/>
-        </java>
-    </target>
-    <target name="Deliverable1 (5)">
-        <java classname="d1.src.Deliverable1" failonerror="true" fork="yes">
-            <classpath refid="run.Deliverable1 (5).classpath"/>
-        </java>
-    </target>
-    <target name="Deliverable2Milestone2">
-        <java classname="d2m2.src.Deliverable2Milestone2" failonerror="true" fork="yes">
-            <classpath refid="run.Deliverable2Milestone2.classpath"/>
-        </java>
-    </target>
-    <target name="Deliverable2Milestone1">
-        <java classname="d2m1.src.Deliverable2Milestone1" failonerror="true" fork="yes">
-            <classpath refid="run.Deliverable2Milestone1.classpath"/>
-        </java>
     </target>
 </project>
