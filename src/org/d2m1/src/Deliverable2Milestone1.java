@@ -226,7 +226,7 @@ public class Deliverable2Milestone1 {
 
 				ArrayList<Integer> fileMetrics = (ArrayList<Integer>) entry.getValue();
 				// Check that the version index is contained in the first half of the releases
-				if (Integer.valueOf(entry.getKey().split(",")[0]) == (lastVersion)) {
+				if (Integer.valueOf(entry.getKey().split(",")[0]) <= (lastVersion) + 1) {
 					if (fileMetrics.get(9).equals(0))
 						buggy = "No";
 					else
@@ -352,8 +352,7 @@ public class Deliverable2Milestone1 {
 			versionListWithReleaseDate = getVersionWithReleaseDate(projectName);
 
 			jiraUtilsIstance = new D2M1Utils(versionListWithReleaseDate, fileMapDataset, ticketWithBuggyIndex, ticketList);
-			
-			lastVersion = (versionListWithReleaseDate.size() / 2);
+			lastVersion = (versionListWithReleaseDate.size() / 2) / 2;
 
 			// Clone the repo in the 'projectName' folder
 			Git.cloneRepository()

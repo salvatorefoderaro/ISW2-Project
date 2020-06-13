@@ -6,6 +6,7 @@ addons:
  sonarcloud:
   organization: salvatorefoderaro
   token: 45175710d5235d1ff8b99d24399856119da70271
+  
 script:
 - ant build
 - sonar-scanner
