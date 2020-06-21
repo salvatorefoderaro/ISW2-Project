@@ -9,12 +9,12 @@ import java.util.List;
 
 import weka.classifiers.Evaluation;
 
-public class D2Utils {
+public class D2M2Utils {
 
 	private static final String TRAINING = "_training.arff";
 	private static final String TESTING = "_testing.arff";
 
-	private D2Utils() throws CustomException {
+	private D2M2Utils() throws CustomException {
 		throw new CustomException("Unable to do this operation.");
 	}
 

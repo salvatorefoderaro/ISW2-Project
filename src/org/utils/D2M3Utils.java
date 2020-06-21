@@ -18,9 +18,9 @@ import weka.filters.supervised.instance.Resample;
 import weka.filters.supervised.instance.SMOTE;
 import weka.filters.supervised.instance.SpreadSubsample;
 
-public class D3M3Utils {
+public class D2M3Utils {
 
-	private D3M3Utils() {}
+	private D2M3Utils() {}
 
 	private static final String OVER_SAMPLING = "Over sampling";
 	private static final String UNDER_SAMPLING = "Under sampling";

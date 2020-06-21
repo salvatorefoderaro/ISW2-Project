@@ -51,9 +51,9 @@ public class Deliverable2Milestone1 {
 	private static MultiKeyMap fileMapDataset = MultiKeyMap.multiKeyMap(new LinkedMap());
 
 	// Map<ticketID, (IV, FV)>
-	private static Map<Integer, List<Integer>> ticketWithBuggyIndex = new HashMap<>();
+	private static Map<Integer, List<Integer>> ticketWithBuggyIndex;
 
-	private static List<Integer> ticketList = new ArrayList<>();
+	private static List<Integer> ticketList;
 	
 	// Index of the last version (first half of the version released)
 	private static int lastVersion;
@@ -337,14 +337,20 @@ public class Deliverable2Milestone1 {
 	public static void main(String[] args)
 			throws IOException, JSONException, GitAPIException {
 
-		//Multimap<ReleaseDate, VersionName, VersionIndex>
-		Multimap<LocalDate, String> versionListWithReleaseDate = MultimapBuilder.treeKeys().linkedListValues()
-				.build();
+
 
 		// The name of the project
-		String[] projectList = {"AVRO"};
+		String[] projectList = {"AVRO", "BOOKKEEPER"};
 
 		for (String projectName : projectList) {
+			
+			//Multimap<ReleaseDate, VersionName, VersionIndex>
+			Multimap<LocalDate, String> versionListWithReleaseDate = MultimapBuilder.treeKeys().linkedListValues()
+					.build();
+			
+			ticketWithBuggyIndex = new HashMap<>();
+			ticketList = new ArrayList<>();
+					
 			// The repo of the project
 			String projectRepo = "https://github.com/apache/" + projectName + ".git";
 

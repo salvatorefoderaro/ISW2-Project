@@ -5,8 +5,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
-import org.utils.D2Utils;
-import org.utils.D3M3Utils;
+import org.utils.D2M2Utils;
+import org.utils.D2M3Utils;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 
@@ -36,8 +36,8 @@ public class Deliverable2Milestone3 {
 				for (int i = 1; i < limits[j]; i++) {
 
 					// For training and testing, get the number of buggy, non buggy and total instancies					
-					List<Integer> resultTraining = D2Utils.walkForwardTraining(projects[j], i);
-					List<Integer> resultTesting = D2Utils.walkForwardTesting(projects[j], i+1);
+					List<Integer> resultTraining = D2M2Utils.walkForwardTraining(projects[j], i);
+					List<Integer> resultTesting = D2M2Utils.walkForwardTesting(projects[j], i+1);
 
 					double percentTraining = resultTraining.get(0) / (double)(resultTraining.get(0) + resultTesting.get(0));
 					double percentDefectTraining = resultTraining.get(1) / (double)resultTraining.get(0);
@@ -53,13 +53,13 @@ public class Deliverable2Milestone3 {
 					Instances noFilterTraining = source.getDataSet();
 					
 					// Apply sampling to the two datasets
-					List<String> samplingResult = D3M3Utils.applySampling(noFilterTraining, testingNoFilter, percentageMajorityClass, "False");
+					List<String> samplingResult = D2M3Utils.applySampling(noFilterTraining, testingNoFilter, percentageMajorityClass, "False");
 					for (String result : samplingResult) {
 						csvWriter.append(projects[j] + "," + i  + "," + percentTraining  + "," + percentDefectTraining  + "," + percentDefectTesting +"," + result);
 					}
 					
 					// Apply feature selection to the two datasets
-					List<String> featureSelectionResult = D3M3Utils.applyFeatureSelection(noFilterTraining, testingNoFilter, percentageMajorityClass);
+					List<String> featureSelectionResult = D2M3Utils.applyFeatureSelection(noFilterTraining, testingNoFilter, percentageMajorityClass);
 					for (String result : featureSelectionResult) {
 						csvWriter.append(projects[j] + "," + i  + "," + percentTraining  + "," + percentDefectTraining  + "," + percentDefectTesting +"," + result);
 					}	
