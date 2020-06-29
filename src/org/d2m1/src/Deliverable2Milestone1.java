@@ -337,8 +337,6 @@ public class Deliverable2Milestone1 {
 	public static void main(String[] args)
 			throws IOException, JSONException, GitAPIException {
 
-
-
 		// The name of the project
 		String[] projectList = {"AVRO", "BOOKKEEPER"};
 

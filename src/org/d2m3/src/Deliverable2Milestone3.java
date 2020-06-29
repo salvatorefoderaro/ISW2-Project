@@ -18,10 +18,10 @@ public class Deliverable2Milestone3 {
 	public static void main(String[] args) throws Throwable{
 
 		// Declare the list of the dataset names
-		String[] projects = {"BOOKKEEPER"};
+		String[] projects = {"AVRO", "BOOKKEEPER"};
 
 		// Declare the number of revision for each dataset
-		Integer[] limits = {7};
+		Integer[] limits = {15, 7};
 
 		// Open the FileWriter for the output file
 		try (FileWriter csvWriter = new FileWriter("output/outputut_D2M3.csv")) {
@@ -45,21 +45,21 @@ public class Deliverable2Milestone3 {
 					double percentageMajorityClass = 1 - ( (resultTraining.get(1) + resultTesting.get(1)) / (double)(resultTraining.get(0) + resultTesting.get(0)));
 
 					// Create the ARFF file for the training, till the i-th version
-					DataSource source2 = new DataSource(projects[j] + TRAINING);
-					Instances testingNoFilter = source2.getDataSet();
+					DataSource trainingSource = new DataSource(projects[j] + TRAINING);
+					Instances testingSource = trainingSource.getDataSet();
 					
 					// Create the ARFF file for testing, with the i+1 version
 					DataSource source = new DataSource(projects[j] + TESTING);
 					Instances noFilterTraining = source.getDataSet();
 					
 					// Apply sampling to the two datasets
-					List<String> samplingResult = D2M3Utils.applySampling(noFilterTraining, testingNoFilter, percentageMajorityClass, "False");
+					List<String> samplingResult = D2M3Utils.applySampling(noFilterTraining, testingSource, percentageMajorityClass, "False");
 					for (String result : samplingResult) {
 						csvWriter.append(projects[j] + "," + i  + "," + percentTraining  + "," + percentDefectTraining  + "," + percentDefectTesting +"," + result);
 					}
 					
 					// Apply feature selection to the two datasets
-					List<String> featureSelectionResult = D2M3Utils.applyFeatureSelection(noFilterTraining, testingNoFilter, percentageMajorityClass);
+					List<String> featureSelectionResult = D2M3Utils.applyFeatureSelection(noFilterTraining, testingSource, percentageMajorityClass);
 					for (String result : featureSelectionResult) {
 						csvWriter.append(projects[j] + "," + i  + "," + percentTraining  + "," + percentDefectTraining  + "," + percentDefectTesting +"," + result);
 					}	
