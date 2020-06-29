@@ -27,7 +27,7 @@ public class D2M3Utils {
 	private static final String UNDER_SAMPLING = "Under sampling";
 	private static final String SMOTE = "Smote";
 	private static final String NO_SAMPLING = "No sampling";
-	private final static Logger LOGGER = Logger.getLogger(D2M3Utils.class.getName());
+	private static final  Logger LOGGER = Logger.getLogger(D2M3Utils.class.getName());
 
 	/** This apply feature selection, apply different sampling technique and evaluate the model
 	 * 
