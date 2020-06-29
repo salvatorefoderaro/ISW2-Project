@@ -2,6 +2,7 @@ package org.utils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 import weka.attributeSelection.CfsSubsetEval;
 import weka.attributeSelection.GreedyStepwise;
@@ -26,7 +27,8 @@ public class D2M3Utils {
 	private static final String UNDER_SAMPLING = "Under sampling";
 	private static final String SMOTE = "Smote";
 	private static final String NO_SAMPLING = "No sampling";
-	
+	private final static Logger LOGGER = Logger.getLogger(D2M3Utils.class.getName());
+
 	/** This apply feature selection, apply different sampling technique and evaluate the model
 	 * 
 	 * @param training, the Evaluation object
@@ -91,84 +93,84 @@ public class D2M3Utils {
 		}
 		// Get an evaluation object
 
-			// Evaluate with no sampling e no feature selection
-			Evaluation eval;
-			try {
-				eval = new Evaluation(training);
-				
-				applyFilterForSampling(null, eval, training, testing, classifierRF);
-				addResult(eval, result, "RF", NO_SAMPLING, featureSelection);
+		// Evaluate with no sampling e no feature selection
+		Evaluation eval;
+		try {
+			eval = new Evaluation(training);
 
-				applyFilterForSampling(null, eval, training, testing, classifierIBk);
-				addResult(eval, result, "IBk", NO_SAMPLING, featureSelection);
+			applyFilterForSampling(null, eval, training, testing, classifierRF);
+			addResult(eval, result, "RF", NO_SAMPLING, featureSelection);
 
-				applyFilterForSampling(null, eval, training, testing, classifierNB);
-				addResult(eval, result, "NB", NO_SAMPLING, featureSelection);
+			applyFilterForSampling(null, eval, training, testing, classifierIBk);
+			addResult(eval, result, "IBk", NO_SAMPLING, featureSelection);
 
-				// Apply under sampling
-				FilteredClassifier fc = new FilteredClassifier();
-				SpreadSubsample  underSampling = new SpreadSubsample();
-				underSampling.setInputFormat(training);
-				String[] opts = new String[]{ "-M", "1.0"};
-				underSampling.setOptions(opts);
-				fc.setFilter(underSampling);
+			applyFilterForSampling(null, eval, training, testing, classifierNB);
+			addResult(eval, result, "NB", NO_SAMPLING, featureSelection);
 
-				// Evaluate the three classifiers
-				eval = new Evaluation(training);
+			// Apply under sampling
+			FilteredClassifier fc = new FilteredClassifier();
+			SpreadSubsample  underSampling = new SpreadSubsample();
+			underSampling.setInputFormat(training);
+			String[] opts = new String[]{ "-M", "1.0"};
+			underSampling.setOptions(opts);
+			fc.setFilter(underSampling);
 
-				applyFilterForSampling(fc, eval, training, testing, classifierRF);
-				addResult(eval, result, "RF", UNDER_SAMPLING, featureSelection);
+			// Evaluate the three classifiers
+			eval = new Evaluation(training);
 
-				applyFilterForSampling(fc, eval, training, testing, classifierIBk);
-				addResult(eval, result, "IBk", UNDER_SAMPLING, featureSelection);
+			applyFilterForSampling(fc, eval, training, testing, classifierRF);
+			addResult(eval, result, "RF", UNDER_SAMPLING, featureSelection);
 
-				applyFilterForSampling(fc, eval, training, testing, classifierNB);
-				addResult(eval, result, "NB", UNDER_SAMPLING, featureSelection);
+			applyFilterForSampling(fc, eval, training, testing, classifierIBk);
+			addResult(eval, result, "IBk", UNDER_SAMPLING, featureSelection);
 
-				// Apply over sampling
-				fc = new FilteredClassifier();
-				Resample  overSampling = new Resample();
-				overSampling.setInputFormat(training);
-				String[] optsOverSampling = new String[]{"-B", "1.0", "-Z", String.valueOf(2*percentageMajorityClass*100)};
-				overSampling.setOptions(optsOverSampling);
-				fc.setFilter(overSampling);
+			applyFilterForSampling(fc, eval, training, testing, classifierNB);
+			addResult(eval, result, "NB", UNDER_SAMPLING, featureSelection);
 
-				// Evaluate the three classifiers
-				eval = new Evaluation(testing);	
+			// Apply over sampling
+			fc = new FilteredClassifier();
+			Resample  overSampling = new Resample();
+			overSampling.setInputFormat(training);
+			String[] optsOverSampling = new String[]{"-B", "1.0", "-Z", String.valueOf(2*percentageMajorityClass*100)};
+			overSampling.setOptions(optsOverSampling);
+			fc.setFilter(overSampling);
 
-				applyFilterForSampling(fc, eval, training, testing, classifierRF);
-				addResult(eval, result, "RF", OVER_SAMPLING, featureSelection);
+			// Evaluate the three classifiers
+			eval = new Evaluation(testing);	
 
-				applyFilterForSampling(fc, eval, training, testing, classifierIBk);
-				addResult(eval, result, "IBk", OVER_SAMPLING, featureSelection);
+			applyFilterForSampling(fc, eval, training, testing, classifierRF);
+			addResult(eval, result, "RF", OVER_SAMPLING, featureSelection);
 
-				applyFilterForSampling(fc, eval, training, testing, classifierNB);
-				addResult(eval, result, "NB", OVER_SAMPLING, featureSelection);
+			applyFilterForSampling(fc, eval, training, testing, classifierIBk);
+			addResult(eval, result, "IBk", OVER_SAMPLING, featureSelection);
 
-				// Apply SMOTE
-				SMOTE smote = new SMOTE();
-				fc = new FilteredClassifier();
-				smote.setInputFormat(training);
-				fc.setFilter(smote);
+			applyFilterForSampling(fc, eval, training, testing, classifierNB);
+			addResult(eval, result, "NB", OVER_SAMPLING, featureSelection);
 
-				// Evaluate the three classifiers
-				eval = new Evaluation(testing);	
+			// Apply SMOTE
+			SMOTE smote = new SMOTE();
+			fc = new FilteredClassifier();
+			smote.setInputFormat(training);
+			fc.setFilter(smote);
 
-				applyFilterForSampling(fc, eval, training, testing, classifierRF);
-				addResult(eval, result, "RF", SMOTE, featureSelection);
+			// Evaluate the three classifiers
+			eval = new Evaluation(testing);	
 
-				applyFilterForSampling(fc, eval, training, testing, classifierIBk);
-				addResult(eval, result, "IBk", SMOTE, featureSelection);
+			applyFilterForSampling(fc, eval, training, testing, classifierRF);
+			addResult(eval, result, "RF", SMOTE, featureSelection);
 
-				applyFilterForSampling(fc, eval, training, testing, classifierNB);
-				addResult(eval, result, "NB", SMOTE, featureSelection);
+			applyFilterForSampling(fc, eval, training, testing, classifierIBk);
+			addResult(eval, result, "IBk", SMOTE, featureSelection);
 
-				
-			} catch (Exception e) {
-				throw new CustomException("Errore nell'applicazione del sampling.");
- 			}	
-			
-			return result;
+			applyFilterForSampling(fc, eval, training, testing, classifierNB);
+			addResult(eval, result, "NB", SMOTE, featureSelection);
+
+
+		} catch (Exception e) {
+			throw new CustomException("Errore nell'applicazione del sampling.");
+		}	
+
+		return result;
 
 
 	}
@@ -187,17 +189,18 @@ public class D2M3Utils {
 
 		// In filter needed, applyt it and evaluate the model 
 		try {
-		if (fc != null) {
-			fc.setClassifier(classifierName);
-			fc.buildClassifier(training);
-			eval.evaluateModel(fc, testing);
+			if (fc != null) {
+				fc.setClassifier(classifierName);
+				fc.buildClassifier(training);
+				eval.evaluateModel(fc, testing);
 
-		// If not... Just evaluate the model
-		} else {
+				// If not... Just evaluate the model
+			} else {
 				eval.evaluateModel(classifierName, testing);
-			
-		}
+
+			}
 		} catch (Exception e) {
+			LOGGER.info("Attenzione. Classe minoritaria insufficiente per SMOTE.");
 		}
 		return eval;
 	}
@@ -217,7 +220,7 @@ public class D2M3Utils {
 
 	}
 
-	
+
 	/** This function build the ARFF file for the specific project relative to the testing set
 	 * 
 	 * @param projectName, the Evaluation object
