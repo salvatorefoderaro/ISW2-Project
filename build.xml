@@ -19,6 +19,39 @@
         <pathelement location="jar/weka.jar"/>
         <pathelement location="jar/SMOTE-1.0.3.jar"/>
     </path>
+    <path id="run.Deliverable2Milestone1 (2).classpath">
+        <path refid="ISW2-Project-Deliverable2.classpath"/>
+        <pathelement location="jar/commons-collections4-4.4.jar"/>
+        <pathelement location="jar/guava-23.0.jar"/>
+        <pathelement location="jar/java-json.jar"/>
+        <pathelement location="jar/org.eclipse.jgit-5.7.0.202003110725-r.jar"/>
+        <pathelement location="jar/slf4j-api-1.7.9.jar"/>
+        <pathelement location="jar/slf4j-simple-1.7.9.jar"/>
+        <pathelement location="jar/weka.jar"/>
+        <pathelement location="jar/SMOTE-1.0.3.jar"/>
+    </path>
+    <path id="run.Deliverable2Milestone2 (2).classpath">
+        <path refid="ISW2-Project-Deliverable2.classpath"/>
+        <pathelement location="jar/commons-collections4-4.4.jar"/>
+        <pathelement location="jar/guava-23.0.jar"/>
+        <pathelement location="jar/java-json.jar"/>
+        <pathelement location="jar/org.eclipse.jgit-5.7.0.202003110725-r.jar"/>
+        <pathelement location="jar/slf4j-api-1.7.9.jar"/>
+        <pathelement location="jar/slf4j-simple-1.7.9.jar"/>
+        <pathelement location="jar/weka.jar"/>
+        <pathelement location="jar/SMOTE-1.0.3.jar"/>
+    </path>
+    <path id="run.Deliverable2Milestone3 (2).classpath">
+        <path refid="ISW2-Project-Deliverable2.classpath"/>
+        <pathelement location="jar/commons-collections4-4.4.jar"/>
+        <pathelement location="jar/guava-23.0.jar"/>
+        <pathelement location="jar/java-json.jar"/>
+        <pathelement location="jar/org.eclipse.jgit-5.7.0.202003110725-r.jar"/>
+        <pathelement location="jar/slf4j-api-1.7.9.jar"/>
+        <pathelement location="jar/slf4j-simple-1.7.9.jar"/>
+        <pathelement location="jar/weka.jar"/>
+        <pathelement location="jar/SMOTE-1.0.3.jar"/>
+    </path>
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
@@ -54,5 +87,20 @@
     <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
+    </target>
+    <target name="Deliverable2Milestone1 (2)">
+        <java classname="org.d2m1.src.Deliverable2Milestone1" failonerror="true" fork="yes">
+            <classpath refid="run.Deliverable2Milestone1 (2).classpath"/>
+        </java>
+    </target>
+    <target name="Deliverable2Milestone2 (2)">
+        <java classname="org.d2m2.src.Deliverable2Milestone2" failonerror="true" fork="yes">
+            <classpath refid="run.Deliverable2Milestone2 (2).classpath"/>
+        </java>
+    </target>
+    <target name="Deliverable2Milestone3 (2)">
+        <java classname="org.d2m3.src.Deliverable2Milestone3" failonerror="true" fork="yes">
+            <classpath refid="run.Deliverable2Milestone3 (2).classpath"/>
+        </java>
     </target>
 </project>

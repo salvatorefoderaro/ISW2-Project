@@ -189,8 +189,8 @@ public class D2M3Utils {
 		try {
 		if (fc != null) {
 			fc.setClassifier(classifierName);
-				fc.buildClassifier(training);
-				eval.evaluateModel(fc, testing);
+			fc.buildClassifier(training);
+			eval.evaluateModel(fc, testing);
 
 		// If not... Just evaluate the model
 		} else {
@@ -198,7 +198,6 @@ public class D2M3Utils {
 			
 		}
 		} catch (Exception e) {
-			throw new CustomException("Errore nella valutazione del modello - ApplyFilteForSampling");
 		}
 		return eval;
 	}

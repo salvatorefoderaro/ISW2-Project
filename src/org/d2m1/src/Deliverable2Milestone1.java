@@ -51,7 +51,6 @@ public class Deliverable2Milestone1 {
 	private static MultiKeyMap fileMapDataset = MultiKeyMap.multiKeyMap(new LinkedMap());
 
 	// Map<ticketID, (IV, FV)>
-	private static Map<Integer, List<Integer>> ticketWithBuggyIndex;
 
 	private static List<Integer> ticketList;
 	
@@ -337,6 +336,9 @@ public class Deliverable2Milestone1 {
 	public static void main(String[] args)
 			throws IOException, JSONException, GitAPIException {
 
+		Map<Integer, List<Integer>> ticketWithBuggyIndex;
+
+		
 		// The name of the project
 		String[] projectList = {"AVRO", "BOOKKEEPER"};
 

@@ -45,21 +45,21 @@ public class Deliverable2Milestone3 {
 					double percentageMajorityClass = 1 - ( (resultTraining.get(1) + resultTesting.get(1)) / (double)(resultTraining.get(0) + resultTesting.get(0)));
 
 					// Create the ARFF file for the training, till the i-th version
-					DataSource trainingSource = new DataSource(projects[j] + TRAINING);
-					Instances testingSource = trainingSource.getDataSet();
+					DataSource source2 = new DataSource(projects[j] + TRAINING);
+					Instances testingNoFilter = source2.getDataSet();
 					
 					// Create the ARFF file for testing, with the i+1 version
 					DataSource source = new DataSource(projects[j] + TESTING);
 					Instances noFilterTraining = source.getDataSet();
 					
 					// Apply sampling to the two datasets
-					List<String> samplingResult = D2M3Utils.applySampling(noFilterTraining, testingSource, percentageMajorityClass, "False");
+					List<String> samplingResult = D2M3Utils.applySampling(noFilterTraining, testingNoFilter, percentageMajorityClass, "False");
 					for (String result : samplingResult) {
 						csvWriter.append(projects[j] + "," + i  + "," + percentTraining  + "," + percentDefectTraining  + "," + percentDefectTesting +"," + result);
 					}
 					
 					// Apply feature selection to the two datasets
-					List<String> featureSelectionResult = D2M3Utils.applyFeatureSelection(noFilterTraining, testingSource, percentageMajorityClass);
+					List<String> featureSelectionResult = D2M3Utils.applyFeatureSelection(noFilterTraining, testingNoFilter, percentageMajorityClass);
 					for (String result : featureSelectionResult) {
 						csvWriter.append(projects[j] + "," + i  + "," + percentTraining  + "," + percentDefectTraining  + "," + percentDefectTesting +"," + result);
 					}	
